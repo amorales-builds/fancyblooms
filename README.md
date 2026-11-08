@@ -6,7 +6,7 @@ For fun! <br>
 
 ## To-Do List
 - [ ] Sectioned Main Page
-    - [ ] Blog Section
+    - [ ] Personal/Blog Section
     - [ ] Art Section
     - [ ] Programming Section
     - [ ] Writing Section

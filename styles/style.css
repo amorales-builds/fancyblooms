@@ -1,0 +1,11 @@
+/* Code by fancy */
+/* @import "tailwindcss"; */
+
+@font-face{
+    font-family: Sniglet;
+    src: url(/assets/fonts/Sniglet-Regular.ttf) ;
+}
+
+body{
+    font-family: Sniglet;
+}
