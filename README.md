@@ -9,7 +9,7 @@ For fun! <br>
     - [ ] Personal/Blog Section
     - [ ] Art Section
     - [ ] Programming Section
-    - [ ] Writing Section
+    - [ ] Stories/Writing Section
 - [ ] Dark/Light Mode
     - [ ] \(Optional) UI Themes <!--  cuter/cooler themes with names -->
 - [ ] Guestbook <!-- (https://atabook.org/) -->
