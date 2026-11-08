@@ -6,19 +6,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fancyblooms</title>
-    <link rel="stylesheet" href="/styles/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/styles/style.css?nocache=1" type="text/css" media="all">
   </head>
 
   <body>    
     <h1>Welcome to my Website!</h1>
     <br>
     <hr>
-    <div>
-      <p><a onmouseover="pop()" href="/public/personalPage.html">Personal</a></p> <!-- journal(?) -->
-      <p><a onmouseover="pop()" href="/public/artPage.html">Art</a></p>  <!-- canvas(?) -->
-      <p><a onmouseover="pop()" href="/public/storiesPage.html">Stories</a></p> <!-- notebook/book -->
-      <p><a onmouseover="pop()" href="/public/programmingPage.html">Programming</a></p> <!-- game -->
+    <p>We're under construction!</p>
+    <div class="mainGrid">
+      <p class="gridPage" onclick="mePage()">Me</p> <!-- journal(?) -->
+      <p class="gridPage" onclick="artPage()">Art</p>  <!-- canvas(?) -->
+      <p class="gridPage" onclick="storiesPage()">Stories</p> <!-- notebook/book -->
+      <p class="gridPage" onclick="programmingPage()">Programming</p> <!-- game -->
     </div>
+
+    <p><a href="/home.html">Home</a></p>
     
     <script src="/src/script.js"></script>
 
