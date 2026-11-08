@@ -1,0 +1,45 @@
+
+body{
+    margin-inline: 16px;
+    margin-top: 40px;        
+    margin-bottom: 20px;
+    background-color: rgb(255, 223, 229);
+}
+
+#mainGrid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    height: 75vh;
+}
+#gridPage{
+    text-align: center;
+    /* border: 2px solid palevioletred; */
+    width: 80vw;
+    height: 5vh;
+    padding-top: 1vh;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+/* #gridPage:hover{
+    transform: translate(0, 5px);
+    transition: 0.05s ease-in-out;
+} */
+
+.programmingDiv{    
+    transform: scale(75%);
+}
+.programmingDiv:hover{    
+    transform: scale(75%);
+}
+.keyboardPart{
+    margin-top: -35px;
+    margin-left: 12px;
+}
+
+.storiesDiv{
+    transform: scale(75%);
+}
+.storiesDiv:hover{
+    transform: scale(75%);
+}
