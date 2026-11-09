@@ -35,43 +35,84 @@ body{
     text-align: center;
     /* border: 2px solid palevioletred; */
     width: 10vw;
-    height: 10vh;
+    height: 15vh;
     padding-top: 8vh;
     margin-inline: 5vw;
 }
 
+.storiesDiv{
+    margin-top: -15px;
+}
 .outsideBook{
+    /* transform: skew(-5deg); */
+    position: absolute;
     font-family: Metamorphous;
-    color: #8a4d0f;
+    background-color: #ffb9d9;
+    border: 3px solid palevioletred;
+    box-shadow: 2px 3px 8px rgba(47, 30, 40, 0.902), 0 0 10px palevioletred inset;
+    /* color: #8a4d0f;
     background-color: bisque;
     border: 3px solid burlywood;
     box-shadow: 2px 3px 8px rgba(47, 30, 30, 0.902), 0 0 10px #8a4d0f inset;
-    border-radius: 20px 0;
-    height: 200px;
-    width: 170px;
+    border-radius: 20px 0; */
+    border-radius: 8px;
+    padding: 16px;
+    height: 190px;
+    width: 160px;
 }
 .outsideBook:hover{
-    background-color: rgb(255, 235, 213);
+    /* background-color: rgb(255, 235, 213);
     border: 3px solid rgb(230, 196, 158);
+    box-shadow: 2px 3px 10px rgba(77, 48, 25, 0.902), 0 0 8px #daa672 inset;
     color: #7a3f05;
+    border-radius: 4px 0; */    
+    background-color: #ffb9d9;
+    border: 3px solid;
+    border-color:  palevioletred  rgb(243, 223, 196)  rgb(255, 232, 205)  palevioletred;
+    box-shadow: 2px 3px 8px rgba(47, 30, 40, 0.902), 0 0 10px palevioletred inset;
     padding: 8px;
     margin-top: -10px;
-    border-radius: 4px 0;
-    box-shadow: 2px 3px 10px rgba(77, 48, 25, 0.902), 0 0 8px #daa672 inset;
-    transform: rotate(10deg);
-    transition: 0.2s ease-in-out;
+    /* border-radius: 4px; */
+    height: 202px;
+    width: 160px;
+    transform: skewY(-20deg) translateY(-20px);
+    transition: 0.25s ease-in-out;
+}
+.bookmark{
+    display: inline;
+    background-color: rgb(189, 78, 115);
+    border: 3px solid rgb(224, 116, 170);
+    box-shadow: 0 -2px 1px palevioletred, 0 0 10px rgb(224, 116, 170) inset;
+    border-radius: 4px;
+    padding: 12px;
+    padding-top: 215px;
+    padding-bottom: 0;
+    margin-left: 15px;
+}
+.outsideBook:hover ~ .bookmark{
+    display: inline;
+    background-color: rgb(189, 78, 115);
+    border: 3px solid rgb(224, 116, 170);
+    box-shadow: 0 -2px 1px palevioletred, 0 0 10px rgb(224, 116, 170) inset;
+    border-radius: 4px;
+    padding: 12px;
+    padding-top: 215px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    transition: 0.25s ease-in-out;
 }
 .insideBook{
     font-family: Metamorphous;
     color: #8a4d0f;
-    background-color: bisque;
-    border: 3px solid burlywood;
-    box-shadow: 2px 3px 8px rgba(47, 30, 30, 0.902), 0 0 10px #8a4d0f inset;
-    border-radius: 20px 0;
-    height: 200px;
-    width: 170px;
+    background-color: rgb(255, 240, 221);
+    border: 3px solid rgb(255, 222, 182);
+    box-shadow: 2px 3px 2px palevioletred, 0 0 10px #fffefb inset;
+    border-radius: 8px;
+    padding: 16px;
+    height: 190px;
+    width: 160px;
 }
-.insideBook:hover{
+/* .outsideBook:hover ~ .insideBook{
     background-color: rgb(255, 235, 213);
     border: 3px solid rgb(230, 196, 158);
     color: #7a3f05;
@@ -81,16 +122,20 @@ body{
     box-shadow: 2px 3px 10px rgba(77, 48, 25, 0.902), 0 0 8px #daa672 inset;
     transform: rotate(10deg);
     transition: 0.2s ease-in-out;
-}
+} */
 #gridPage.storiesBtn{
+    color: #fffafc;
     text-align: start; 
-    margin-left: 15px;
-    width: 0;
-    height: 10px;
-    padding-top: 0;
+    margin-left: 44px;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow:  1px 1px 4px #530c24;
 }
 
-
+.programmingDiv{
+    margin-top: -15px;
+}
 #gridPage.programmingBtn{  
     padding-top: 55px;  
     margin-top: 10px;
@@ -117,7 +162,32 @@ body{
     border-color: rgb(225, 123, 157) rgb(235, 163, 202) rgb(225, 123, 157) rgb(225, 123, 157) ;
     background-color: #d9ffff;
     transform: skew(-1deg) translate(0, -8px);
-    transition: 0.3s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+.computerNeck{
+    border: 5px solid rgb(251, 151, 184);
+    box-shadow: 5px -1px 0 palevioletred, 0 0 40px #87c9cb00 inset;
+    background-color: rgb(251, 151, 184);
+    border-radius: 2px;
+    /* margin-top: -15px; */
+    margin-top: 0px;
+    padding-bottom: 4px;
+    transform: skew(-5deg);
+    margin-left: 10.8vw;
+    height: 5px;
+    width: 15px;
+}
+#gridPage.programmingBtn:hover ~ .computerNeck{
+    border: 5px solid rgb(251, 151, 184);
+    box-shadow: 5px -.5px 0  rgb(225, 123, 157), 0 0 40px #87c9cb00 inset;
+    background-color: rgb(251, 151, 184);
+    /* margin-top: -15px; */
+    margin-top: -8px;
+    padding-bottom: 4px;
+    transform: skew(-5deg);
+    margin-left: 10.8vw;
+    /* height: 20px; */
+    transition: 0.25s ease-in-out;
 }
 .keyboardPart{
     /* border: 5px dashed rgb(135, 240, 184);
@@ -128,7 +198,7 @@ body{
     background-color: rgb(163, 68, 100);
     border-radius: 10px;
     /* margin-top: -15px; */
-    margin-top: 1.5px;
+    margin-top: -6px;
     padding-bottom: 4px;
     transform: skew(-20deg);
     margin-left: 3.8vw;
@@ -137,8 +207,8 @@ body{
 #gridPage.programmingBtn:hover ~ .keyboardPart{
     border: 5px dashed rgb(254, 164, 194);
     border-radius: 10px;
-    box-shadow: 8px -3px 0 rgb(253, 152, 186), 0 0 40px #87c9cb21 inset;
+    box-shadow: 8px -5px 0 rgb(253, 152, 186), 0 0 40px #87c9cb21 inset;
     background-color: rgb(181, 79, 113);
-    transform: skew(-24deg) translate(0, 0px) translateY(-5px);
-    transition: 0.3s ease-in-out;
+    transform: skew(-24deg) translate(0,8px) translateY(-11px);
+    transition: 0.25s ease-in-out;
 }
