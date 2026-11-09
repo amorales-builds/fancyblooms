@@ -8,9 +8,8 @@ For fun! <br>
 - [ ] Sectioned Main Page
     - [ ] Personal/Blog Section
     - [ ] Art Section
-    - [ ] Programming Section
-    - [ ] Stories/Writing Section
-- [ ] Dark/Light Mode
+    - [x] Programming Section
+    - [x] Stories/Writing Section
+- [x] Dark/Light Mode
     - [ ] \(Optional) UI Themes <!--  cuter/cooler themes with names -->
 - [ ] Guestbook <!-- (https://atabook.org/) -->
-- [ ] \(Optional) SFX sounds

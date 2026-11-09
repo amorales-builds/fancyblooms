@@ -39,11 +39,11 @@ body{
     align-content: center;
     justify-content: center;
     height: 80vh;
+    /* width: 80vh; */
     border: 2px solid palevioletred;
-    column-gap: 10%;
+    column-gap: 6%;
     background-color: #fffafc;
 }
-
 #gridPage{
     color: #530c24;
     text-align: center;
@@ -54,9 +54,166 @@ body{
     margin-inline: 5vw;*/
 }
 
+
+#gridPage.artBtn{
+    margin-top: -17px;
+    margin-left: -19px;
+    font-size: 24px;
+    color: #fffafc; 
+    text-shadow: -2px 0 1px #d47696, 0 2px 1px #d47696, 2px 0 1px #d47696, 0 -2px 1px #d47696;
+}
+.artSquare{
+    background-image: url(/assets/images/pixelArtTrainPink.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:color-burn;
+    background-color: #ffebf4;
+    box-shadow: 0 0 0 rgb(150, 69, 96), 0 0 10px palevioletred inset;
+    border: 2px solid;
+    border-radius:  0 10px 0 0;
+    border-color: palevioletred;
+    margin-top: -202px;
+    margin-left: 36px;
+    height: 160px;
+    width: 212px;
+}
+.artWindow:hover > .artSquare{
+    /* background-blend-mode:overlay; 
+    box-shadow: 0 0 0 rgb(150, 69, 96), 0 0 20px rgb(255, 120, 174) inset;*/
+    border: 2px solid;
+    border-radius:  0 10px 0 0;
+    border-color: palevioletred;
+    transition: 0.25s ease-in-out;
+}
+.artColors{
+    background-color: #ffd5e8;
+    border: 2px solid;
+    border-radius: 0 0 10px;
+    border-color: palevioletred;
+    margin-left: 36px;
+    margin-top: -4px;
+    height: 38px;
+    width: 212px;
+}
+#colorSquare{
+    border: 2px solid;
+    border-radius: 6px;
+    border-color: palevioletred;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    transform: translateY(31px);
+    margin-left: 4px;
+    margin-top: -24px;
+    height: 20px;
+    width: 20px;
+}
+#colorSquare.redSqr{
+    background-color: #ff8ab1;
+    margin-left: 4px;
+}
+#colorSquare.orangeSqr{
+    background-color: #ffa39b;
+    margin-left: 34px;
+}
+#colorSquare.yellowSqr{
+    background-color: #efe5b9;
+    margin-left: 64px;
+}
+#colorSquare.greenSqr{
+    background-color: #c5ffdb;
+    margin-left: 94px;
+}
+#colorSquare.blueSqr{
+    background-color: #b8dcff;
+    margin-left: 124px;
+}
+#colorSquare.purpleSqr{
+    background-color: #e6b8ff;
+    margin-left: 154px;
+}
+#colorSquare.whiteSqr{
+    background-color: #fff8f7;
+    margin-left: 184px;
+}
+/* #colorSquare.blackSqr{
+    background-color: #ffa39b;
+    margin-left: 215px;
+} */
+.artTools{
+    background-color: #ffd5e8;
+    border: 2px solid;
+    border-radius: 10px 0 0 10px;
+    border-color: palevioletred;
+    margin-left: -14px;
+    height: 198px;
+    width: 48px;
+}
+#artCircle{
+    border: 2px solid;
+    border-radius: 100%;
+    border-color: palevioletred;
+    margin-top: -17px;
+    margin-bottom: 3px;
+    width: 10px;
+    height: 10px;    
+}
+#artCircle.redButton{
+    background-color: rgb(255, 203, 220);
+    margin-left: 233px;
+}
+#artCircle.greenButton{
+    background-color: #d2ffe3;
+    margin-left: 213px;
+}
+#artCircle.yellowButton{
+    background-color: rgb(247, 239, 197);
+    margin-left: 193px;
+}
+.artWindow{
+    /* direction: grid;
+    grid-column: auto auto auto; */
+    margin-top: -18px;
+    background-color: rgb(255, 142, 180);
+    border: 2px solid palevioletred;
+    /* border: 3px solid rgb(255, 232, 239); */
+    border-radius: 12px;
+    /* border-color: palevioletred rgb(240, 153, 182)  rgb(240, 153, 182) palevioletred ; */
+    box-shadow: -6px 4px 0 rgb(213, 252, 255), 0 0 0 palevioletred inset;
+    padding: 20px;
+    height: 190px;
+    width: 240px;
+}
+.artDiv:hover > .artWindow{
+    /* margin-top: -25px;
+    margin-left: 5px; */
+    border-width: 1px;
+    box-shadow: 6px 6px 0 rgb(213, 252, 255), 0 0 0 palevioletred inset;
+    border-radius: 10px;
+    /* border-radius: 100%; */
+    transform: scale(105%);
+    transition: 0.25s ease-in-out;
+}
+.artDiv{    
+    border: 3px solid transparent;
+    padding-left: 10px;
+    width: 14vw;
+    background-color: rgb(213, 252, 255);
+    border-radius: 12px;
+}
+
+
 .storiesDiv{
     margin-top: -15px;
 }
+/* .bookBox{
+    position: absolute;
+    display: inline;
+    border: 3px solid palevioletred;
+    border-radius: 8px;
+    padding: 114px;
+    padding-right: 80px;
+    margin-top: -248px;
+} */
 .outsideBook{
     /* transform: skew(-5deg); */
     position: absolute;
@@ -71,7 +228,8 @@ body{
     border-radius: 20px 0; */
     border-radius: 8px;
     padding: 16px;
-    height: 190px;
+    padding-top: 19px;
+    height: 185px;
     width: 160px;
 }
 .outsideBook:hover{

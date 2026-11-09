@@ -20,8 +20,26 @@
     </div>
     <div id="website">
       <div id="mainGrid">
-        <div onclick="artPage()">
-          <p id="gridPage">Art</p>  <!-- canvas(?) -->
+        <div class="artDiv" onclick="artPage()">
+          <div class="artWindow">
+            <div id="artCircle" class="redButton"></div>
+            <div id="artCircle" class="greenButton"></div>
+            <div id="artCircle" class="yellowButton"></div>
+            <div class="artTools"></div>
+            <div class="artSquare">
+              <p id="gridPage" class="artBtn">Art</p>  <!-- canvas(?) -->
+            </div>
+            <div class="artColors">
+              <div id="colorSquare" class="redSqr"></div>
+              <div id="colorSquare" class="orangeSqr"></div>
+              <div id="colorSquare" class="yellowSqr"></div>
+              <div id="colorSquare" class="greenSqr"></div>
+              <div id="colorSquare" class="blueSqr"></div>
+              <div id="colorSquare" class="purpleSqr"></div>
+              <div id="colorSquare" class="whiteSqr"></div>
+              <div id="colorSquare" class="bkackSqr"></div>
+            </div>
+          </div>
         </div>
         <div>
           <div class="storiesDiv" onclick="storiesPage()">
@@ -32,6 +50,7 @@
               <p style="font-family: Redacted Script; font-size: 17px;">this is where I write stuff. bla bla bla. bla bla bla. bla bla bla. bla bla.  are you reading this? that's pretty cool bud. I welcome you to my random musings. I hope you're blessed and happy.</p>
             </div>
             <div class="bookmark"></div>
+            <!-- <div class="bookBox"></div> -->
           </div>
           <!-- <div class="storiesDiv" onclick="storiesPage()">
             <p style="font-family: Redacted Script; padding: 16px; font-size: 14px; opacity: 0.3">this is where I write stuff</p>
