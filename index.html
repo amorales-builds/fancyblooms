@@ -11,47 +11,49 @@
     <link rel="stylesheet" href="/styles/mobileStyle.css" media="screen and (max-width: 770px)">
   </head>
 
-  <body>    
+  <body>
     <h1>Welcome to my Website!</h1>
     <br>
-    <hr>
-    <div id="mainGrid">
-      <div onclick="artPage()">
-        <p id="gridPage">Art</p>  <!-- canvas(?) -->
-      </div>
-      <div>
-        <div class="storiesDiv" onclick="storiesPage()">
-          <div class="outsideBook" >
-            <p id="gridPage" class="storiesBtn">Stories</p> <!-- notebook/book -->
-          </div>
-          <div class="insideBook">
-            <p style="font-family: Redacted Script; font-size: 17px;">this is where I write stuff. bla bla bla. bla bla bla. bla bla bla. bla bla.  are you reading this? that's pretty cool bud. I welcome you to my random musings. I hope you're blessed and happy.</p>
-          </div>
-          <div class="bookmark"></div>
+    <hr>    
+    <p id="wip">We're under construction!</p>
+    <div id="website">
+      <div id="mainGrid">
+        <div onclick="artPage()">
+          <p id="gridPage">Art</p>  <!-- canvas(?) -->
         </div>
-        <!-- <div class="storiesDiv" onclick="storiesPage()">
-          <p style="font-family: Redacted Script; padding: 16px; font-size: 14px; opacity: 0.3">this is where I write stuff</p>
-          <p id="gridPage" class="storiesBtn">Stories</p> <!-- notebook/book -->
-          <!-- <p style="font-family: Redacted Script; padding: 16px; font-size: 14px; opacity: 0.3">are you actually reading this? pretty cool bud. welcome</p>
-        </div> -->
+        <div>
+          <div class="storiesDiv" onclick="storiesPage()">
+            <div class="outsideBook" >
+              <p id="gridPage" class="storiesBtn">Stories</p> <!-- notebook/book -->
+            </div>
+            <div class="insideBook">
+              <p style="font-family: Redacted Script; font-size: 17px;">this is where I write stuff. bla bla bla. bla bla bla. bla bla bla. bla bla.  are you reading this? that's pretty cool bud. I welcome you to my random musings. I hope you're blessed and happy.</p>
+            </div>
+            <div class="bookmark"></div>
+          </div>
+          <!-- <div class="storiesDiv" onclick="storiesPage()">
+            <p style="font-family: Redacted Script; padding: 16px; font-size: 14px; opacity: 0.3">this is where I write stuff</p>
+            <p id="gridPage" class="storiesBtn">Stories</p> <!-- notebook/book -->
+            <!-- <p style="font-family: Redacted Script; padding: 16px; font-size: 14px; opacity: 0.3">are you actually reading this? pretty cool bud. welcome</p>
+          </div> -->
+        </div>
+        <div class="programmingDiv" onclick="programmingPage()">
+          <div id="gridPage" class="programmingBtn" >
+            <p style="margin-left: -5px; transform:skew(-5deg)">Programming</p> <!-- game -->
+          </div>        
+          <p class="computerNeck"></p>
+          <p class="keyboardPart"></p>
+        </div>
+        <div onclick="mePage()">
+          <p id="gridPage">Me</p> <!-- journal(?) -->
+        </div>
       </div>
-      <div class="programmingDiv" onclick="programmingPage()">
-        <div id="gridPage" class="programmingBtn" >
-          <p style="margin-left: -5px; transform:skew(-5deg)">Programming</p> <!-- game -->
-        </div>        
-        <p class="computerNeck"></p>
-        <p class="keyboardPart"></p>
-      </div>
-      <div onclick="mePage()">
-        <p id="gridPage">Me</p> <!-- journal(?) -->
-      </div>
-    </div>
-    
-    <script src="/src/script.js"></script>
+      <script src="/src/script.js"></script>
 
-    <footer>
-      <hr>
-      <p><a href="/not_found.html">error404</a></p>
-    </footer>
+      <footer>
+        <hr>
+        <p><a href="/not_found.html">error404</a></p>
+      </footer>
+    </div>
   </body>
 </html>
