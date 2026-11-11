@@ -1,6 +1,10 @@
 /* Code by fancy */
 /* @import "tailwindcss"; */
 
+:root{
+    --pinkWhite: #fffafc;
+}
+
 @font-face{
     font-family: Audiowide;
     src: url(/assets/fonts/Audiowide-Regular.ttf) ;
@@ -22,9 +26,6 @@
     src: url(/assets/fonts/Sniglet-Regular.ttf) ;
 }
 
-#wip{
-    display: none;
-}
 
 * {
      cursor: url('https://cdn.cursors-4u.net/previews/white-cat-s-paw-ef5d1f14-32.webp') 32 32, auto !important;  /* White Cat's Paw - https://www.cursors-4u.com/cursor/nat260 */
@@ -32,36 +33,50 @@
     /*cursor: url('https://cdn.cursors-4u.net/previews/cat-paw-curl-f8836eeb-preview-64.webp') 0 0, auto !important; /* White Cat Paw Curl - https://www.cursors-4u.com/cursor/white-cat-paw-curl */
 }
 
+#wip{
+    display: none;
+}
 
 body{
     font-family: Sniglet;
 }
 
+#website{
+    background-color: var(--pinkWhite); 
+}
+
 #mainGrid{
+    background-color: var(--pinkWhite); 
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-content: center;
     justify-content: center;
-    height: 80vh;
+    height: 50vh;
+    margin-top: 120px;
     /* width: 80vh; */
     border: 2px solid palevioletred;
-    column-gap: 6%;
-    background-color: #fffafc;
+    column-gap: 4vw;
+    background-color: transparent; 
+    /* background-color: #e291b0;
+    background-color: #692740; */
 }
 #gridPage{
     color: #530c24;
     text-align: center;
-    padding-top: 8vh;
-    /* border: 2px solid palevioletred; 
+    /* padding-top: 8vh;
+    border: 2px solid palevioletred; 
     width: 10vw;
     height: 15vh;
     margin-inline: 5vw;*/
 }
 
+/* /////////////////////////////// */
+/* /////////////////////////////// */
 
 #gridPage.artBtn{
     font-family: Gorditas;
     /* font-weight: bold; */
+    padding-top: 80px;
     margin-top: -17px;
     margin-left: -19px;
     font-size: 28px;
@@ -252,6 +267,7 @@ body{
     border-radius: 12px;
 }
 
+/* /////////////////////////////// */
 
 .storiesDiv{
     margin-top: -15px;
@@ -356,6 +372,8 @@ body{
     text-shadow:  1px 1px 4px #530c24;
 }
 
+/* /////////////////////////////// */
+
 .programmingDiv{
     margin-top: -15px;
 }
@@ -385,7 +403,7 @@ body{
     border-color: rgb(225, 123, 157) rgb(235, 163, 202) rgb(225, 123, 157) rgb(225, 123, 157) ;
     background-color: #d9ffff;
     transform: skew(-1deg) translate(2px, -18px);
-    transition: 0.25s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 .computerNeck{
     border: 5px solid rgb(251, 151, 184);
@@ -396,7 +414,7 @@ body{
     margin-top: 0px;
     padding-bottom: 4px;
     transform: skew(-5deg);
-    margin-left: 5.6vw;
+    margin-left: 115px;
     height: 5px;
     width: 15px;
 }
@@ -408,9 +426,9 @@ body{
     margin-top: -18px;
     padding-bottom: 4px;
     transform: skew(-5deg);
-    margin-left: 5.65vw;
+    margin-left: 110px;
     height: 15px;
-    transition: 0.25s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 .keyboardPart{
     /* border: 5px dashed rgb(135, 240, 184);
@@ -433,8 +451,170 @@ body{
     box-shadow: 8px -5px 0 rgb(253, 152, 186), 0 0 40px #87c9cb21 inset;
     background-color: rgb(181, 79, 113);
     transform: skew(-25deg) translate(-2px, 6px);
-    transition: 0.25s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
+
+/* /////////////////////////////// */
+
+#meText{
+    padding-top: 5px;
+    font-size: 20px;
+    text-shadow: -2px 0 1px #fff7fa, 0 2px 1px #fff7fa, 2px 0 1px #fff7fa, 0 -2px 1px #fff7fa, 0 0 5px #fff7fa,  0 0 10px #fff7fa;
+}
+/* #earsDiv{
+    display: grid;
+    grid-template-columns: auto auto;
+} */
+#meEar{
+    /* transform: translateY(-10px);  
+    z-index: -1;*/
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid palevioletred;
+    box-shadow: 0 0 20px palevioletred, 0 0 5px #fffbfd inset;
+    height: 75px;
+    width: 45px;
+    border-radius: 50% 50% 0 0;
+    /* margin-inline: auto; */
+    /* margin-bottom: -15px; */
+    margin-bottom: -80px;
+    /* margin-left: 12px; */
+}
+.meDiv:hover >  #meEar{
+    margin-top: -25px;    
+    box-shadow: 0 0 5px palevioletred, 0 0 5px #fffbfd inset;
+}
+/* #meEar.left{
+    border-radius: 50% 50% 0 0;
+    transform: rotate(-23deg);
+}
+#meEar.right{
+    border-radius: 50% 50% 0 0;
+    transform: rotate(23deg);
+} */
+#meEar.left{
+    transform: rotate(-28deg);
+    margin-left: 5px;
+}
+#meEar.right{
+    transform: rotate(28deg);
+    margin-left: 122px;
+}
+/* .meDiv:hover > #earsDiv{
+    transform: translateY(5px);
+    transition: 0.2s ease-in-out;
+} */
+.meDiv:hover >  #meEar.left{
+    /* transform: rotate(-38deg);
+    margin-left: -13px; */
+    transform: rotate(-18deg);
+    margin-left: 22px;
+    transition: 0.2s ease-in-out;
+}
+.meDiv:hover >  #meEar.right{
+    /* transform: rotate(38deg);
+    margin-left: 139px; */
+    transform: rotate(18deg);
+    margin-left: 105px;
+    transition: 0.2s ease-in-out;
+}
+#meEye{
+    transform: translateY(15px) scaleY(15%) scaleX(90%);
+    background-color: palevioletred; 
+    border-radius: 0 0 50% 50%;
+    border: 3px solid;
+    border-color:transparent  transparent palevioletred transparent;
+    /* box-shadow: 0 5px 0 palevioletred, 0 0 5px #fffbfd inset;  */
+    /* box-shadow: 0 0 20px palevioletred, 0 0 5px #fffbfd inset; * */
+    height: 30px;
+    width: 30px;
+    margin-top: -36px;
+}
+.meDiv:hover > #meEye{
+    background-color: palevioletred; 
+    border-color: palevioletred;
+    /* box-shadow: 0 5px 0 palevioletred, 0 0 5px #fffbfd inset; */
+    /* box-shadow: 0 0 0 transparent, 0 0 0 transparent inset;  */
+    border: 3px solid;
+    /* border-radius: 50%; */
+    border-radius: 0 50px 50% 40px;
+    transform: scaleY(100%);
+    transition: 0.2s ease;
+}
+/* #meEye{
+    background-color: white; 
+    border-color: palevioletred;
+    box-shadow: 0 5px 0 palevioletred, 0 0 5px #fffbfd inset; 
+    border: 3px solid;
+    border-radius: 50%;
+    transform: scale(90%);
+    transition: 0.2s ease;
+    height: 30px;
+    width: 30px;
+    margin-top: -36px;
+}
+.meDiv:hover > #meEye{
+    background-color: palevioletred; 
+    border-color: palevioletred;
+    box-shadow: 0 0 0 rgba(216, 112, 147, 0), 0 0 0 transparent inset; 
+    border: 3px solid;
+    border-radius: 50%;
+    transform: scale(100%);
+    transition: 0.2s ease;
+} */
+#meEye.left{
+    margin-top: -116px;
+    margin-left: 20px;
+}
+#meEye.right{
+    margin-left: 120px;
+}
+#meNose{
+    transform: scaleY(25%) scaleX(90%);
+    background-color: palevioletred; 
+    border-radius: 0 0 50% 50%;
+    border: 3px solid;
+    border-color:transparent  transparent palevioletred transparent;
+    box-shadow: 70px -10px 40px rgb(255, 97, 144), -70px -10px 40px rgb(255, 97, 144); 
+    height: 20px;
+    width: 20px;
+    margin-top: -6px;
+    margin-left: 73px;
+}
+.meDiv:hover > #meNose{
+    transform: scaleY(30%) scaleX(90%);
+    margin-top: -4px;
+}
+#gridPage.meBtn{
+    background-color: var(--pinkWhite); 
+    border-radius: 50%;
+    border: 3px solid palevioletred;
+    box-shadow: 0 0 20px palevioletred, 0 0 5px #fffbfd inset;
+    height: 170px;
+    width: 170px;
+    margin-top: 61px;
+}
+.meDiv:hover >  #gridPage.meBtn{
+    box-shadow: 0 0 5px palevioletred, 0 0 5px #fffbfd inset;
+    margin-top: 68px;
+    transition: 0.2s ease-in-out;
+}
+/* #gridPage.meBtn:hover{    
+    color: white;
+    background-color: palevioletred; 
+    border-color: rgb(218, 94, 135);
+    border-radius: 30px;
+    box-shadow: 0 0 30px palevioletred, 0 0 0 #c9ffff inset;
+    transition: 0.2s ease-in-out;
+} */
+.meDiv{
+    scale: 90%;
+    margin-top: -20px;
+    width: 200px;
+}
+
+/* /////////////////////////////// */
+/* /////////////////////////////// */
 
 @media (prefers-color-scheme: dark) {
     body{

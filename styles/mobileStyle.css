@@ -34,6 +34,13 @@ body{
     transition: 0.05s ease-in-out;
 } */
 
+.artBtn{
+    transform: translateX(-180px);
+}
+.artDiv{
+    transform: scale(75%);
+}
+
 .programmingDiv{    
     transform: scale(75%);
 }
@@ -51,3 +58,8 @@ body{
 .storiesDiv:hover{
     transform: scale(75%);
 }
+
+.meDiv{
+    transform: scale(75%);
+}
+

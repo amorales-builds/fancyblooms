@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fancyblooms</title>
     <link rel="stylesheet" href="/styles/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="/styles/mobileStyle.css" media="screen and (max-width: 770px)">
+    <!-- <link rel="stylesheet" href="/styles/mobileStyle.css" media="screen and (max-width: 770px)"> -->
+    <link rel="stylesheet" href="/styles/mobileStyle.css" media="screen and (max-width: 980px)">
   </head>
 
   <body>
@@ -34,7 +35,7 @@
               <div id=tool class="t6"></div>
             </div>
             <div class="artSquare">
-              <p id="gridPage" class="artBtn">Art</p>  <!-- canvas(?) -->
+              <p id="gridPage" class="artBtn">Art</p>  <!-- canvas(?)/window -->
             </div>
             <div class="artColors">
               <div id="colorSquare" class="redSqr"></div>
@@ -66,19 +67,28 @@
         </div>
         <div class="programmingDiv" onclick="programmingPage()">
           <div id="gridPage" class="programmingBtn" >
-            <p style="margin-left: -5px; transform:skew(-5deg)">Programming</p> <!-- game -->
+            <p style="margin-left: -5px; transform:skew(-5deg)">Programming</p> <!-- game/computer -->
           </div>        
           <p class="computerNeck"></p>
           <p class="keyboardPart"></p>
         </div>
-        <div onclick="mePage()">
-          <p id="gridPage">Me</p> <!-- journal(?) -->
+        <div class="meDiv" onclick="mePage()">
+          <!-- <div id="earsDiv">
+          </div> -->
+            <div id="meEar" class="left"></div>
+            <div id="meEar" class="right"></div>
+          <div id="gridPage" class="meBtn">
+            <p id="meText">Me</p> <!-- journal(?)/bunny(?) -->
+          </div>           
+          <div id="meEye" class="left"></div>
+          <div id="meEye" class="right"></div>
+          <div id="meNose"></div>
         </div>
       </div>
       <script src="/src/script.js"></script>
 
       <footer>
-        <p><a href="/not_found.html">error404</a></p>
+        <!-- <p><a href="/not_found.html">error404</a></p> -->
       </footer>
     </div>
   </body>
