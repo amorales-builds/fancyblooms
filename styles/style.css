@@ -6,6 +6,10 @@
     src: url(/assets/fonts/Audiowide-Regular.ttf) ;
 }
 @font-face{
+    font-family: Gorditas;
+    src: url(/assets/fonts/Gorditas-Regular.ttf) ;
+}
+@font-face{
     font-family: Metamorphous;
     src: url(/assets/fonts/Metamorphous-Regular.ttf) ;
 }
@@ -56,11 +60,13 @@ body{
 
 
 #gridPage.artBtn{
+    font-family: Gorditas;
+    /* font-weight: bold; */
     margin-top: -17px;
     margin-left: -19px;
-    font-size: 24px;
+    font-size: 28px;
     color: #fffafc; 
-    text-shadow: -2px 0 1px #d47696, 0 2px 1px #d47696, 2px 0 1px #d47696, 0 -2px 1px #d47696;
+    text-shadow: -2px 0 1px #d47696, 0 2px 1px #d47696, 2px 0 1px #d47696, 0 -2px 1px #d47696, 0 0 5px #fff7fa,  0 0 10px #6e0a2e;
 }
 .artSquare{
     background-image: url(/assets/images/pixelArtTrainPink.png);
@@ -78,6 +84,7 @@ body{
     width: 212px;
 }
 .artWindow:hover > .artSquare{
+    background-blend-mode:normal;
     /* background-blend-mode:overlay; 
     box-shadow: 0 0 0 rgb(150, 69, 96), 0 0 20px rgb(255, 120, 174) inset;*/
     border: 2px solid;
@@ -96,6 +103,7 @@ body{
     width: 212px;
 }
 #colorSquare{
+    display: none;
     border: 2px solid;
     border-radius: 6px;
     border-color: palevioletred;
@@ -108,37 +116,40 @@ body{
     width: 20px;
 }
 #colorSquare.redSqr{
+    display: block;
     background-color: #ff8ab1;
     margin-left: 4px;
 }
 #colorSquare.orangeSqr{
+    display: block;
     background-color: #ffa39b;
     margin-left: 34px;
 }
 #colorSquare.yellowSqr{
+    display: block;
     background-color: #efe5b9;
     margin-left: 64px;
 }
 #colorSquare.greenSqr{
+    display: block;
     background-color: #c5ffdb;
     margin-left: 94px;
 }
 #colorSquare.blueSqr{
+    display: block;
     background-color: #b8dcff;
     margin-left: 124px;
 }
 #colorSquare.purpleSqr{
+    display: block;
     background-color: #e6b8ff;
     margin-left: 154px;
 }
 #colorSquare.whiteSqr{
+    display: block;
     background-color: #fff8f7;
-    margin-left: 184px;
+    margin-left: 183px;
 }
-/* #colorSquare.blackSqr{
-    background-color: #ffa39b;
-    margin-left: 215px;
-} */
 .artTools{
     background-color: #ffd5e8;
     border: 2px solid;
@@ -148,12 +159,49 @@ body{
     height: 198px;
     width: 48px;
 }
+#tool{
+    display: none;
+    border-radius: 2px;
+    margin-left: 11px;
+    height: 15px;
+    width: 15px;
+    margin-top: 12px;
+}
+#tool.t1{
+    display: block;
+    border: 5px dashed;
+    height: 14px;
+    width: 14px;
+}
+#tool.t2{
+    display: block;
+    border: 5px dotted;
+    height: 14px;
+    width: 14px;
+}
+#tool.t3{
+    display: block;
+    border: 5px dashed;
+    border-radius: 50%;
+}
+#tool.t4{
+    display: block;
+    border: 5px dotted;
+    border-radius: 50%;
+}
+#tool.t5{
+    display: block;
+    border: 5px double;
+    border-radius: 50%;
+}
 #artCircle{
     border: 2px solid;
     border-radius: 100%;
     border-color: palevioletred;
     margin-top: -17px;
     margin-bottom: 3px;
+    border-left-width: 3px;
+    border-right-width: 3px;
     width: 10px;
     height: 10px;    
 }
@@ -170,6 +218,7 @@ body{
     margin-left: 193px;
 }
 .artWindow{
+    transform: scale(90%);
     /* direction: grid;
     grid-column: auto auto auto; */
     margin-top: -18px;
@@ -188,16 +237,18 @@ body{
     margin-left: 5px; */
     border-width: 1px;
     box-shadow: 6px 6px 0 rgb(213, 252, 255), 0 0 0 palevioletred inset;
-    border-radius: 10px;
+    border-radius: 8px;
     /* border-radius: 100%; */
-    transform: scale(105%);
+    transform: scale(100%) translateY(-3px) rotate(-2deg);
     transition: 0.25s ease-in-out;
 }
 .artDiv{    
     border: 3px solid transparent;
-    padding-left: 10px;
-    width: 14vw;
+    /* padding-left: 10px; */
+    width: 250px;
+    height: 210px;
     background-color: rgb(213, 252, 255);
+    /* background-color: rgb(196, 86, 128); */
     border-radius: 12px;
 }
 
