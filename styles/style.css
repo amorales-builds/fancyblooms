@@ -66,6 +66,39 @@ body{
     } 
 }
 
+/* .navBtn{
+    position: absolute;
+    background-color: var(--pinkWhite); 
+    border-radius: 50%;
+    border: 3px solid palevioletred;
+    height: 40px;
+    width: 40px;
+    margin-top: 250px;
+    margin-left: 150px;
+    box-shadow: 0 0 5px rgb(213, 252, 255), 0 0 5px palevioletred inset;
+}
+#rightBtn{
+    margin-left: 230px;
+}
+.navBtn:hover{
+    height: 39px;
+    width: 39px;
+    margin-top: 250px;
+    margin-left: 150px;
+}
+#rightBtn:hover{
+    margin-left: 230px;
+}
+.navBtn:active{
+    height: 35px;
+    width: 35px;
+    margin-top: 252px;
+    margin-left: 152px;
+}
+#rightBtn:active{
+    margin-left: 232px;
+} */
+
 #mainGrid{
     display: grid;
     grid-template-columns: auto auto auto auto;

@@ -10,9 +10,8 @@
 .gameDiv{
     border-radius: 50px;
     /* margin-inline: 25vw; */
-    height: 710px;
-    width: 80vw;
-    margin-top: 0;      
+    height: 50%;
+    width: 85%;     
     border-inline-width: 1vw;
     border-top-width: 2vh;
     border-bottom-width: 2vh;
@@ -20,22 +19,25 @@
 
 #mainGrid{
     grid-template-columns: auto;
-    height: 75vh;
-    row-gap: 10vh;
-    scale: 65%;
+    height: 50%;
+    row-gap: 13vh;
+    scale: 95%;
 }
 
 .artDiv{    
     margin-left: -10px;
 }
 
-.storiesDiv{
+.storiesDiv{ 
+    width: 200px;
     margin-top: -70px;
     margin-left: 25px;
 }
 
 .programmingDiv{    
+    width: 250px;
     margin-top: -50px;
+    box-shadow: 0 0 30px #a9fbff;
 }
 
 #meText{
