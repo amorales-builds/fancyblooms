@@ -271,6 +271,9 @@ body{
 
 .storiesDiv{
     margin-top: -15px;
+    box-shadow: 0 0 30px #a9fbff;
+    border-radius: 20px;
+    height: 230px;
 }
 /* .bookBox{
     position: absolute;
@@ -345,7 +348,7 @@ body{
     color: #8a4d0f;
     background-color: rgb(255, 240, 221);
     border: 3px solid rgb(255, 222, 182);
-    box-shadow: 2px 3px 2px palevioletred, 0 0 10px #fffefb inset;
+    box-shadow: 2px 3px 2px palevioletred, 0 0 10px #fbfeff inset;
     border-radius: 8px;
     padding: 16px;
     height: 190px;
@@ -376,6 +379,10 @@ body{
 
 .programmingDiv{
     margin-top: -15px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px #a9fbff;
+    height: 165px;
+
 }
 #gridPage.programmingBtn{  
     padding-top: 55px;  
@@ -457,7 +464,8 @@ body{
 /* /////////////////////////////// */
 
 #meText{
-    padding-top: 5px;
+    /* padding-top: 5px; */
+    margin-top: -95px;
     font-size: 20px;
     text-shadow: -2px 0 1px #fff7fa, 0 2px 1px #fff7fa, 2px 0 1px #fff7fa, 0 -2px 1px #fff7fa, 0 0 5px #fff7fa,  0 0 10px #fff7fa;
 }
@@ -466,12 +474,12 @@ body{
     grid-template-columns: auto auto;
 } */
 #meEar{
-    /* transform: translateY(-10px);  
+    /*transform: translateY(50px);  
     z-index: -1;*/
-    background-color: transparent;
+    background-color: var(--pinkWhite);
     border-radius: 50%;
     border: 3px solid palevioletred;
-    box-shadow: 0 0 20px palevioletred, 0 0 5px #fffbfd inset;
+    box-shadow: 0 0 20px palevioletred, 0 0 10px #b4f7ff inset;
     height: 75px;
     width: 45px;
     border-radius: 50% 50% 0 0;
@@ -482,7 +490,7 @@ body{
 }
 .meDiv:hover >  #meEar{
     margin-top: -25px;    
-    box-shadow: 0 0 5px palevioletred, 0 0 5px #fffbfd inset;
+    box-shadow: 0 0 5px palevioletred, 0 0 10px #b4f7ff inset;
 }
 /* #meEar.left{
     border-radius: 50% 50% 0 0;
@@ -493,12 +501,13 @@ body{
     transform: rotate(23deg);
 } */
 #meEar.left{
-    transform: rotate(-28deg);
-    margin-left: 5px;
+    transform: rotate(-30deg);
+    margin-left: -1px;
+    margin-top: 9px;
 }
 #meEar.right{
-    transform: rotate(28deg);
-    margin-left: 122px;
+    transform: rotate(30deg);
+    margin-left: 127px;
 }
 /* .meDiv:hover > #earsDiv{
     transform: translateY(5px);
@@ -508,14 +517,14 @@ body{
     /* transform: rotate(-38deg);
     margin-left: -13px; */
     transform: rotate(-18deg);
-    margin-left: 22px;
+    margin-left: 21px;
     transition: 0.2s ease-in-out;
 }
 .meDiv:hover >  #meEar.right{
     /* transform: rotate(38deg);
     margin-left: 139px; */
     transform: rotate(18deg);
-    margin-left: 105px;
+    margin-left: 106px;
     transition: 0.2s ease-in-out;
 }
 #meEye{
@@ -563,8 +572,11 @@ body{
     transition: 0.2s ease;
 } */
 #meEye.left{
-    margin-top: -116px;
+    margin-top: -96px;
     margin-left: 20px;
+}
+.meDiv:hover > #meEye.left{
+    margin-top: -106px;
 }
 #meEye.right{
     margin-left: 120px;
@@ -589,14 +601,43 @@ body{
     background-color: var(--pinkWhite); 
     border-radius: 50%;
     border: 3px solid palevioletred;
-    box-shadow: 0 0 20px palevioletred, 0 0 5px #fffbfd inset;
+    /* box-shadow: 0 0 20px palevioletred, 0 0 5px #fffbfd inset; */
+    box-shadow: 0 0 20px palevioletred, 0 0 15px #b4f7ff inset;
     height: 170px;
     width: 170px;
-    margin-top: 61px;
+    /* margin-top: 61px; */
+    margin-top: 55px;
+    /* margin-left: 12px; */
 }
+/* #mePaw{
+    background-color: var(--pinkWhite);
+    border: 3px solid palevioletred;
+    box-shadow: 0 0 20px palevioletred, 0 0 10px #b4f7ff inset;
+    height: 25px;
+    width: 45px;
+    border-radius: 20px 20px 50% 50%;
+    margin-top: -31px;
+}
+#mePaw.left{
+    margin-top: 210px;
+    margin-left: 5px;
+}
+#mePaw.right{
+    margin-left: 122px;
+}
+.meBody{
+    background-color: var(--pinkWhite); 
+    border-radius: 50% 50% 20px 20px ;
+    border: 3px solid palevioletred;
+    box-shadow: 0 0 20px palevioletred, 0 0 15px #b4f7ff inset;
+    height: 180px;
+    width: 240px;
+    margin-bottom: -230px;
+    margin-left: -35px ;
+} */
 .meDiv:hover >  #gridPage.meBtn{
-    box-shadow: 0 0 5px palevioletred, 0 0 5px #fffbfd inset;
-    margin-top: 68px;
+    box-shadow: 0 0 5px palevioletred, 0 0 15px #b4f7ff inset;
+    margin-top: 67px;
     transition: 0.2s ease-in-out;
 }
 /* #gridPage.meBtn:hover{    
@@ -611,6 +652,17 @@ body{
     scale: 90%;
     margin-top: -20px;
     width: 200px;
+}
+.meFrame{
+    background-color: transparent;
+    border: 7px double palevioletred;
+    box-shadow: 0 0 30px #b4f7ff, 0 0 15px #ffb4d0 inset;
+    border-radius: 10px;
+    height: 210px;
+    width: 190px;
+    padding-left: 10px;
+    margin-top: -10px;
+    /* margin-left: -20px; */
 }
 
 /* /////////////////////////////// */
