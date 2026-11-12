@@ -316,7 +316,7 @@ body{
     /* border: 3px solid rgb(255, 232, 239); */
     border-radius: 12px;
     /* border-color: palevioletred rgb(240, 153, 182)  rgb(240, 153, 182) palevioletred ; */
-    box-shadow: -6px 4px 0 rgb(213, 252, 255), 0 0 0 palevioletred inset;
+    box-shadow: -6px 4px 20px rgb(213, 252, 255), 0 0 0 palevioletred inset;
     padding: 20px;
     height: 190px;
     width: 240px;
@@ -325,7 +325,7 @@ body{
     /* margin-top: -25px;
     margin-left: 5px; */
     border-width: 1px;
-    box-shadow: 6px 6px 0 rgb(213, 252, 255), 0 0 0 palevioletred inset;
+    /* box-shadow: 6px 6px 0 rgb(213, 252, 255), 0 0 0 palevioletred inset; */
     border-radius: 8px;
     /* border-radius: 100%; */
     transform: scale(100%) translateY(-3px) rotate(-2deg);
@@ -455,8 +455,16 @@ body{
     margin-top: -15px;
     border-radius: 50px;
     box-shadow: 0 0 30px #a9fbff;
-    height: 165px;
-
+    background-color: #d9ffff73;
+    height: 180px;
+    width: 245px;
+}
+.programmingDiv:hover{
+    margin-top: -15px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px #a9fbff;
+    height: 160px;
+    transition: 0.2s ease-in-out;
 }
 #gridPage.programmingBtn{  
     padding-top: 55px;  
@@ -479,7 +487,7 @@ body{
     color:  rgb(128, 36, 67);
     font-weight: bold;
     border-radius: 20px;
-    box-shadow: 8px -3px 0 rgb(247, 139, 175), 0 0 40px #87c9cb inset;
+    box-shadow: 8px -3px 0 rgb(247, 139, 175), 0 0 40px #87c9cb00 inset;
     /* border-color: rgb(225, 123, 157); */    
     border-color: rgb(225, 123, 157) rgb(235, 163, 202) rgb(225, 123, 157) rgb(225, 123, 157) ;
     background-color: #d9ffff;
@@ -728,7 +736,7 @@ body{
     width: 200px;
 }
 .meFrame{
-    background-color: transparent;
+    background-color: var(--pinkWhite);
     border: 7px double palevioletred;
     box-shadow: 0 0 30px #b4f7ff, 0 0 15px #ffb4d0 inset;
     border-radius: 10px;
@@ -744,7 +752,8 @@ body{
 
 @media (prefers-color-scheme: dark) {
     body{
-        background-color: palevioletred;
+        background-color: rgb(54, 7, 73);
+        /* background-color: #ce5887 ; */
         color: #fffafc;
         /* background-color: #2a1431; */
     }
@@ -754,6 +763,22 @@ body{
     a:visited{
         color: #ffc7dd;
     }
+    .gameDiv{
+        /* border-color: palevioletred; */
+        border-color: rgb(230, 89, 136);
+        /* border-color: rgb(22, 1, 42); */
+        /* background-color: rgb(7, 45, 74); */
+        background-color: rgb(33, 4, 57);
+        /* box-shadow: 0 0 10px #d52c64, 0 0 50px #00093c inset; */
+        box-shadow: 0 0 10px #240011, 0 0 30px #9ae1ff, 0 0 50px #00093c inset;
+    }
+    .meFrame{
+        background-color: rgb(216, 98, 138);
+    }
+    .artDiv{    
+        background-color: transparent;
+    }
+    
 }
 @media (prefers-color-scheme: light) {
     body{
