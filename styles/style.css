@@ -41,24 +41,65 @@ body{
     font-family: Sniglet;
 }
 
-#website{
+/* #website{
     background-color: var(--pinkWhite); 
+} */
+
+.gameDiv{
+    /* height: 50vh;*/
+    margin-top: 10vh; 
+    border: 1vw solid palevioletred;
+    border-radius: 50px;
+    border-inline-width: 10vw;
+    margin-inline: 6vw;
+    background-color: var(--pinkWhite); 
+    @media screen and (max-width: 1398px) {        
+        border-inline-width: 15vw;
+        border-top-width: 2vh;
+        border-bottom-width: 2vh;
+    } 
+    @media screen and (max-width: 820px) {   
+        margin-top: 1vh;      
+        border-inline-width: 1vw;
+        border-top-width: 2vh;
+        border-bottom-width: 2vh;
+    } 
 }
 
 #mainGrid{
-    background-color: var(--pinkWhite); 
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-content: center;
     justify-content: center;
     height: 50vh;
-    margin-top: 120px;
-    /* width: 80vh; */
-    border: 2px solid palevioletred;
     column-gap: 4vw;
-    background-color: transparent; 
+    /* margin-top: 12vh;
+    border: 1vw solid palevioletred;
+    border-radius: 50px;
+    border-inline-width: 10vw;
+    margin-inline: 6vw;
+    background-color: var(--pinkWhite);  */
+    /* width: 80vh; */
     /* background-color: #e291b0;
     background-color: #692740; */
+    @media screen and (max-width: 1685px) {
+        column-gap: 3vw;
+        scale: 89%;
+    }    
+    @media screen and (max-width: 1398px) {
+        grid-template-columns: auto auto;
+        height: 53vh;
+        column-gap: 10vw;
+        row-gap: 10vh;
+        scale: 80%;
+    }     
+    @media screen and (max-width: 820px) {
+        grid-template-columns: auto auto;
+        height: 70vh;
+        column-gap: 15vw;
+        row-gap: 15vh;
+        scale: 85%;
+    } 
 }
 #gridPage{
     color: #530c24;
@@ -433,7 +474,7 @@ body{
     margin-top: -18px;
     padding-bottom: 4px;
     transform: skew(-5deg);
-    margin-left: 110px;
+    margin-left: 120px;
     height: 15px;
     transition: 0.2s ease-in-out;
 }
@@ -583,10 +624,10 @@ body{
 }
 #meNose{
     transform: scaleY(25%) scaleX(90%);
-    background-color: palevioletred; 
+    background-color: rgb(255, 175, 201); 
     border-radius: 0 0 50% 50%;
     border: 3px solid;
-    border-color:transparent  transparent palevioletred transparent;
+    border-color:transparent  transparent rgb(255, 175, 201) transparent;
     box-shadow: 70px -10px 40px rgb(255, 97, 144), -70px -10px 40px rgb(255, 97, 144); 
     height: 20px;
     width: 20px;

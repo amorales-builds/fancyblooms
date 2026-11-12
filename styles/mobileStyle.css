@@ -1,18 +1,60 @@
 
 #website{
-    display: none;
+    display: block;
 }
 
 #wip{
-    display: inline-block;
+    display: none;
 }
 
+.gameDiv{
+    border-radius: 50px;
+    /* margin-inline: 25vw; */
+    height: 710px;
+    width: 80vw;
+    margin-top: 0;      
+    border-inline-width: 1vw;
+    border-top-width: 2vh;
+    border-bottom-width: 2vh;
+}
+
+#mainGrid{
+    grid-template-columns: auto;
+    height: 75vh;
+    row-gap: 10vh;
+    scale: 65%;
+}
+
+.artDiv{    
+    margin-left: -10px;
+}
+
+.storiesDiv{
+    margin-top: -70px;
+    margin-left: 25px;
+}
+
+.programmingDiv{    
+    margin-top: -50px;
+}
+
+#meText{
+    color: rgb(202, 90, 128);
+    margin-top: 40px;
+    font-size: 30px;
+}
+.meFrame{
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+/* 
 body{
     margin-inline: 16px;
     margin-top: 40px;        
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
     /* background-color: rgb(255, 223, 229); */
-}
+/* }
 
 #mainGrid{
     display: grid;
@@ -21,45 +63,17 @@ body{
     height: 75vh;
 }
 #gridPage{
-    text-align: center;
+    text-align: center; */
     /* border: 2px solid palevioletred; */
-    width: 80vw;
+    /* width: 80vw;
     height: 5vh;
     padding-top: 1vh;
     margin-top: 5vw;
     margin-bottom: 5vw;
-}
+} */
 /* #gridPage:hover{
     transform: translate(0, 5px);
     transition: 0.05s ease-in-out;
 } */
 
-.artBtn{
-    transform: translateX(-180px);
-}
-.artDiv{
-    transform: scale(75%);
-}
-
-.programmingDiv{    
-    transform: scale(75%);
-}
-.programmingDiv:hover{    
-    transform: scale(75%);
-}
-.keyboardPart{
-    margin-top: -35px;
-    margin-left: 12px;
-}
-
-.storiesDiv{
-    transform: scale(75%);
-}
-.storiesDiv:hover{
-    transform: scale(75%);
-}
-
-.meDiv{
-    transform: scale(75%);
-}
 
