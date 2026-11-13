@@ -2,7 +2,18 @@
 /* @import "tailwindcss"; */
 
 :root{
-    --pinkWhite: #fffafc;
+    --colorWhite: #fffafc;
+    --colorLightest: rgb(255, 212, 225);
+    --colorLighter: #ffc4da;
+    --colorLight: #ffb9d9;
+    --colorMedium: rgb(255, 158, 198);
+    --colorMain: palevioletred;
+    --colorDark: rgb(208, 81, 119);
+
+    --colorAccentLighter: rgb(213, 252, 255);
+    --colorAccentLight: rgb(203, 246, 255);
+    --colorAccentMedium: #a9fbff;
+    --colorAccent: #7cffe0;
 }
 
 @font-face{
@@ -39,10 +50,10 @@
 
 body{
     font-family: Sniglet;
-    color:#fffafc;
-    /* background-color: #ffb9d9; */
-    background-color: val(--pinkWhite);
-    background-image:  radial-gradient(circle 23px at 20px 8px, #ffb9d9 23px, transparent 24px), radial-gradient(circle 23px at 20px 32px, #ffc4da 23px, transparent 24px), linear-gradient(#ffc4da 50%, #ffb9d9 50%);
+    color:var(--colorWhite);
+    /* background-color: var(--colorLight); */
+    background-color: val(--colorWhite);
+    background-image:  radial-gradient(circle 23px at 20px 8px, var(--colorLight) 23px, transparent 24px), radial-gradient(circle 23px at 20px 32px, var(--colorLighter) 23px, transparent 24px), linear-gradient(var(--colorLighter) 50%, var(--colorLight) 50%);
     background-size: 40px 40px;
     background-position: 0 0, 20px 0, 0 0;
 }
@@ -56,7 +67,7 @@ body{
     align-content: center;
     justify-content: center;
     border-radius: 80px;
-    /* box-shadow: 0 0 5px #a9fbff; */
+    /* box-shadow: 0 0 5px var(--colorAccentMedium); */
     /* box-shadow: 0 0 10px #011e1f; */
     border: 4px dashed;
     border-color: transparent;
@@ -65,28 +76,28 @@ body{
     padding-top: 30px;
 }
 #selectArt:hover{    
-    /* border-color: #7cffe0;   */
-    border-color: #7cffe0;
+    /* border-color: var(--colorAccent);   */
+    border-color: var(--colorAccent);
 }
 #selectStories:hover{
-    border-color: #7cffe0;    
+    border-color: var(--colorAccent);    
 }#selectProgramming:hover{    
-    border-color: #7cffe0;
+    border-color: var(--colorAccent);
 }
 #selectMe:hover{
-    border-color: #7cffe0;    
+    border-color: var(--colorAccent);    
 }
 /* #selectArt{    
-    border-color: #7cffe0;
+    border-color: var(--colorAccent);
     background-color: #c0fff0;
 }
 #selectStories{
-    border-color: #7cffe0;    
+    border-color: var(--colorAccent);    
 }#selectProgramming{    
-    border-color: #7cffe0;
+    border-color: var(--colorAccent);
 }
 #selectMe{
-    border-color: #7cffe0;    
+    border-color: var(--colorAccent);    
 } */
 /* #selectArt{    
     border-color: transparent;
@@ -107,12 +118,12 @@ body{
 .gameDiv{
     /* height: 50vh;*/
     margin-top: 6vh; 
-    border: 1vw solid palevioletred;
-    box-shadow:0 0 0 .1vw rgb(255, 152, 183), 0 0 0 .35vw rgb(208, 81, 119), 0 0 0 .6vw rgb(255, 212, 225), 0 0 20px 1vw rgba(255, 209, 224, 0.822), 0 0 0 .5vw rgb(255, 158, 198) inset, 0 0 0 .8vw  rgb(203, 246, 255) inset, 0 0 50px 1.5vw rgb(255, 212, 230) inset;
+    border: 1vw solid var(--colorMain);
+    box-shadow:0 0 0 .1vw var(--colorLight) , 0 0 0 .35vw var(--colorDark), 0 0 0 .6vw var(--colorLightest), 0 0 20px 1vw var(--colorLighter), 0 0 0 .5vw var(--colorMedium) inset, 0 0 0 .8vw  var(--colorAccentLight) inset, 0 0 50px 1.5vw var(--colorLightest) inset;
     border-radius: 50px;
     border-inline-width: 10vw;
     margin-inline: 4vw;
-    background-color: var(--pinkWhite); 
+    background-color: var(--colorWhite); 
     @media screen and (max-width: 1398px) {     
     margin-top: 5vh;    
         border-inline-width: 15vw;
@@ -135,7 +146,7 @@ body{
     height: 60vh;
     column-gap: 2.8vw;
     /* margin-top: 12vh;
-    border: 1vw solid palevioletred;
+    border: 1vw solid var(--colorMain);
     border-radius: 50px;
     border-inline-width: 10vw;
     margin-inline: 6vw;
@@ -166,7 +177,7 @@ body{
     color: #530c24;
     text-align: center;
     /* padding-top: 8vh;
-    border: 2px solid palevioletred; 
+    border: 2px solid var(--colorMain); 
     width: 10vw;
     height: 15vh;
     margin-inline: 5vw;*/
@@ -174,16 +185,16 @@ body{
 
 
 .settingBtn{
-    color: palevioletred;
+    color: var(--colorMain);
     font-size: 12px;
     position: absolute;
-    background-color: var(--pinkWhite); 
+    background-color: var(--colorWhite); 
     border-radius: 50%;
-    border: 3px solid palevioletred;
+    border: 3px solid var(--colorMain);
     margin-top: 53vh;
     margin-left: 86%;
     /* margin-left: 110px; */
-    box-shadow: 0 0 2px rgb(213, 252, 255), 0 -2px 3px palevioletred inset;
+    box-shadow: 0 0 2px var(--colorAccentLighter), 0 -2px 3px var(--colorMedium) inset;
     height: 30px;
     width: 1.5%;
     @media screen and (max-height: 1080) {
@@ -204,7 +215,7 @@ body{
     margin-top: 57.5vh;
 }
 .settingBtn:hover{
-    box-shadow: 0 0 5px rgb(213, 252, 255), 0 -2px 2px palevioletred inset;
+    box-shadow: 0 0 5px var(--colorAccentLighter), 0 -2px 2px var(--colorMedium) inset;
 }
 .settingBtn:active{
     background-color: rgb(255, 238, 244); 
@@ -213,16 +224,16 @@ body{
 
 
 .navBtn{
-    color: palevioletred;
+    color: var(--colorMain);
     font-size: 18px;
     position: absolute;
-    background-color: var(--pinkWhite); 
+    background-color: var(--colorWhite); 
     border-radius: 50%;
-    border: 3px solid palevioletred;
+    border: 3px solid var(--colorMain);
     margin-top: 28vh;
     margin-left: 5.5%;
     /* margin-left: 110px; */
-    box-shadow: 0 0 5px rgb(213, 252, 255), 0 -3px 3px palevioletred inset;
+    box-shadow: 0 0 5px var(--colorAccentLighter), 0 -3px 3px var(--colorMedium) inset;
     height: 40px;
     width: 2%;
     @media screen and (max-height: 1080) {
@@ -287,7 +298,7 @@ body{
     }
 }
 .navBtn:hover{
-    box-shadow: 0 0 8px rgb(213, 252, 255), 0 -2px 5px palevioletred inset;
+    box-shadow: 0 0 8px var(--colorAccentLighter), 0 -2px 5px var(--colorMedium) inset;
     /* height: 41px;
     width: 41px; */
     /*margin-top: 249px;
@@ -320,7 +331,7 @@ body{
     width: 35px; 
     margin-top: 252px;*/
     /* margin-left: 111px; */
-    box-shadow: 0 0 3px rgb(213, 252, 255), 0 -4px 5px palevioletred inset;
+    box-shadow: 0 0 3px var(--colorAccentLighter), 0 -4px 5px var(--colorMedium) inset;
     margin-top: 28.35vh;
 }
 #rightBtn:active{
@@ -356,7 +367,7 @@ body{
     margin-top: -17px;
     margin-left: -50px;
     font-size: 28px;
-    color: #fffafc; 
+    color: var(--colorWhite); 
     text-shadow: -2px 0 1px #d47696, 0 2px 1px #d47696, 2px 0 1px #d47696, 0 -2px 1px #d47696, 0 0 5px #fff7fa,  0 0 10px #6e0a2e;
 }
 .artSquare{
@@ -365,10 +376,10 @@ body{
     background-size: cover;
     background-blend-mode:color-burn;
     background-color: #ffebf4;
-    box-shadow: 0 0 0 rgb(150, 69, 96), 0 0 10px palevioletred inset;
+    box-shadow: 0 0 0 rgb(150, 69, 96), 0 0 10px var(--colorMain) inset;
     border: 2px solid;
     border-radius:  0 10px 0 0;
-    border-color: palevioletred;
+    border-color: var(--colorMain);
     margin-top: -202px;
     margin-left: 36px;
     height: 160px;
@@ -380,14 +391,14 @@ body{
     box-shadow: 0 0 0 rgb(150, 69, 96), 0 0 20px rgb(255, 120, 174) inset;*/
     border: 2px solid;
     border-radius:  0 10px 0 0;
-    border-color: palevioletred;
+    border-color: var(--colorMain);
     transition: 0.2s ease-in-out;
 }
 .artColors{
     background-color: #ffd5e8;
     border: 2px solid;
     border-radius: 0 0 10px;
-    border-color: palevioletred;
+    border-color: var(--colorMain);
     margin-left: 36px;
     margin-top: -4px;
     height: 38px;
@@ -397,7 +408,7 @@ body{
     display: none;
     border: 2px solid;
     border-radius: 6px;
-    border-color: palevioletred;
+    border-color: var(--colorMain);
     border-left-width: 3px;
     border-right-width: 3px;
     transform: translateY(31px);
@@ -445,7 +456,7 @@ body{
     background-color: #ffd5e8;
     border: 2px solid;
     border-radius: 10px 0 0 10px;
-    border-color: palevioletred;
+    border-color: var(--colorMain);
     margin-left: -14px;
     height: 198px;
     width: 48px;
@@ -488,7 +499,7 @@ body{
 #artCircle{
     border: 2px solid;
     border-radius: 100%;
-    border-color: palevioletred;
+    border-color: var(--colorMain);
     margin-top: -17px;
     margin-bottom: 3px;
     border-left-width: 3px;
@@ -514,11 +525,11 @@ body{
     grid-column: auto auto auto; */
     margin-top: -18px;
     background-color: rgb(255, 142, 180);
-    border: 2px solid palevioletred;
+    border: 2px solid var(--colorMain);
     /* border: 3px solid rgb(255, 232, 239); */
     border-radius: 12px;
-    /* border-color: palevioletred rgb(240, 153, 182)  rgb(240, 153, 182) palevioletred ; */
-    box-shadow: -6px 4px 20px rgb(213, 252, 255), 0 0 0 palevioletred inset;
+    /* border-color: var(--colorMain) rgb(240, 153, 182)  rgb(240, 153, 182) var(--colorMain) ; */
+    box-shadow: -6px 4px 20pxvar(--colorAccentLighter), 0 0 0 var(--colorMain) inset;
     padding: 20px;
     height: 190px;
     width: 240px;
@@ -528,7 +539,7 @@ body{
     /* margin-top: -25px;
     margin-left: 5px; */
     border-width: 1px;
-    /* box-shadow: 6px 6px 0 rgb(213, 252, 255), 0 0 0 palevioletred inset; */
+    /* box-shadow: 6px 6px 0var(--colorAccentLighter), 0 0 0 var(--colorMain) inset; */
     border-radius: 8px;
     /* border-radius: 100%; */
     transform: scale(100%) translateY(-3px) rotate(-2deg);
@@ -550,14 +561,14 @@ body{
 
 #storiesDiv{
     margin-top: -15px;
-    box-shadow: 0 0 30px #a9fbff;
+    box-shadow: 0 0 30px var(--colorAccentMedium);
     border-radius: 20px;
     height: 230px;
 }
 /* .bookBox{
     position: absolute;
     display: inline;
-    border: 3px solid palevioletred;
+    border: 3px solid var(--colorMain);
     border-radius: 8px;
     padding: 114px;
     padding-right: 80px;
@@ -567,9 +578,9 @@ body{
     /* transform: skew(-5deg); */
     position: absolute;
     font-family: Metamorphous;
-    background-color: #ffb9d9;
-    border: 3px solid palevioletred;
-    box-shadow: 2px 3px 8px rgba(47, 30, 40, 0.902), 0 0 10px palevioletred inset;
+    background-color: var(--colorLight);
+    border: 3px solid var(--colorMain);
+    box-shadow: 2px 3px 8px rgba(47, 30, 40, 0.902), 0 0 10px var(--colorMain) inset;
     /* color: #8a4d0f;
     background-color: bisque;
     border: 3px solid burlywood;
@@ -587,10 +598,10 @@ body{
     box-shadow: 2px 3px 10px rgba(77, 48, 25, 0.902), 0 0 8px #daa672 inset;
     color: #7a3f05;
     border-radius: 4px 0; */    
-    background-color: #ffb9d9;
+    background-color: var(--colorLight);
     border: 3px solid;
-    border-color:  palevioletred  rgb(243, 223, 196)  rgb(255, 232, 205)  palevioletred;
-    box-shadow: 2px 3px 8px rgba(47, 30, 40, 0.902), 0 0 10px palevioletred inset;
+    border-color:  var(--colorMain)  rgb(243, 223, 196)  rgb(255, 232, 205)  var(--colorMain);
+    box-shadow: 2px 3px 8px rgba(47, 30, 40, 0.902), 0 0 10px var(--colorMain) inset;
     padding: 8px;
     margin-top: -10px;
     /* border-radius: 4px; */
@@ -602,8 +613,8 @@ body{
 .bookmark{
     display: inline;
     background-color: rgb(189, 78, 115);
-    border: 3px solid rgb(224, 116, 170);
-    box-shadow: 0 -2px 1px palevioletred, 0 0 10px rgb(224, 116, 170) inset;
+    border: 3px solid var(--colorMain);
+    box-shadow: 0 -2px 1px var(--colorMain), 0 0 10px var(--colorMain) inset;
     border-radius: 4px;
     padding: 12px;
     padding-top: 215px;
@@ -613,8 +624,8 @@ body{
 .outsideBook:hover ~ .bookmark{
     display: inline;
     background-color: rgb(189, 78, 115);
-    border: 3px solid rgb(224, 116, 170);
-    box-shadow: 0 -2px 1px palevioletred, 0 0 10px rgb(224, 116, 170) inset;
+    border: 3px solid var(--colorMain);
+    box-shadow: 0 -2px 1px var(--colorMain), 0 0 10px var(--colorMain) inset;
     border-radius: 4px;
     padding: 12px;
     padding-top: 215px;
@@ -627,7 +638,7 @@ body{
     color: #8a4d0f;
     background-color: rgb(255, 240, 221);
     border: 3px solid rgb(255, 222, 182);
-    box-shadow: 2px 3px 2px palevioletred, 0 0 10px #fbfeff inset;
+    box-shadow: 2px 3px 2px var(--colorMain), 0 0 10px #fbfeff inset;
     border-radius: 8px;
     padding: 16px;
     height: 190px;
@@ -645,7 +656,7 @@ body{
     transition: 0.2s ease-in-out;
 } */
 #gridPage.storiesBtn{
-    color: #fffafc;
+    color: var(--colorWhite);
     text-align: start; 
     margin-left: 44px;
     padding-top: 50px;
@@ -659,7 +670,7 @@ body{
 #programmingDiv{
     margin-top: -15px;
     border-radius: 50px;
-    box-shadow: 0 0 30px #a9fbff;
+    box-shadow: 0 0 30px var(--colorAccentMedium);
     background-color: #d9ffff73;
     height: 180px;
     width: 245px;
@@ -670,7 +681,7 @@ body{
 .programmingDiv:hover{
     margin-top: -15px;
     border-radius: 50px;
-    box-shadow: 0 0 30px #a9fbff;
+    box-shadow: 0 0 30px var(--colorAccentMedium);
     height: 160px;
     transition: 0.2s ease-in-out;
 }
@@ -684,7 +695,7 @@ body{
     border: 10px solid rgb(135, 240, 184);*/
     border: 10px solid;
     color: aliceblue; 
-    border-color: palevioletred palevioletred palevioletred rgb(227, 168, 187);
+    border-color: var(--colorMain) var(--colorMain) var(--colorMain) rgb(227, 168, 187);
     box-shadow: 8px -8px 0 rgb(163, 68, 100), 0 0 25px #ca1d76 inset;
     border-radius: 25px;
     background-color: #000d0d;
@@ -704,7 +715,7 @@ body{
 }
 .computerNeck{
     border: 5px solid rgb(251, 151, 184);
-    box-shadow: 5px -1px 0 palevioletred, 0 0 40px #87c9cb00 inset;
+    box-shadow: 5px -1px 0 var(--colorMain), 0 0 40px #87c9cb00 inset;
     background-color: rgb(251, 151, 184);
     border-radius: 2px;
     /* margin-top: -15px; */
@@ -732,7 +743,7 @@ body{
     box-shadow: 8px -8px 0 rgb(2, 37, 24), 0 0 40px #87c9cb00 inset;
     background-color: rgb(2, 37, 24); */
     border: 5px dashed rgb(251, 151, 184);
-    box-shadow: 8px -6px 0 palevioletred, 0 0 40px #87c9cb00 inset;
+    box-shadow: 8px -6px 0 var(--colorMain), 0 0 40px #87c9cb00 inset;
     background-color: rgb(163, 68, 100);
     border-radius: 10px;
     /* margin-top: -15px; */
@@ -766,10 +777,10 @@ body{
 #meEar{
     /*transform: translateY(50px);  
     z-index: -1;*/
-    background-color: var(--pinkWhite);
+    background-color: var(--colorWhite);
     border-radius: 50%;
-    border: 3px solid palevioletred;
-    box-shadow: 0 0 20px palevioletred, 0 0 10px #b4f7ff inset;
+    border: 3px solid var(--colorMain);
+    box-shadow: 0 0 20px var(--colorMain), 0 0 10px #b4f7ff inset;
     height: 75px;
     width: 45px;
     border-radius: 50% 50% 0 0;
@@ -780,7 +791,7 @@ body{
 }
 .meDiv:hover >  #meEar{
     margin-top: -25px;    
-    box-shadow: 0 0 5px palevioletred, 0 0 10px #b4f7ff inset;
+    box-shadow: 0 0 5px var(--colorMain), 0 0 10px #b4f7ff inset;
 }
 /* #meEar.left{
     border-radius: 50% 50% 0 0;
@@ -819,20 +830,20 @@ body{
 }
 #meEye{
     transform: translateY(15px) scaleY(15%) scaleX(90%);
-    background-color: palevioletred; 
+    background-color: var(--colorMain); 
     border-radius: 0 0 50% 50%;
     border: 3px solid;
-    border-color:transparent  transparent palevioletred transparent;
-    /* box-shadow: 0 5px 0 palevioletred, 0 0 5px #fffbfd inset;  */
-    /* box-shadow: 0 0 20px palevioletred, 0 0 5px #fffbfd inset; * */
+    border-color:transparent  transparent var(--colorMain) transparent;
+    /* box-shadow: 0 5px 0 var(--colorMain), 0 0 5px #fffbfd inset;  */
+    /* box-shadow: 0 0 20px var(--colorMain), 0 0 5px #fffbfd inset; * */
     height: 30px;
     width: 30px;
     margin-top: -36px;
 }
 .meDiv:hover > #meEye{
-    background-color: palevioletred; 
-    border-color: palevioletred;
-    /* box-shadow: 0 5px 0 palevioletred, 0 0 5px #fffbfd inset; */
+    background-color: var(--colorMain); 
+    border-color: var(--colorMain);
+    /* box-shadow: 0 5px 0 var(--colorMain), 0 0 5px #fffbfd inset; */
     /* box-shadow: 0 0 0 transparent, 0 0 0 transparent inset;  */
     border: 3px solid;
     /* border-radius: 50%; */
@@ -842,8 +853,8 @@ body{
 }
 /* #meEye{
     background-color: white; 
-    border-color: palevioletred;
-    box-shadow: 0 5px 0 palevioletred, 0 0 5px #fffbfd inset; 
+    border-color: var(--colorMain);
+    box-shadow: 0 5px 0 var(--colorMain), 0 0 5px #fffbfd inset; 
     border: 3px solid;
     border-radius: 50%;
     transform: scale(90%);
@@ -853,8 +864,8 @@ body{
     margin-top: -36px;
 }
 .meDiv:hover > #meEye{
-    background-color: palevioletred; 
-    border-color: palevioletred;
+    background-color: var(--colorMain); 
+    border-color: var(--colorMain);
     box-shadow: 0 0 0 rgba(216, 112, 147, 0), 0 0 0 transparent inset; 
     border: 3px solid;
     border-radius: 50%;
@@ -888,11 +899,11 @@ body{
     margin-top: -4px;
 }
 #gridPage.meBtn{
-    background-color: var(--pinkWhite); 
+    background-color: var(--colorWhite); 
     border-radius: 50%;
-    border: 3px solid palevioletred;
-    /* box-shadow: 0 0 20px palevioletred, 0 0 5px #fffbfd inset; */
-    box-shadow: 0 0 20px palevioletred, 0 0 15px #b4f7ff inset;
+    border: 3px solid var(--colorMain);
+    /* box-shadow: 0 0 20px var(--colorMain), 0 0 5px #fffbfd inset; */
+    box-shadow: 0 0 20px var(--colorMain), 0 0 15px #b4f7ff inset;
     height: 170px;
     width: 170px;
     /* margin-top: 61px; */
@@ -901,8 +912,8 @@ body{
 }
 /* #mePaw{
     background-color: var(--pinkWhite);
-    border: 3px solid palevioletred;
-    box-shadow: 0 0 20px palevioletred, 0 0 10px #b4f7ff inset;
+    border: 3px solid var(--colorMain);
+    box-shadow: 0 0 20px var(--colorMain), 0 0 10px #b4f7ff inset;
     height: 25px;
     width: 45px;
     border-radius: 20px 20px 50% 50%;
@@ -918,24 +929,24 @@ body{
 .meBody{
     background-color: var(--pinkWhite); 
     border-radius: 50% 50% 20px 20px ;
-    border: 3px solid palevioletred;
-    box-shadow: 0 0 20px palevioletred, 0 0 15px #b4f7ff inset;
+    border: 3px solid var(--colorMain);
+    box-shadow: 0 0 20px var(--colorMain), 0 0 15px #b4f7ff inset;
     height: 180px;
     width: 240px;
     margin-bottom: -230px;
     margin-left: -35px ;
 } */
 .meDiv:hover >  #gridPage.meBtn{
-    box-shadow: 0 0 5px palevioletred, 0 0 15px #b4f7ff inset;
+    box-shadow: 0 0 5px var(--colorMain), 0 0 15px #b4f7ff inset;
     margin-top: 67px;
     transition: 0.2s ease-in-out;
 }
 /* #gridPage.meBtn:hover{    
     color: white;
-    background-color: palevioletred; 
+    background-color: var(--colorMain); 
     border-color: rgb(218, 94, 135);
     border-radius: 30px;
-    box-shadow: 0 0 30px palevioletred, 0 0 0 #c9ffff inset;
+    box-shadow: 0 0 30px var(--colorMain), 0 0 0 #c9ffff inset;
     transition: 0.2s ease-in-out;
 } */
 .meDiv{
@@ -944,8 +955,8 @@ body{
     width: 200px;
 }
 #meFrame{
-    background-color: var(--pinkWhite);
-    border: 7px double palevioletred;
+    background-color: var(--colorWhite);
+    border: 7px double var(--colorMain);
     box-shadow: 0 0 30px #b4f7ff, 0 0 15px #ffb4d0 inset;
     border-radius: 10px;
     height: 210px;
@@ -959,7 +970,7 @@ body{
 }
 
 a{
-        color: #fffafc;
+        color: var(--colorWhite);
 }
 a:visited{
     color: #96053f;
@@ -971,12 +982,12 @@ a:visited{
 /* @media (prefers-color-scheme: dark) {
     body{
         background-color: rgb(54, 7, 73);
-        color: #fffafc; */
+        color: var(--colorWhite); */
         /* background-color: #ce5887 ; */
         /* background-color: #2a1431; */
     /* }
     a{
-        color: #fffafc;
+        color: var(--colorWhite);
     }
     a:visited{
         color: #ffc7dd;
@@ -985,7 +996,7 @@ a:visited{
         border-color: rgb(230, 89, 136);
         background-color: rgb(33, 4, 57);
         box-shadow: 0 0 10px #240011, 0 0 30px #9ae1ff, 0 0 50px #00093c inset; */
-        /* border-color: palevioletred; */
+        /* border-color: var(--colorMain); */
         /* border-color: rgb(22, 1, 42); */
         /* background-color: rgb(7, 45, 74); */
         /* box-shadow: 0 0 10px #d52c64, 0 0 50px #00093c inset; */
@@ -999,9 +1010,14 @@ a:visited{
     
 } */
 @media (prefers-color-scheme: dark) {
+
+    :root{
+        --colorAccent: #82ba87;
+    }
+
     body{
         /* background-color: rgb(54, 7, 73); */
-        color: #fffafc;
+        color: var(--colorWhite);
         /* background-color: #ce5887 ; */
         /* background-color: #2a1431; */
         background-color:#000d0d;
@@ -1009,7 +1025,7 @@ a:visited{
         background-size: 40px 40px;
         background-position: 0 0, 20px 0, 0 0;
     }    
-    #selectArt:hover{    
+    /* #selectArt:hover{    
         border-color: #82ba87;
     }
     #selectStories:hover{
@@ -1019,9 +1035,9 @@ a:visited{
     }
     #selectMe:hover{
         border-color: #82ba87;    
-    }
+    } */
     a{
-        color: #fffafc;
+        color: var(--colorWhite);
     }
     a:visited{
         color: #ffc7dd;
@@ -1030,7 +1046,7 @@ a:visited{
         border-color: rgb(230, 89, 136);
         background-color: rgb(49, 82, 66);
         box-shadow: 0 0 10px #1b321e, 0 0 30px #88c99e, 0 0 50px #2d3a29 inset;
-        /* border-color: palevioletred; */
+        /* border-color: var(--colorMain); */
         /* border-color: rgb(22, 1, 42); */
         /* background-color: rgb(7, 45, 74); */
         /* box-shadow: 0 0 10px #d52c64, 0 0 50px #00093c inset; */
@@ -1048,12 +1064,12 @@ a:visited{
 }
 @media (prefers-color-scheme: light) {
     body{
-        color:#fffafc;
-        background-color: #ffb9d9;
+        color:var(--colorWhite);
+        background-color: var(--colorLight);
         /* background-color: #2a1431; */
     }
     a{
-        color: #fffafc;
+        color: var(--colorWhite);
     }
     a:visited{
         color: #96053f;
