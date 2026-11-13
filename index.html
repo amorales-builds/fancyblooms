@@ -18,42 +18,45 @@
     <hr>    
       <p>We're under construction!</p>
     </div>
-    <div id="website">
-      <!-- <div class="buttons">
-        <button id="leftBtn" class="navBtn"></button>
-        <button id="rightBtn" class="navBtn"></button>
-      </div> -->
+    <div id="website" class="website">
+      <div class="buttons">
+        <button id="leftBtn" class="navBtn"><</button>
+        <button id="rightBtn" class="navBtn">></button>
+      </div>
       <div class="gameDiv">
         <div id="mainGrid">
-          <div class="artDiv" onclick="artPage()">
-            <div class="artWindow">
-              <div id="artCircle" class="redButton"></div>
-              <div id="artCircle" class="greenButton"></div>
-              <div id="artCircle" class="yellowButton"></div>
-              <div class="artTools">
-                <div id=tool class="t1"></div>
-                <div id=tool class="t2"></div>
-                <div id=tool class="t3"></div>
-                <div id=tool class="t4"></div>
-                <div id=tool class="t5"></div>
-                <div id=tool class="t6"></div>
-              </div>
-              <div class="artSquare">
-                <p id="gridPage" class="artBtn">Art</p>  <!-- canvas(?)/window -->
-              </div>
-              <div class="artColors">
-                <div id="colorSquare" class="redSqr"></div>
-                <div id="colorSquare" class="orangeSqr"></div>
-                <div id="colorSquare" class="yellowSqr"></div>
-                <div id="colorSquare" class="greenSqr"></div>
-                <div id="colorSquare" class="blueSqr"></div>
-                <div id="colorSquare" class="purpleSqr"></div>
-                <div id="colorSquare" class="whiteSqr"></div>
+
+          <div id="selectArt" class="select">
+            <div class="artDiv" onclick="artPage()">
+              <div class="artWindow">
+                <div id="artCircle" class="redButton"></div>
+                <div id="artCircle" class="greenButton"></div>
+                <div id="artCircle" class="yellowButton"></div>
+                <div class="artTools">
+                  <div id=tool class="t1"></div>
+                  <div id=tool class="t2"></div>
+                  <div id=tool class="t3"></div>
+                  <div id=tool class="t4"></div>
+                  <div id=tool class="t5"></div>
+                  <div id=tool class="t6"></div>
+                </div>
+                <div class="artSquare">
+                  <p id="gridPage" class="artBtn">Art</p>  <!-- canvas(?)/window -->
+                </div>
+                <div class="artColors">
+                  <div id="colorSquare" class="redSqr"></div>
+                  <div id="colorSquare" class="orangeSqr"></div>
+                  <div id="colorSquare" class="yellowSqr"></div>
+                  <div id="colorSquare" class="greenSqr"></div>
+                  <div id="colorSquare" class="blueSqr"></div>
+                  <div id="colorSquare" class="purpleSqr"></div>
+                  <div id="colorSquare" class="whiteSqr"></div>
+                </div>
               </div>
             </div>
           </div>
           
-          <div>
+          <div id="selectStories" class="select">
             <div class="storiesDiv" onclick="storiesPage()">
               <div class="outsideBook" >
                 <p id="gridPage" class="storiesBtn">Stories</p> <!-- notebook/book -->
@@ -64,27 +67,32 @@
               <div class="bookmark"></div>
             </div>
           </div>
-
-          <div class="programmingDiv" onclick="programmingPage()">
-            <div id="gridPage" class="programmingBtn" >
-              <p style="margin-left: -5px; transform:skew(-5deg)">Programming</p> <!-- game/computer -->
-            </div>        
-            <p class="computerNeck"></p>
-            <p class="keyboardPart"></p>
-          </div>
-
-          <div class="meFrame" onclick="mePage()">
-            <div class="meDiv">
-              <div id="meEar" class="left"></div>
-              <div id="meEar" class="right"></div>
-              <div id="gridPage" class="meBtn">
-                <p id="meText">Me</p> <!-- journal(?)/bunny(?) -->
-              </div>           
-              <div id="meEye" class="left"></div>
-              <div id="meEye" class="right"></div>
-              <div id="meNose"></div>
+          
+          <div id="selectProgramming" class="select">
+            <div class="programmingDiv" onclick="programmingPage()">
+              <div id="gridPage" class="programmingBtn" >
+                <p style="margin-left: -5px; transform:skew(-5deg)">Programming</p> <!-- game/computer -->
+              </div>        
+              <p class="computerNeck"></p>
+              <p class="keyboardPart"></p>
             </div>
           </div>
+
+          <div id="selectMe" class="select">
+            <div class="meFrame" onclick="mePage()">
+              <div class="meDiv">
+                <div id="meEar" class="left"></div>
+                <div id="meEar" class="right"></div>
+                <div id="gridPage" class="meBtn">
+                  <p id="meText">Me</p> <!-- journal(?)/bunny(?) -->
+                </div>           
+                <div id="meEye" class="left"></div>
+                <div id="meEye" class="right"></div>
+                <div id="meNose"></div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <script src="/src/script.js"></script>
