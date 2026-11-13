@@ -146,6 +146,6 @@ document.getElementById("downBtn").addEventListener('click', async () => {
     selectLeft()
 })
 
-document.getElementById("lightBtn").addEventListener('click', async () => {   
-    window.matchMedia("(prefers-color-scheme: dark)");
-})
+// document.getElementById("lightBtn").addEventListener('click', async () => {   
+    
+// })
