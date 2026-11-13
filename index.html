@@ -20,14 +20,22 @@
     </div>
     <div id="website" class="website">
       <div class="buttons">
-        <button id="leftBtn" class="navBtn"><</button>
-        <button id="rightBtn" class="navBtn">></button>
+        <button id="upBtn" class="navBtn">&#9650</button>
+        <button id="leftBtn" class="navBtn">&#9664</button>
+        <button id="rightBtn" class="navBtn">&#9654</button>
+        <button id="downBtn" class="navBtn">&#9660</button>
+        <button id="uBtn" class="navBtn" onclick="selectEnter()">u</button>
+        <button id="xBtn" class="navBtn" onclick="selectEnter()">x</button>
+        <button id="eBtn" class="navBtn" onclick="selectEnter()">e</button>
+        <button id="bBtn" class="navBtn" onclick="selectEnter()">b</button>
+        <button id="lightBtn" class="settingBtn"">&#9728</button>
+        <button id="darkBtn" class="settingBtn">&#9681</button>
       </div>
       <div class="gameDiv">
         <div id="mainGrid">
 
           <div id="selectArt" class="select">
-            <div class="artDiv" onclick="artPage()">
+            <div id="artDiv" onclick="artPage()">
               <div class="artWindow">
                 <div id="artCircle" class="redButton"></div>
                 <div id="artCircle" class="greenButton"></div>
@@ -57,7 +65,7 @@
           </div>
           
           <div id="selectStories" class="select">
-            <div class="storiesDiv" onclick="storiesPage()">
+            <div id="storiesDiv" onclick="storiesPage()">
               <div class="outsideBook" >
                 <p id="gridPage" class="storiesBtn">Stories</p> <!-- notebook/book -->
               </div>
@@ -69,7 +77,7 @@
           </div>
           
           <div id="selectProgramming" class="select">
-            <div class="programmingDiv" onclick="programmingPage()">
+            <div id="programmingDiv" onclick="programmingPage()">
               <div id="gridPage" class="programmingBtn" >
                 <p style="margin-left: -5px; transform:skew(-5deg)">Programming</p> <!-- game/computer -->
               </div>        
@@ -79,7 +87,7 @@
           </div>
 
           <div id="selectMe" class="select">
-            <div class="meFrame" onclick="mePage()">
+            <div id="meFrame" onclick="mePage()">
               <div class="meDiv">
                 <div id="meEar" class="left"></div>
                 <div id="meEar" class="right"></div>
