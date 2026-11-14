@@ -3,13 +3,23 @@
 
 :root{
     --colorWhite: #fffafc;
-    --colorLightest: rgb(255, 212, 225);
+    --colorWhitish: #ffebf4;
+    --colorLightest: rgb(255, 215, 232);
     --colorLighter: #ffc4da;
     --colorLight: #ffb9d9;
+    --colorMediumLight: rgb(227, 168, 187);
     --colorMedium: rgb(255, 158, 198);
+    --colorMediumDarkish: rgb(255, 142, 180);
     --colorMain: palevioletred;
-    --colorDark: rgb(208, 81, 119);
+    --colorMediumDark: rgb(208, 81, 119);
+    /* --colorMediumDarker: rgb(196, 95, 129); */
+    --colorMediumDarker: rgb(163, 68, 100);
+    --colorDark: rgb(156, 52, 87);
+    --colorDarker: #530c24;
+    --colorBlackish: rgb(47, 30, 40);
+    --colorBlack: #0d0004;
 
+    --colorAccentWhite: aliceblue;
     --colorAccentLighter: rgb(213, 252, 255);
     --colorAccentLight: rgb(203, 246, 255);
     --colorAccentMedium: #a9fbff;
@@ -75,8 +85,7 @@ body{
     width: 250px;  
     padding-top: 30px;
 }
-#selectArt:hover{    
-    /* border-color: var(--colorAccent);   */
+/* #selectArt:hover{    
     border-color: var(--colorAccent);
 }
 #selectStories:hover{
@@ -86,7 +95,7 @@ body{
 }
 #selectMe:hover{
     border-color: var(--colorAccent);    
-}
+} */
 /* #selectArt{    
     border-color: var(--colorAccent);
     background-color: #c0fff0;
@@ -119,7 +128,7 @@ body{
     /* height: 50vh;*/
     margin-top: 6vh; 
     border: 1vw solid var(--colorMain);
-    box-shadow:0 0 0 .1vw var(--colorLight) , 0 0 0 .35vw var(--colorDark), 0 0 0 .6vw var(--colorLightest), 0 0 20px 1vw var(--colorLighter), 0 0 0 .5vw var(--colorMedium) inset, 0 0 0 .8vw  var(--colorAccentLight) inset, 0 0 50px 1.5vw var(--colorLightest) inset;
+    box-shadow:0 0 0 .1vw var(--colorLight) , 0 0 0 .35vw var(--colorMediumDark), 0 0 0 .6vw var(--colorLightest), 0 0 20px 1vw var(--colorLighter), 0 0 0 .5vw var(--colorMedium) inset, 0 0 10px .8vw  var(--colorAccentLight) inset, 0 0 50px 1.5vw var(--colorLightest) inset;
     border-radius: 50px;
     border-inline-width: 10vw;
     margin-inline: 4vw;
@@ -174,7 +183,7 @@ body{
     }  */
 }
 #gridPage{
-    color: #530c24;
+    color: var(--colorDarker);
     text-align: center;
     /* padding-top: 8vh;
     border: 2px solid var(--colorMain); 
@@ -218,8 +227,9 @@ body{
     box-shadow: 0 0 5px var(--colorAccentLighter), 0 -2px 2px var(--colorMedium) inset;
 }
 .settingBtn:active{
-    background-color: rgb(255, 238, 244); 
-    box-shadow: 0 0 0 1px rgb(156, 52, 87), 0 0 2px 2px rgb(255, 185, 208) inset;
+    color: var(--colorWhite);
+    background-color: var(--colorMedium); 
+    box-shadow: 0 0 0 1px var(--colorDark), 0 0 2px 2px var(--colorMedium) inset;
 }
 
 
@@ -325,7 +335,7 @@ body{
     margin-top: 32.1vh;
 }
 .navBtn:active{
-    background-color: rgb(255, 238, 244); 
+    background-color: var(--colorWhitish); 
     font-size: 16px;
     /* height: 35px;
     width: 35px; 
@@ -368,19 +378,19 @@ body{
     margin-left: -50px;
     font-size: 28px;
     color: var(--colorWhite); 
-    text-shadow: -2px 0 1px #d47696, 0 2px 1px #d47696, 2px 0 1px #d47696, 0 -2px 1px #d47696, 0 0 5px #fff7fa,  0 0 10px #6e0a2e;
+    text-shadow: -2px 0 1px var(--colorMain), 0 2px 1px var(--colorMain), 2px 0 1px var(--colorMain), 0 -2px 1px var(--colorMain), 0 0 5px var(--colorWhite),  0 0 10px var(--colorDarker);
 }
 .artSquare{
     background-image: url(/assets/images/pixelArtTrainPink.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode:color-burn;
-    background-color: #ffebf4;
-    box-shadow: 0 0 0 rgb(150, 69, 96), 0 0 10px var(--colorMain) inset;
-    border: 2px solid;
+    background-color: var(--colorWhitish);
+    box-shadow: 0 0 0 var(--colorMediumDark), 0 0 10px var(--colorMain) inset;
+    border: 3px solid;
     border-radius:  0 10px 0 0;
     border-color: var(--colorMain);
-    margin-top: -202px;
+    margin-top: -206px;
     margin-left: 36px;
     height: 160px;
     width: 212px;
@@ -389,14 +399,14 @@ body{
     background-blend-mode:normal;
     /* background-blend-mode:overlay; 
     box-shadow: 0 0 0 rgb(150, 69, 96), 0 0 20px rgb(255, 120, 174) inset;*/
-    border: 2px solid;
+    border: 3px solid;
     border-radius:  0 10px 0 0;
     border-color: var(--colorMain);
     transition: 0.2s ease-in-out;
 }
 .artColors{
-    background-color: #ffd5e8;
-    border: 2px solid;
+    background-color: var(--colorLightest);
+    border: 3px solid;
     border-radius: 0 0 10px;
     border-color: var(--colorMain);
     margin-left: 36px;
@@ -453,12 +463,12 @@ body{
     margin-left: 183px;
 }
 .artTools{
-    background-color: #ffd5e8;
-    border: 2px solid;
+    background-color: var(--colorLightest);;
+    border: 3px solid;
     border-radius: 10px 0 0 10px;
     border-color: var(--colorMain);
     margin-left: -14px;
-    height: 198px;
+    height: 200px;
     width: 48px;
 }
 #tool{
@@ -524,12 +534,12 @@ body{
     /* direction: grid;
     grid-column: auto auto auto; */
     margin-top: -18px;
-    background-color: rgb(255, 142, 180);
-    border: 2px solid var(--colorMain);
+    background-color: var(--colorMediumDarkish);
+    border: 3px solid var(--colorMain);
     /* border: 3px solid rgb(255, 232, 239); */
     border-radius: 12px;
     /* border-color: var(--colorMain) rgb(240, 153, 182)  rgb(240, 153, 182) var(--colorMain) ; */
-    box-shadow: -6px 4px 20pxvar(--colorAccentLighter), 0 0 0 var(--colorMain) inset;
+    box-shadow: -6px 4px 20px var(--colorAccentLighter), 0 0 0 var(--colorMain) inset;
     padding: 20px;
     height: 190px;
     width: 240px;
@@ -538,7 +548,7 @@ body{
 .artWindow:hover{
     /* margin-top: -25px;
     margin-left: 5px; */
-    border-width: 1px;
+    border-width: 3px;
     /* box-shadow: 6px 6px 0var(--colorAccentLighter), 0 0 0 var(--colorMain) inset; */
     border-radius: 8px;
     /* border-radius: 100%; */
@@ -550,7 +560,7 @@ body{
     /* padding-left: 10px; */
     width: 250px;
     height: 210px;
-    background-color: rgba(213, 252, 255, 0.687);
+    background-color: var(--colorAccentLighter);
     /* background-color: rgb(196, 86, 128); */
     border-radius: 12px;
     /* margin-left: -15px; */
@@ -580,7 +590,7 @@ body{
     font-family: Metamorphous;
     background-color: var(--colorLight);
     border: 3px solid var(--colorMain);
-    box-shadow: 2px 3px 8px rgba(47, 30, 40, 0.902), 0 0 10px var(--colorMain) inset;
+    box-shadow: 2px 3px 8px var(--colorDarker), 0 0 10px var(--colorMain) inset;
     /* color: #8a4d0f;
     background-color: bisque;
     border: 3px solid burlywood;
@@ -601,7 +611,7 @@ body{
     background-color: var(--colorLight);
     border: 3px solid;
     border-color:  var(--colorMain)  rgb(243, 223, 196)  rgb(255, 232, 205)  var(--colorMain);
-    box-shadow: 2px 3px 8px rgba(47, 30, 40, 0.902), 0 0 10px var(--colorMain) inset;
+    box-shadow: 2px 3px 8px var(--colorDarker), 0 0 10px var(--colorMain) inset;
     padding: 8px;
     margin-top: -10px;
     /* border-radius: 4px; */
@@ -612,9 +622,9 @@ body{
 }
 .bookmark{
     display: inline;
-    background-color: rgb(189, 78, 115);
+    background-color: var(--colorMediumDark);
     border: 3px solid var(--colorMain);
-    box-shadow: 0 -2px 1px var(--colorMain), 0 0 10px var(--colorMain) inset;
+    box-shadow: 0 -2px 1px var(--colorMain), 0 0 30px var(--colorAccentMedium), 0 0 10px var(--colorMain) inset;
     border-radius: 4px;
     padding: 12px;
     padding-top: 215px;
@@ -623,9 +633,9 @@ body{
 }
 .outsideBook:hover ~ .bookmark{
     display: inline;
-    background-color: rgb(189, 78, 115);
+    background-color: var(--colorMediumDark);
     border: 3px solid var(--colorMain);
-    box-shadow: 0 -2px 1px var(--colorMain), 0 0 10px var(--colorMain) inset;
+    box-shadow: 0 -2px 1px var(--colorMain), 0 0 30px var(--colorAccentMedium), 0 0 10px var(--colorMain) inset;
     border-radius: 4px;
     padding: 12px;
     padding-top: 215px;
@@ -638,7 +648,7 @@ body{
     color: #8a4d0f;
     background-color: rgb(255, 240, 221);
     border: 3px solid rgb(255, 222, 182);
-    box-shadow: 2px 3px 2px var(--colorMain), 0 0 10px #fbfeff inset;
+    box-shadow: 2px 3px 2px var(--colorMain), 0 0 10px var(--colorAccentLighter) inset;
     border-radius: 8px;
     padding: 16px;
     height: 190px;
@@ -662,7 +672,7 @@ body{
     padding-top: 50px;
     font-weight: bold;
     font-size: 18px;
-    text-shadow:  1px 1px 4px #530c24;
+    text-shadow:  1px 1px 4px var(--colorDarker);
 }
 
 /* /////////////////////////////// */
@@ -670,8 +680,8 @@ body{
 #programmingDiv{
     margin-top: -15px;
     border-radius: 50px;
-    box-shadow: 0 0 30px var(--colorAccentMedium);
-    background-color: #d9ffff73;
+    /* box-shadow: 0 0 30px var(--colorAccentMedium); */
+    background-color: var(--colorAccentLighter)73;
     height: 180px;
     width: 245px;
     @media screen and (max-width: 820px) {
@@ -694,29 +704,29 @@ body{
     box-shadow: 8px -8px 0  rgb(2, 37, 24), 0 1px 25px #51ffd6b1 inset; 
     border: 10px solid rgb(135, 240, 184);*/
     border: 10px solid;
-    color: aliceblue; 
-    border-color: var(--colorMain) var(--colorMain) var(--colorMain) rgb(227, 168, 187);
-    box-shadow: 8px -8px 0 rgb(163, 68, 100), 0 0 25px #ca1d76 inset;
+    color: var(--colorAccentWhite); 
+    border-color: var(--colorMain) var(--colorMain) var(--colorMain) var(--colorMediumLight);
+    box-shadow: 8px -8px 0 var(--colorMediumDarker), 0 0 30px var(--colorAccentMedium), 0 0 25px var(--colorMediumDark) inset;
     border-radius: 25px;
-    background-color: #000d0d;
+    background-color: var(--colorBlack);
     width: 220px;
     height: 100px;
 }
 #gridPage.programmingBtn:hover{ 
-    color:  rgb(128, 36, 67);
+    color:  var(--colorDark);
     font-weight: bold;
     border-radius: 20px;
-    box-shadow: 8px -3px 0 rgb(247, 139, 175), 0 0 40px #87c9cb00 inset;
-    /* border-color: rgb(225, 123, 157); */    
-    border-color: rgb(225, 123, 157) rgb(235, 163, 202) rgb(225, 123, 157) rgb(225, 123, 157) ;
-    background-color: #d9ffff;
+    box-shadow: 8px -3px 0 var(--colorMedium), 0 0 30px var(--colorAccentMedium), 0 0 40px transparent inset;
+    /* border-color: var(--colorMain); */    
+    border-color: var(--colorMain) var(--colorLight) var(--colorMain) var(--colorMain) ;
+    background-color: var(--colorAccentLighter);
     transform: skew(-1deg) translate(2px, -18px);
     transition: 0.2s ease-in-out;
 }
 .computerNeck{
-    border: 5px solid rgb(251, 151, 184);
-    box-shadow: 5px -1px 0 var(--colorMain), 0 0 40px #87c9cb00 inset;
-    background-color: rgb(251, 151, 184);
+    border: 5px solid var(--colorMedium);
+    box-shadow: 5px -1px 0 var(--colorMain), 0 0 40px transparent inset;
+    background-color: var(--colorMedium);
     border-radius: 2px;
     /* margin-top: -15px; */
     margin-top: 0px;
@@ -727,9 +737,9 @@ body{
     width: 15px;
 }
 #gridPage.programmingBtn:hover ~ .computerNeck{
-    border: 5px solid rgb(251, 151, 184);
-    box-shadow: 5px -.5px 0  rgb(225, 123, 157), 0 0 40px #87c9cb00 inset;
-    background-color: rgb(251, 151, 184);
+    border: 5px solid var(--colorMedium);
+    box-shadow: 5px -.5px 0  var(--colorMain), 0 0 40px transparent inset;
+    background-color: var(--colorMedium);
     /* margin-top: -15px; */
     margin-top: -18px;
     padding-bottom: 4px;
@@ -742,9 +752,9 @@ body{
     /* border: 5px dashed rgb(135, 240, 184);
     box-shadow: 8px -8px 0 rgb(2, 37, 24), 0 0 40px #87c9cb00 inset;
     background-color: rgb(2, 37, 24); */
-    border: 5px dashed rgb(251, 151, 184);
-    box-shadow: 8px -6px 0 var(--colorMain), 0 0 40px #87c9cb00 inset;
-    background-color: rgb(163, 68, 100);
+    border: 5px dashed var(--colorMedium);
+    box-shadow: 8px -6px 0 var(--colorMain), 0 0 30px var(--colorAccentMedium), 0 0 40px transparent inset;
+    background-color: var(--colorMediumDarker);
     border-radius: 10px;
     /* margin-top: -15px; */
     margin-top: -6px;
@@ -754,10 +764,10 @@ body{
     width: 260px;
 }
 #gridPage.programmingBtn:hover ~ .keyboardPart{
-    border: 5px dashed rgb(254, 164, 194);
+    border: 5px dashed var(--colorLight);
     border-radius: 10px;
-    box-shadow: 8px -5px 0 rgb(253, 152, 186), 0 0 40px #87c9cb21 inset;
-    background-color: rgb(181, 79, 113);
+    box-shadow: 8px -5px 0 var(--colorMain), 0 0 30px var(--colorAccentMedium), 0 0 40px #87c9cb21 inset;
+    background-color: var(--colorMain);
     transform: skew(-25deg) translate(-2px, 6px);
     transition: 0.2s ease-in-out;
 }
@@ -766,9 +776,10 @@ body{
 
 #meText{
     /* padding-top: 5px; */
+    color: var(--colorDarker);
     margin-top: -89px;
     font-size: 20px;
-    text-shadow: -2px 0 1px #fff7fa, 0 2px 1px #fff7fa, 2px 0 1px #fff7fa, 0 -2px 1px #fff7fa, 0 0 5px #fff7fa,  0 0 10px #fff7fa;
+    text-shadow: -2px 0 1px var(--colorWhite), 0 2px 1px var(--colorWhite), 2px 0 1px var(--colorWhite), 0 -2px 1px var(--colorWhite), 0 0 5px var(--colorWhite),  0 0 10px var(--colorWhite);
 }
 /* #earsDiv{
     display: grid;
@@ -780,7 +791,7 @@ body{
     background-color: var(--colorWhite);
     border-radius: 50%;
     border: 3px solid var(--colorMain);
-    box-shadow: 0 0 20px var(--colorMain), 0 0 10px #b4f7ff inset;
+    box-shadow: 0 0 20px var(--colorMain), 0 0 10px var(--colorAccentMedium) inset;
     height: 75px;
     width: 45px;
     border-radius: 50% 50% 0 0;
@@ -791,7 +802,7 @@ body{
 }
 .meDiv:hover >  #meEar{
     margin-top: -25px;    
-    box-shadow: 0 0 5px var(--colorMain), 0 0 10px #b4f7ff inset;
+    box-shadow: 0 0 5px var(--colorMain), 0 0 10px var(--colorAccentMedium) inset;
 }
 /* #meEar.left{
     border-radius: 50% 50% 0 0;
@@ -884,11 +895,13 @@ body{
 }
 #meNose{
     transform: scaleY(25%) scaleX(90%);
-    background-color: rgb(255, 175, 201); 
+    background-color: var(--colorLight); 
+    /* background-color: rgb(255, 175, 201);  */
     border-radius: 0 0 50% 50%;
     border: 3px solid;
-    border-color:transparent  transparent rgb(255, 175, 201) transparent;
-    box-shadow: 70px -10px 40px rgb(255, 97, 144), -70px -10px 40px rgb(255, 97, 144); 
+    border-color:transparent  transparent var(--colorLight) transparent;
+    box-shadow: 70px -10px 40px var(--colorMain), -70px -10px 40px var(--colorMain); 
+    /* box-shadow: 70px -10px 40px rgb(255, 97, 144), -70px -10px 40px rgb(255, 97, 144);  */
     height: 20px;
     width: 20px;
     margin-top: -6px;
@@ -903,41 +916,15 @@ body{
     border-radius: 50%;
     border: 3px solid var(--colorMain);
     /* box-shadow: 0 0 20px var(--colorMain), 0 0 5px #fffbfd inset; */
-    box-shadow: 0 0 20px var(--colorMain), 0 0 15px #b4f7ff inset;
+    box-shadow: 0 0 20px var(--colorMain), 0 0 15px var(--colorAccentMedium) inset;
     height: 170px;
     width: 170px;
     /* margin-top: 61px; */
     margin-top: 55px;
     /* margin-left: 12px; */
 }
-/* #mePaw{
-    background-color: var(--pinkWhite);
-    border: 3px solid var(--colorMain);
-    box-shadow: 0 0 20px var(--colorMain), 0 0 10px #b4f7ff inset;
-    height: 25px;
-    width: 45px;
-    border-radius: 20px 20px 50% 50%;
-    margin-top: -31px;
-}
-#mePaw.left{
-    margin-top: 210px;
-    margin-left: 5px;
-}
-#mePaw.right{
-    margin-left: 122px;
-}
-.meBody{
-    background-color: var(--pinkWhite); 
-    border-radius: 50% 50% 20px 20px ;
-    border: 3px solid var(--colorMain);
-    box-shadow: 0 0 20px var(--colorMain), 0 0 15px #b4f7ff inset;
-    height: 180px;
-    width: 240px;
-    margin-bottom: -230px;
-    margin-left: -35px ;
-} */
 .meDiv:hover >  #gridPage.meBtn{
-    box-shadow: 0 0 5px var(--colorMain), 0 0 15px #b4f7ff inset;
+    box-shadow: 0 0 5px var(--colorMain), 0 0 15px var(--colorAccentMedium) inset;
     margin-top: 67px;
     transition: 0.2s ease-in-out;
 }
@@ -957,7 +944,7 @@ body{
 #meFrame{
     background-color: var(--colorWhite);
     border: 7px double var(--colorMain);
-    box-shadow: 0 0 30px #b4f7ff, 0 0 15px #ffb4d0 inset;
+    box-shadow: 0 0 30px var(--colorAccentMedium), 0 0 15px var(--colorLight) inset;
     border-radius: 10px;
     height: 210px;
     width: 190px;
@@ -973,7 +960,7 @@ a{
         color: var(--colorWhite);
 }
 a:visited{
-    color: #96053f;
+    color: var(--colorDark);
 }
 
 /* /////////////////////////////// */
@@ -1063,15 +1050,37 @@ a:visited{
     
 }
 @media (prefers-color-scheme: light) {
-    body{
+    :root{
+        --colorWhite: #fffafc;
+        --colorWhitish: #ffebf4;
+        --colorLightest: rgb(255, 215, 232);
+        --colorLighter: #ffc4da;
+        --colorLight: #ffb9d9;
+        --colorMediumLight: rgb(227, 168, 187);
+        --colorMedium: rgb(255, 158, 198);
+        --colorMediumDarkish: rgb(255, 142, 180);
+        --colorMain: palevioletred;
+        --colorMediumDark: rgb(208, 81, 119);
+        --colorMediumDarker: rgb(163, 68, 100);
+        --colorDark: rgb(156, 52, 87);
+        --colorDarker: #530c24;
+        --colorBlackish: rgb(47, 30, 40);
+        --colorBlack: #0d0004;
+
+        --colorAccentWhite: aliceblue;
+        --colorAccentLighter: rgb(213, 252, 255);
+        --colorAccentLight: rgb(203, 246, 255);
+        --colorAccentMedium: #a9fbff;
+        --colorAccent: #7cffe0;
+    }
+    /* body{
         color:var(--colorWhite);
         background-color: var(--colorLight);
-        /* background-color: #2a1431; */
     }
     a{
         color: var(--colorWhite);
     }
     a:visited{
         color: #96053f;
-    }
+    }*/
 }
