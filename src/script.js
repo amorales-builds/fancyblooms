@@ -24,28 +24,28 @@ function selectRight(){
     y = 1;
     switch(x) {
         case 0:
-            document.getElementById("selectArt").style.borderColor = "var(--colorAccent)";
+            document.getElementById("selectArt").style.borderColor = "var(--colorSelection)";
             document.getElementById("artDiv").style.marginTop = "-10px"; 
             document.getElementById("selectMe").style.borderColor = "transparent";
             document.getElementById("meFrame").style.marginTop = "";   
             x = x + 1;
             break;
         case 1:
-            document.getElementById("selectStories").style.borderColor = "var(--colorAccent)";
+            document.getElementById("selectStories").style.borderColor = "var(--colorSelection)";
             document.getElementById("storiesDiv").style.marginTop = "-20px";    
             document.getElementById("selectArt").style.borderColor = "transparent";
             document.getElementById("artDiv").style.marginTop = ""; 
             x = x + 1;
             break;
         case 2:
-            document.getElementById("selectProgramming").style.borderColor = "var(--colorAccent)";
+            document.getElementById("selectProgramming").style.borderColor = "var(--colorSelection)";
             document.getElementById("programmingDiv").style.marginTop = "-20px";  
             document.getElementById("selectStories").style.borderColor = "transparent";
             document.getElementById("storiesDiv").style.marginTop = "";   
             x = x + 1;
             break;
         case 3:
-            document.getElementById("selectMe").style.borderColor = "var(--colorAccent)";
+            document.getElementById("selectMe").style.borderColor = "var(--colorSelection)";
             document.getElementById("meFrame").style.marginTop = "-20px"; 
             document.getElementById("selectProgramming").style.borderColor = "transparent";
             document.getElementById("programmingDiv").style.marginTop = "";    
@@ -63,7 +63,7 @@ function selectLeft(){
             document.getElementById("selectArt").style.borderColor = "transparent";
             document.getElementById("artDiv").style.marginTop = ""; 
             // document.getElementById("selectArt").style.backgroundColor = "transparent";
-            document.getElementById("selectMe").style.borderColor = "var(--colorAccent)";
+            document.getElementById("selectMe").style.borderColor = "var(--colorSelection)";
             // document.getElementById("selectMe").style.backgroundColor = "#e7fff9";
             document.getElementById("meFrame").style.marginTop = "-20px";            
             x = 4;
@@ -72,7 +72,7 @@ function selectLeft(){
             document.getElementById("selectArt").style.borderColor = "transparent";
             document.getElementById("artDiv").style.marginTop = ""; 
             // document.getElementById("selectArt").style.backgroundColor = "transparent";
-            document.getElementById("selectMe").style.borderColor = "var(--colorAccent)";
+            document.getElementById("selectMe").style.borderColor = "var(--colorSelection)";
             // document.getElementById("selectMe").style.backgroundColor = "#e7fff9";
             document.getElementById("meFrame").style.marginTop = "-20px";    
             x = 4;
@@ -81,7 +81,7 @@ function selectLeft(){
             document.getElementById("selectStories").style.borderColor = "transparent";
             document.getElementById("storiesDiv").style.marginTop = ""; 
             // document.getElementById("selectStories").style.backgroundColor = "transparent";
-            document.getElementById("selectArt").style.borderColor = "var(--colorAccent)";
+            document.getElementById("selectArt").style.borderColor = "var(--colorSelection)";
             // document.getElementById("selectArt").style.backgroundColor = "#e7fff9";
             document.getElementById("artDiv").style.marginTop = "-10px";    
             x = x-1;
@@ -90,7 +90,7 @@ function selectLeft(){
             document.getElementById("selectProgramming").style.borderColor = "transparent";
             document.getElementById("programmingDiv").style.marginTop = ""; 
             // document.getElementById("selectProgramming").style.backgroundColor = "transparent";
-            document.getElementById("selectStories").style.borderColor = "var(--colorAccent)";
+            document.getElementById("selectStories").style.borderColor = "var(--colorSelection)";
             // document.getElementById("selectStories").style.backgroundColor = "#e7fff9";
             document.getElementById("storiesDiv").style.marginTop = "-20px";    
             x = x-1;
@@ -99,7 +99,7 @@ function selectLeft(){
             document.getElementById("selectMe").style.borderColor = "transparent";
             document.getElementById("meFrame").style.marginTop = ""; 
             // document.getElementById("selectMe").style.backgroundColor = "transparent";
-            document.getElementById("selectProgramming").style.borderColor = "var(--colorAccent)";
+            document.getElementById("selectProgramming").style.borderColor = "var(--colorSelection)";
             // document.getElementById("selectProgramming").style.backgroundColor = "#e7fff9";
             document.getElementById("programmingDiv").style.marginTop = "-20px";    
             x = x-1;

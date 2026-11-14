@@ -24,6 +24,14 @@
     --colorAccentLight: rgb(203, 246, 255);
     --colorAccentMedium: #a9fbff;
     --colorAccent: #7cffe0;
+
+    --colorMainGame: palevioletred;
+    --colorGameGlow: rgb(255, 215, 232);
+    --colorGameBG: #fffafc;
+    
+    --colorWhiteBG: #fffafc;
+    --colorLighterBG: #ffc4da;
+    --colorLightBG: #ffb9d9;
 }
 
 @font-face{
@@ -62,8 +70,8 @@ body{
     font-family: Sniglet;
     color:var(--colorWhite);
     /* background-color: var(--colorLight); */
-    background-color: val(--colorWhite);
-    background-image:  radial-gradient(circle 23px at 20px 8px, var(--colorLight) 23px, transparent 24px), radial-gradient(circle 23px at 20px 32px, var(--colorLighter) 23px, transparent 24px), linear-gradient(var(--colorLighter) 50%, var(--colorLight) 50%);
+    background-color: val(--colorWhiteBG);
+    background-image:  radial-gradient(circle 23px at 20px 8px, var(--colorLightBG) 23px, transparent 24px), radial-gradient(circle 23px at 20px 32px, var(--colorLighterBG) 23px, transparent 24px), linear-gradient(var(--colorLighterBG) 50%, var(--colorLightBG) 50%);
     background-size: 40px 40px;
     background-position: 0 0, 20px 0, 0 0;
 }
@@ -127,12 +135,12 @@ body{
 .gameDiv{
     /* height: 50vh;*/
     margin-top: 6vh; 
-    border: 1vw solid var(--colorMain);
-    box-shadow:0 0 0 .1vw var(--colorLight) , 0 0 0 .35vw var(--colorMediumDark), 0 0 0 .6vw var(--colorLightest), 0 0 20px 1vw var(--colorLighter), 0 0 0 .5vw var(--colorMedium) inset, 0 0 10px .8vw  var(--colorAccentLight) inset, 0 0 50px 1.5vw var(--colorLightest) inset;
+    border: 1vw solid var(--colorMainGame);
+    box-shadow:0 0 0 .1vw var(--colorLight) , 0 0 0 .35vw var(--colorMediumDark), 0 0 0 .6vw var(--colorLightest), 0 0 20px 1vw var(--colorLighter), 0 0 0 .5vw var(--colorMedium) inset, 0 0 10px .8vw  var(--colorAccentLight) inset, 0 0 50px 1.5vw var(--colorGameGlow) inset;
+    background-color: var(--colorGameBG); 
     border-radius: 50px;
     border-inline-width: 10vw;
     margin-inline: 4vw;
-    background-color: var(--colorWhite); 
     @media screen and (max-width: 1398px) {     
     margin-top: 5vh;    
         border-inline-width: 15vw;
@@ -539,7 +547,7 @@ body{
     /* border: 3px solid rgb(255, 232, 239); */
     border-radius: 12px;
     /* border-color: var(--colorMain) rgb(240, 153, 182)  rgb(240, 153, 182) var(--colorMain) ; */
-    box-shadow: -6px 4px 20px var(--colorAccentLighter), 0 0 0 var(--colorMain) inset;
+    box-shadow: -6px 4px 20px var(--colorAccentMedium), 0 0 0 var(--colorMain) inset;
     padding: 20px;
     height: 190px;
     width: 240px;
@@ -560,7 +568,7 @@ body{
     /* padding-left: 10px; */
     width: 250px;
     height: 210px;
-    background-color: var(--colorAccentLighter);
+    background-color: var(--colorAccentMedium);
     /* background-color: rgb(196, 86, 128); */
     border-radius: 12px;
     /* margin-left: -15px; */
@@ -999,19 +1007,87 @@ a:visited{
 @media (prefers-color-scheme: dark) {
 
     :root{
-        --colorAccent: #82ba87;
+        --colorWhite: #fdfffe;
+        --colorWhitish: #deffe9;
+        --colorLightest: #c8f4d7;
+        --colorLighter: #213924;
+        --colorLight: #b55a77;
+        --colorMediumLight: rgb(49, 82, 66);
+        --colorMedium: rgb(49, 82, 66);
+        --colorMediumDarkish: rgb(223, 125, 156);
+        --colorMain: #943d59;
+        --colorMediumDark: #1b321e;
+        --colorMediumDarker: #2d3a29;
+        --colorDark: #1b321e;
+        --colorDarker: #1b321e;
+        --colorBlackish: #1b321e;
+        --colorBlack: #0d0004;
+
+        --colorAccentWhite: #fff6f9;
+        --colorAccentLighter: #ffeaf1;
+        --colorAccentLight: #ae5f79;
+        --colorAccentMedium: #c57c94;
+        --colorAccent: #ffa7c4;
+
+        --colorSelection: #749175;
+
+        --colorMainGame: #88c99e;
+        --colorGameGlow: #1b321e;
+        --colorGameBG: rgb(49, 82, 66);
+        
+        --colorWhiteBG: #fdfffe;
+        --colorLighterBG: #213924;
+        --colorLightBG: #1b321e;
     }
 
+    * {
+        cursor: url('https://cdn.cursors-4u.net/css-previews/cute-bunny-in-the-rain-cfe3f4af-css.webp') 0 0, auto !important; /* Cute Bunny In The Rain - https://www.cursors-4u.com/cursor/nat317 */
+    }
+
+    /*.gameDiv{
+        border: 1vw solid var(--colorMain);
+        box-shadow:0 0 0 .1vw var(--colorLight) , 0 0 0 .35vw var(--colorMediumDark), 0 0 0 .6vw var(--colorLightest), 0 0 20px 1vw var(--colorLighter), 0 0 0 .5vw var(--colorMedium) inset, 0 0 10px .8vw  var(--colorAccentLight) inset, 0 0 50px 1.5vw var(--colorLightest) inset; 
+        background-color: rgb(49, 82, 66);
+    }*/
+/* 
     body{
-        /* background-color: rgb(54, 7, 73); */
         color: var(--colorWhite);
-        /* background-color: #ce5887 ; */
-        /* background-color: #2a1431; */
         background-color:#000d0d;
         background-image:  radial-gradient(circle 23px at 20px 8px, #1b321e 23px, transparent 24px), radial-gradient(circle 23px at 20px 32px, #213924 23px, transparent 24px), linear-gradient(#213924 50%, #1b321e 50%);
         background-size: 40px 40px;
         background-position: 0 0, 20px 0, 0 0;
     }    
+    a{
+        color: var(--colorWhite);
+    }
+    a:visited{
+        color: #ffc7dd;
+    }
+    .gameDiv{
+        border-color: rgb(230, 89, 136);
+        background-color: rgb(49, 82, 66);
+        box-shadow: 0 0 10px #1b321e, 0 0 30px #88c99e, 0 0 50px #2d3a29 inset;
+    }
+    .meFrame{
+        background-color: rgb(216, 98, 138);
+    }
+    .artDiv{    
+        background-color: transparent;
+    }
+    .gameDiv{
+        border-color: #99b0a4;
+    }  */
+
+    /* body{ */
+        /* background-color: rgb(54, 7, 73); */
+        /* background-color: #ce5887 ; */
+        /* background-color: #2a1431; */
+        /* color: var(--colorWhite);
+        background-color:#000d0d;
+        background-image:  radial-gradient(circle 23px at 20px 8px, #1b321e 23px, transparent 24px), radial-gradient(circle 23px at 20px 32px, #213924 23px, transparent 24px), linear-gradient(#213924 50%, #1b321e 50%);
+        background-size: 40px 40px;
+        background-position: 0 0, 20px 0, 0 0;
+    }     */
     /* #selectArt:hover{    
         border-color: #82ba87;
     }
@@ -1023,7 +1099,7 @@ a:visited{
     #selectMe:hover{
         border-color: #82ba87;    
     } */
-    a{
+    /* a{
         color: var(--colorWhite);
     }
     a:visited{
@@ -1032,12 +1108,12 @@ a:visited{
     .gameDiv{
         border-color: rgb(230, 89, 136);
         background-color: rgb(49, 82, 66);
-        box-shadow: 0 0 10px #1b321e, 0 0 30px #88c99e, 0 0 50px #2d3a29 inset;
+        box-shadow: 0 0 10px #1b321e, 0 0 30px #88c99e, 0 0 50px #2d3a29 inset; */
         /* border-color: var(--colorMain); */
         /* border-color: rgb(22, 1, 42); */
         /* background-color: rgb(7, 45, 74); */
         /* box-shadow: 0 0 10px #d52c64, 0 0 50px #00093c inset; */
-    }
+    /* }
     .meFrame{
         background-color: rgb(216, 98, 138);
     }
@@ -1046,7 +1122,7 @@ a:visited{
     }
     .gameDiv{
         border-color: #99b0a4;
-    }
+    } */
     
 }
 @media (prefers-color-scheme: light) {
@@ -1071,7 +1147,21 @@ a:visited{
         --colorAccentLighter: rgb(213, 252, 255);
         --colorAccentLight: rgb(203, 246, 255);
         --colorAccentMedium: #a9fbff;
-        --colorAccent: #7cffe0;
+        --colorAccent: #7cffe0;        
+
+        --colorSelection: #7cffe0;
+        
+        --colorMainGame: palevioletred;
+        --colorGameGlow: rgb(255, 215, 232);
+        --colorGameBG: #fffafc;
+        
+        --colorWhiteBG: #fffafc;
+        --colorLighterBG: #ffc4da;
+        --colorLightBG: #ffb9d9;
+    }
+
+    * {
+        cursor: url('https://cdn.cursors-4u.net/previews/white-cat-s-paw-ef5d1f14-32.webp') 32 32, auto !important;  /* White Cat's Paw - https://www.cursors-4u.com/cursor/nat260 */
     }
     /* body{
         color:var(--colorWhite);
