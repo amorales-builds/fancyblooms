@@ -15,6 +15,10 @@
     display:none;
 }
 
+.settingBtn{
+    display:none;
+}
+
 .gameDiv{
     border-radius: 50px;
     /* margin-inline: 25vw; */

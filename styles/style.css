@@ -150,10 +150,23 @@ body{
         border-bottom-width: 2vh;
     } 
     @media screen and (max-width: 820px) {   
-        margin-top: 1vh;      
-        border-inline-width: 1vw;
+        margin-top: 2vh;      
+        /* border-inline-width: 1vw;
         border-top-width: 2vh;
-        border-bottom-width: 2vh;
+        border-bottom-width: 2vh; */
+        margin-inline: 1vw;
+        border-inline-width: 12vw;
+        border-top-width: 1vh;
+        border-bottom-width: 1vh;
+        border-radius: 10%;
+        
+        @media screen and (max-height: 550px){
+            margin-top: 0;   
+            margin-inline: 1vw;   
+            border-inline-width: 15vw;
+            /* scale: 65%;             */
+            border-radius: 50px;
+        }    
     } 
 }
 
@@ -184,13 +197,20 @@ body{
         row-gap: 4vh;
         scale: 85%;
     }     
-    /* @media screen and (max-width: 820px) {
+    @media screen and (max-width: 820px) {
         grid-template-columns: auto auto;
-        height: 70vh;
-        column-gap: 15vw;
-        row-gap: 15vh;
-        scale: 85%;
-    }  */
+        height: 65vh;
+        column-gap: 8vw;
+        row-gap: 5vh;
+        scale: 75%;   
+
+        @media screen and (max-height: 550px){
+            height: 70vh;
+            column-gap: 10vw;
+            row-gap: 4vh;
+            scale: 50%;            
+        }        
+    } 
 }
 #gridPage{
     color: var(--colorDarker);
@@ -224,14 +244,26 @@ body{
     }
     @media screen and (max-width: 1398px) {
         font-size: 10px;
-        width: 2.5%;
-    }
+        width: 3.5%;
+        margin-left: 83%;
+    }    
     @media screen and (max-width: 820px) {
-        display:none;
+        margin-top: 53vh;
+        font-size: 10px;
+        width: 4%;
+        margin-left: 87.5%;
+        @media screen and (max-height: 550px){
+            font-size: 16px;
+            width: 4.5%;  
+            margin-left: 84%;
+        }  
     }
 }
 #darkBtn{    
     margin-top: 57.5vh;
+    @media screen and (max-height: 550px){
+        margin-top: 61vh;
+    }  
 }
 .settingBtn:hover{
     box-shadow: 0 0 5px var(--colorAccentLighter), 0 -2px 2px var(--colorMedium) inset;
@@ -267,7 +299,16 @@ body{
         width: 3.2%;
     }
     @media screen and (max-width: 820px) {
-        display:none;
+        font-size: 12px;
+        width: 4%;
+        scale: 90%;        
+        margin-left: 1.5%;  
+        @media screen and (max-height: 550px){
+            font-size: 16px;
+            width: 5%;
+            scale: 100%;        
+            margin-left: 1.5%;  
+        }  
     }
 }
 #rightBtn{
@@ -275,6 +316,12 @@ body{
     margin-left: 10.1%;
     @media screen and (max-width: 1398px) {
         margin-left: 13%;
+    }    
+    @media screen and (max-width: 820px) {   
+        margin-left: 8%;       
+        @media screen and (max-height: 550px){
+            margin-left: 10.2%;
+        } 
     }
 }
 #upBtn{    
@@ -283,12 +330,26 @@ body{
     @media screen and (max-width: 1398px) {
         margin-left: 9.3%;
     }
+    @media screen and (max-width: 820px) {   
+        margin-left: 4.8%;     
+        @media screen and (max-height: 550px){
+            margin-top: 20vh;
+            margin-left: 5.8%;
+        }     
+    }
 }
 #downBtn{    
     margin-top: 32.3vh;
     margin-left: 7.85%;
     @media screen and (max-width: 1398px) {
         margin-left: 9.3%;
+    }
+    @media screen and (max-width: 820px) {   
+        margin-left: 4.8%;        
+        @media screen and (max-height: 550px){
+            margin-top: 36vh;
+            margin-left: 5.8%;
+        }               
     }
 }
 #uBtn{    
@@ -297,11 +358,24 @@ body{
     @media screen and (max-width: 1398px) {
         margin-left: 85.5%;
     }
+    @media screen and (max-width: 820px) {  
+        margin-left: 89%;        
+        @media screen and (max-height: 550px){
+            margin-top: 20vh;
+            margin-left: 87.1%;
+        }     
+    }
 }
 #xBtn{    
     margin-left: 86.8%;
     @media screen and (max-width: 1398px) {
         margin-left: 82%;
+    }
+    @media screen and (max-width: 820px) {   
+        margin-left: 85.8%;    
+        @media screen and (max-height: 550px){
+            margin-left: 82.5%;
+        }    
     }
 }
 #eBtn{    
@@ -309,12 +383,25 @@ body{
     @media screen and (max-width: 1398px) {
         margin-left: 89%;
     }
-}
+    @media screen and (max-width: 820px) {   
+        margin-left: 92%;   
+        @media screen and (max-height: 550px){
+            margin-left: 91.5%;
+        }        
+    }
+}   
 #bBtn{    
     margin-top: 32.3vh;
     margin-left: 89%;
     @media screen and (max-width: 1398px) {
         margin-left: 85.5%;
+    }
+    @media screen and (max-width: 820px) {   
+        margin-left: 89%;       
+        @media screen and (max-height: 550px){
+            margin-top: 36vh;
+            margin-left: 87.1%;
+        }  
     }
 }
 .navBtn:hover{
@@ -331,18 +418,52 @@ body{
     @media screen and (max-width: 1398px) {
         margin-left: 13%;
     }
+    @media screen and (max-width: 820px) {   
+        margin-left: 8%;       
+        @media screen and (max-height: 550px){
+            margin-left: 10.2%;
+        } 
+    }
 }
 #upBtn:hover{    
     margin-top: 23.6vh;
+    @media screen and (max-width: 820px) {   
+        margin-left: 4.8%;     
+        @media screen and (max-height: 550px){
+            margin-top: 20vh;
+            margin-left: 5.8%;
+        }     
+    }
 }
 #downBtn:hover{    
     margin-top: 32.1vh;
+    @media screen and (max-width: 820px) {   
+        margin-left: 4.8%;        
+        @media screen and (max-height: 550px){
+            margin-top: 36vh;
+            margin-left: 5.8%;
+        }               
+    }
 }
 #uBtn:hover{    
     margin-top: 23.6vh;
+    @media screen and (max-width: 820px) {  
+        margin-left: 89%;        
+        @media screen and (max-height: 550px){
+            margin-top: 20vh;
+            margin-left: 87.1%;
+        }     
+    }
 }
 #bBtn:hover{    
     margin-top: 32.1vh;
+    @media screen and (max-width: 820px) {   
+        margin-left: 89%;       
+        @media screen and (max-height: 550px){
+            margin-top: 36vh;
+            margin-left: 87.1%;
+        }  
+    }
 }
 .navBtn:active{
     background-color: var(--colorWhitish); 
@@ -361,20 +482,54 @@ body{
     @media screen and (max-width: 1398px) {
         margin-left: 13%;
     }
+    @media screen and (max-width: 820px) {   
+        margin-left: 8%;       
+        @media screen and (max-height: 550px){
+            margin-left: 10.2%;
+        } 
+    }
 }
 #upBtn:active{    
     margin-top: 24vh;
+    @media screen and (max-width: 820px) {   
+        margin-left: 4.8%;     
+        @media screen and (max-height: 550px){
+            margin-top: 20.5vh;
+            margin-left: 5.8%;
+        }     
+    }
 }
 #downBtn:active{    
     margin-top: 32.5vh;
+    @media screen and (max-width: 820px) {   
+        margin-left: 4.8%;        
+        @media screen and (max-height: 550px){
+            margin-top: 36.5vh;
+            margin-left: 5.8%;
+        }               
+    }
 }
 #uBtn:active{    
     font-size: 20px;
     margin-top: 24vh;
+    @media screen and (max-width: 820px) {  
+        margin-left: 89%;        
+        @media screen and (max-height: 550px){
+            margin-top: 20.5vh;
+            margin-left: 87.1%;
+        }     
+    }
 }
 #bBtn:active{    
     font-size: 20px;
     margin-top: 32.5vh;
+    @media screen and (max-width: 820px) {   
+        margin-left: 89%;       
+        @media screen and (max-height: 550px){
+            margin-top: 36.5vh;
+            margin-left: 87.1%;
+        }  
+    }
 }
 
 /* /////////////////////////////// */
