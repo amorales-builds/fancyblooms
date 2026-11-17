@@ -10,6 +10,6 @@ For fun! <br>
     - [x] Art Section
     - [x] Programming Section
     - [x] Stories/Writing Section
-- [x] Dark/Light Mode
+- [ ] Dark/Light Mode
     - [ ] \(Optional) UI Themes <!--  cuter/cooler themes with names -->
 - [ ] Guestbook <!-- (https://atabook.org/) -->
