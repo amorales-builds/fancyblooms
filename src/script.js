@@ -149,6 +149,13 @@ function selectEnter(){
 //     }
 // }
 
+// document.body.innerHTML.addEventListener('change', async () => {   
+//     if (screen.width <= 600){
+//     document.getElementById("lightBtn").style.display="none";  
+//     document.getElementById("darkBtn").style.display="none";     
+//     }
+// })
+
 function lightTheme(){
     document.body.dataset.theme = ("light");    
     document.getElementById("lightBtn").style.display="none";

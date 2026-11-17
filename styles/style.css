@@ -69,8 +69,11 @@
 }
 
 #intro{
-    @media screen and (max-width: 820px) and (max-height: 550px) {
-        display:none;             
+    @media screen and (max-width: 820px){
+        display:none;          
+        @media screen and (max-height: 550px)    {
+            display:none;                      
+        }
     } 
 }
 
@@ -1206,6 +1209,20 @@ a:visited{
 * [data-theme="dark"] {
     cursor: url('https://cdn.cursors-4u.net/css-previews/cute-bunny-in-the-rain-cfe3f4af-css.webp') 0 0, auto !important; /* Cute Bunny In The Rain - https://www.cursors-4u.com/cursor/nat317 */
 }
+/* #lightBtn [data-theme="dark"] {
+    display: inline-block;
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+}  
+#darkBtn [data-theme="dark"] {
+    display: none;
+} */
+.settingBtn [data-theme="dark"]{
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+}
 
 
 :root [data-theme="light"]{
@@ -1244,13 +1261,22 @@ a:visited{
 * [data-theme="light"] {
     cursor: url('https://cdn.cursors-4u.net/previews/white-cat-s-paw-ef5d1f14-32.webp') 32 32, auto !important;  /* White Cat's Paw - https://www.cursors-4u.com/cursor/nat260 */
 }
+/* #lightBtn [data-theme="light"] {
+    display: none;
+}  
+#darkBtn [data-theme="light"] {
+    display:inline-block;
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+}   */
+
 
 @media (prefers-color-scheme: dark) {
 
-    :root{
+    /* :root{
         --colorWhite: #fdfffe;
         --colorWhitish: #ffdee7;
-        /* --colorWhitish: #deffe9; */
         --colorLightest: #94dbae;
         --colorLighter: #213924;
         --colorLight: #f9bccf;
@@ -1258,14 +1284,12 @@ a:visited{
         --colorMedium: rgb(154, 255, 176);
         --colorMediumDarkish: rgb(239, 149, 178);
         --colorMain: #a04c67;
-        /* --colorMain: #ff709d; */
         --colorMediumDark: #733250;
         --colorMediumDarker: #2d3a29;
         --colorDark: #1b321e;
         --colorDarker: #321b22;
         --colorBlackish: #1b321e;
         --colorBlack: #040c00;
-        /* --colorBlack: #0d0004; */
 
         --colorAccentWhite: #fff6f9;
         --colorAccentLighter: #ffeaf1;
@@ -1285,14 +1309,20 @@ a:visited{
     }
 
     * {
-        cursor: url('https://cdn.cursors-4u.net/css-previews/cute-bunny-in-the-rain-cfe3f4af-css.webp') 0 0, auto !important; /* Cute Bunny In The Rain - https://www.cursors-4u.com/cursor/nat317 */
-    }
+        cursor: url('https://cdn.cursors-4u.net/css-previews/cute-bunny-in-the-rain-cfe3f4af-css.webp') 0 0, auto !important; /* Cute Bunny In The Rain - https://www.cursors-4u.com/cursor/nat317 
+    } */
 
     #lightBtn{
         display:inline-block;
     }
     #darkBtn{
         display:none;
+    }
+    
+    @media screen and (max-width: 600px) {
+        #lightBtn{
+            display:none;
+        }        
     }
     /*.gameDiv{
         border: 1vw solid var(--colorMain);
@@ -1419,6 +1449,12 @@ a:visited{
     }
     #darkBtn{
         display:inline-block;
+    }
+
+    @media screen and (max-width: 600px) {
+        #darkBtn{
+            display:none;
+        }        
     }
 
     /* body{
