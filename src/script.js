@@ -138,6 +138,33 @@ function selectEnter(){
     }
 }
 
+// function lightTheme(){
+//     if(document.getElementById("lightBtn").value == "&#9728"){
+//         document.body.dataset.theme = ("dark");
+//         document.getElementById("lightBtn").value = "&#9681";
+//     }
+//     else{
+//         document.body.dataset.theme = ("light");
+//         document.getElementById("lightBtn").value = "&#9728";
+//     }
+// }
+
+function lightTheme(){
+    document.body.dataset.theme = ("light");    
+    document.getElementById("lightBtn").style.display="none";
+    document.getElementById("darkBtn").style.display="inline-block";
+}
+function darkTheme(){
+    document.body.dataset.theme = ("dark");
+    document.getElementById("darkBtn").style.display="none";
+    document.getElementById("lightBtn").style.display="inline-block";
+}
+
+// window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', async () => {
+//     const isDarkMode = await window.darkMode.toggle()
+//     document.getElementById('themeBtn').innerHTML = isDarkMode ? '&#9681' : '&#9728'
+// })
+
 document.getElementById("rightBtn").addEventListener('click', async () => {   
     selectRight();
 })
@@ -154,3 +181,5 @@ document.getElementById("downBtn").addEventListener('click', async () => {
 // document.getElementById("lightBtn").addEventListener('click', async () => {   
     
 // })
+
+

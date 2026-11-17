@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <h1>Welcome to my (under construction) Website!</h1>
+    <h1 id="intro">Welcome to my (under construction) Website!</h1>
     <br>
     <div id="wip">
     <hr>    
@@ -28,8 +28,9 @@
         <button id="xBtn" class="navBtn" onclick="selectEnter()">x</button>
         <button id="eBtn" class="navBtn" onclick="selectEnter()">e</button>
         <button id="bBtn" class="navBtn" onclick="selectEnter()">b</button>
-        <button id="lightBtn" class="settingBtn"">&#9728</button>
-        <button id="darkBtn" class="settingBtn">&#9681</button>
+        <!-- <button id="lightBtn" class="settingBtn" onclick="lightTheme()">&#9728</button> -->
+        <button id="lightBtn" class="settingBtn" onclick="lightTheme()">&#9728</button>
+        <button id="darkBtn" class="settingBtn"  onclick="darkTheme()">&#9681</button>
       </div>
       <div class="gameDiv">
         <div id="mainGrid">
