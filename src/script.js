@@ -156,16 +156,16 @@ function selectEnter(){
 //     }
 // })
 
-function lightTheme(){
-    document.body.dataset.theme = ("light");    
-    document.getElementById("lightBtn").style.display="none";
-    document.getElementById("darkBtn").style.display="inline-block";
-}
-function darkTheme(){
-    document.body.dataset.theme = ("dark");
-    document.getElementById("darkBtn").style.display="none";
-    document.getElementById("lightBtn").style.display="inline-block";
-}
+// function lightTheme(){
+//     document.body.dataset.theme = ("light");    
+//     document.getElementById("lightBtn").style.display="none";
+//     document.getElementById("darkBtn").style.display="inline-block";
+// }
+// function darkTheme(){
+//     document.body.dataset.theme = ("dark");
+//     document.getElementById("darkBtn").style.display="none";
+//     document.getElementById("lightBtn").style.display="inline-block";
+// }
 
 // window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', async () => {
 //     const isDarkMode = await window.darkMode.toggle()

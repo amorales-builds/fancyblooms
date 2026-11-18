@@ -1,0 +1,45 @@
+@import "/styles/style.css";
+
+:root{
+    --colorLightBG: #e4d8c3;
+    --colorLighterBG: #e8ddcb;
+}
+
+
+body{
+    margin: 16px;
+    font-family: Metamorphous;
+    color: darkslategray;
+    /* background-color: var(--colorLight); */
+    /* background-color: val(--colorWhiteBG);
+    background-image:  radial-gradient(circle 23px at 20px 8px, var(--colorLightBG) 23px, transparent 24px), radial-gradient(circle 23px at 20px 32px, var(--colorLighterBG) 23px, transparent 24px), linear-gradient(var(--colorLighterBG) 50%, var(--colorLightBG) 50%);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 0, 0 0; */
+    background-color: #e8ddcb;
+    background-image:  repeating-linear-gradient(to right, #e8ddcb 0, #e8ddcb 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, #cdb380 1px, transparent 1px);
+    background-size: 100% 100%, 100% 25px;
+}
+
+.title{
+    color: rgb(95, 59, 49);
+}
+
+.storiesContent{
+    /* background-color: #e8ddcb;
+    background-image:  repeating-linear-gradient(to right, #e8ddcb 0, #e8ddcb 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, #cdb380 1px, transparent 1px);
+    background-size: 100% 100%, 100% 25px;
+    height: 100vh; */
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 50%;
+    column-gap: 10%;
+}
+
+#compartment{
+    background-color: white;
+    border: 0.5vw solid white;
+    height: 10vh;
+    width: 20vw;
+}
