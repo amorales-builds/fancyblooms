@@ -5,6 +5,10 @@
     --colorLighterBG: #e8ddcb;
 }
 
+* {
+    cursor: url('https://cdn.cursors-4u.net/previews/pink-feather-c4993148-64.webp') 19 21, auto !important; /* Pink Feather - https://www.cursors-4u.com/cursor/pink-feather */
+}
+
 
 body{
     margin: 16px;
