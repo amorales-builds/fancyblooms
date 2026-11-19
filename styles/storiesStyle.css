@@ -3,6 +3,7 @@
 :root{
     --colorLightBG: #e4d8c3;
     --colorLighterBG: #e8ddcb;
+    --colorMain:  rgb(156, 102, 102);
 }
 
 * {
@@ -11,7 +12,8 @@
 
 
 body{
-    margin: 16px;
+    /* margin: 16px; */
+    padding: 16px;
     font-family: Metamorphous;
     color: darkslategray;
     /* background-color: var(--colorLight); */
@@ -20,8 +22,11 @@ body{
     background-size: 40px 40px;
     background-position: 0 0, 20px 0, 0 0; */
     background-color: #e8ddcb;
-    background-image:  repeating-linear-gradient(to right, #e8ddcb 0, #e8ddcb 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, #cdb380 1px, transparent 1px);
+    /* background-image:  repeating-linear-gradient(to right, #e8ddcb 0, #e8ddcb 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, #cdb380 1px, transparent 1px);
     background-size: 100% 100%, 100% 25px;
+    border: 20px solid var(--colorMain);
+    border-image: linear-gradient(to right, var(--colorMain) 0%,  var(--colorMediumLight) 35%, var(--colorDark) 90%) 1; */
+    height: 90vh;
 }
 
 .title{
@@ -38,12 +43,17 @@ body{
     display: grid;
     grid-template-columns: auto auto auto;
     row-gap: 50%;
-    column-gap: 10%;
+    column-gap: 1%;
 }
 
 #compartment{
     background-color: white;
-    border: 0.5vw solid white;
-    height: 10vh;
+    border: 0.2vw solid var(--colorMain);
+    border-radius: 10px;
+    margin-top: 5vh;
+    height: 80vh;
     width: 20vw;
+}
+#compartment.community{
+    width: 51vw;
 }
