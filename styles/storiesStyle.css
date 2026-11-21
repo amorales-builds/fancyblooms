@@ -1,17 +1,31 @@
 @import "/styles/style.css";
 
 :root{
-    --colorLight: #e4d8c3;
-    --colorLighter: #e8ddcb;
-    --colorLightBG: rgb(135, 84, 84);
-    --colorLighterBG: rgb(128, 78, 78);
-    --colorMain:  rgb(156, 102, 102);
-    --colorMedium:  rgb(147, 84, 84);
-    --colorDark:  rgb(93, 49, 49);
+    --colorWhite: #ffffff;
+
+    --colorLight: #f3f4fc;
+    --colorLighter: #414148be;
+    --colorMediumLight: #a0a0c1;
+    --colorLightBG: #414148;
+    --colorLighterBG: #4e4e56;
+    --colorMain:  #1a1a22;
+    --colorMedium:  #935454;
+    --colorMediumDark: #1a1a22;
+    --colorDark:  #0c0c14;
+
+    --colorContent: #f2f2fbd9;
+    --colorContentText: #121018;
+    
+    /* --colorContent: #0c0c17;
+    --colorContentText: #ffffff; */
+
+    --colorAccent: #fa5353;
+    /* --colorAccentLight: #ffa4a4; */
 }
 
 * {
-    cursor: url('https://cdn.cursors-4u.net/previews/pink-feather-c4993148-64.webp') 19 21, auto !important; /* Pink Feather - https://www.cursors-4u.com/cursor/pink-feather */
+    /* cursor: url('https://cdn.cursors-4u.net/previews/pink-feather-c4993148-64.webp') 19 21, auto !important; Pink Feather - https://www.cursors-4u.com/cursor/pink-feather */
+    cursor: url('https://cdn.cursors-4u.net/previews/basic-pixel-cursor-arrow-d1a2493e-64.webp') 16 16, auto !important;
 }
 
 #tabBtn{
@@ -24,28 +38,32 @@
 body{
     /* margin: 16px; */
     padding: 16px;
-    font-family: Metamorphous;
-    color: var(--colorDark);
+    font-family: Audiowide;
+    color: var(--colorContentText);
     /* background-color: var(--colorLight); */
     /* background-color: val(--colorWhiteBG);
     background-image:  radial-gradient(circle 23px at 20px 8px, var(--colorLightBG) 23px, transparent 24px), radial-gradient(circle 23px at 20px 32px, var(--colorLighterBG) 23px, transparent 24px), linear-gradient(var(--colorLighterBG) 50%, var(--colorLightBG) 50%);
     background-size: 40px 40px;
     background-position: 0 0, 20px 0, 0 0; */
-    background-color: #e8ddcb;
-    /* background-image:  repeating-linear-gradient(to right, #e8ddcb 0, #e8ddcb 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, #cdb380 1px, transparent 1px);
+    background-color: var(--colorLighter);
+    /* background-image:  repeating-linear-gradient(to right, var(--colorLighter) 0, var(--colorLighter) 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, var(--colorMediumLight) 1px, transparent 1px);
     background-size: 100% 100%, 100% 25px;
     border: 20px solid var(--colorMain);
     border-image: linear-gradient(to right, var(--colorMain) 0%,  var(--colorMediumLight) 35%, var(--colorDark) 90%) 1; */
     height: 90vh;
+    background-color: var(--colorLightBG);
+    background-image: linear-gradient(45deg, var(--colorLighterBG) 25%, transparent 25%, transparent 75%, var(--colorLighterBG) 75%), linear-gradient(45deg, var(--colorLighterBG) 25%, transparent 25%, transparent 75%, var(--colorLighterBG) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
 }
 
 .title{
-    color: rgb(95, 59, 49);
+    color: var(--colorMain);
 }
 
 .storiesContent{
-    /* background-color: #e8ddcb;
-    background-image:  repeating-linear-gradient(to right, #e8ddcb 0, #e8ddcb 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, #cdb380 1px, transparent 1px);
+    /* background-color: var(--colorLighter);
+    background-image:  repeating-linear-gradient(to right, var(--colorLighter) 0, var(--colorLighter) 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, var(--colorMediumLight) 1px, transparent 1px);
     background-size: 100% 100%, 100% 25px;
     height: 100vh; */
     align-content: center;
@@ -70,14 +88,15 @@ h2{
     padding: 25px;
     padding-inline: 8px;
     padding-top: 0;
-    border: 0.3vw solid #703941;
+    border: 0.3vw solid var(--colorMediumDark);
     border-radius: 5px;
-    margin-top: 6.6vh;
-    height: 81.2vh;
+    /* margin-top: 6.6vh; 
+    height: 81.2vh;*/    
+    height: 76.2vh;
     width: 5vw;
-    background-color: #e8ddcb;
-    background-image:  repeating-linear-gradient(to right, #e8ddcb 0, #e8ddcb 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, #cdb380 1px, transparent 1px);
-    background-size: 100% 100%, 100% 25px;
+    background-color: var(--colorLighter);
+    /* background-image: repeating-linear-gradient(to right, var(--colorLighter) 0, var(--colorLighter) 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, var(--colorMediumLight) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 25px; */
 }
 #compartment.options{    
     padding-top: 10px;
@@ -86,31 +105,32 @@ h2{
 #optionContent{
     padding: 16px;
     padding-top: 10px;
-    /* border: 0.5vw solid #e8ddcb; */
-    border: 0.3vw solid #703941;
+    /* border: 0.5vw solid var(--colorLighter); */
+    border: 0.3vw solid var(--colorMediumDark);
     border-radius: 2px;
-    margin-top: 6.6vh;
-    height: 82vh;
+    /* margin-top: 6.6vh; */
+    height: 77vh;
     width: 80vw;
-    background-color: #e8ddcb;
-    background-image:  repeating-linear-gradient(to right, #e8ddcb 0, #e8ddcb 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, #cdb380 1px, transparent 1px);
-    background-size: 100% 100%, 100% 25px;
+    background-color: var(--colorLighter);
+    /* background-image:  repeating-linear-gradient(to right, var(--colorLighter) 0, var(--colorLighter) 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, var(--colorMediumLight) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 25px; */
 }
 
 #optionContent.community{
     width: 80vw;
 }
 .collaborativeWorks{    
-    border: 0.2vw solid #b17066;
+    border: 0.2vw solid var(--colorMain);
+    background-color: var(--colorContent);
+    scrollbar-color: var(--colorMain) transparent;
     border-radius: 2px;
-    background-color: #fff8edbe;
     padding: 20px;
     padding-inline: 5vw;
     padding-top: 0;
-    height: 72vh;
+    height: 66vh;
     overflow-y: scroll;
     scrollbar-width: thin;
-    scrollbar-color: #b17066 transparent;
+    /* margin-top: -10px; */
 }
 .colabInfo{
     text-align: center;
@@ -119,7 +139,7 @@ h2{
 }
 .navButtonsColab{
     text-align: center;
-    margin-top: 12px;
+    margin-top: 18px;
 }
 /* .colabOptions{
     text-align: center;
@@ -137,10 +157,46 @@ h2{
     width: 100%;
 } */
 
+#contentTopic{
+    font-size: 80px;
+    color: var(--colorWhite);
+    margin-top: 4vh; 
+    margin-bottom: 1vh; 
+    text-align: start;
+    background-color: var(--colorDark);
+    padding-inline: 8%;
+    height: 11.5%;
+    /* transition: 0.4s ease-in-out; */
+}
+#contentTitle{
+    /* font-size: 40px;
+    margin-top: -5px;
+    margin-bottom: 5px; 
+    text-align: center;*/
+    margin-bottom: 10px;
+    /* letter-spacing: 20px; */
+    color: var(--colorAccent);
+    text-shadow: 0 1px 2px var(--colorDark),  0 -1px 2px var(--colorDark),  1px 0 2px var(--colorDark), -1px 0 2px var(--colorDark), 0 2px 5px var(--colorMain),  0 -2px 5px var(--colorMain),  2px 0 5px var(--colorMain), -2px 0 5px var(--colorMain);
+    
+}
 #contentPdf{
     /* height: 50%;
     width: 100%;
-    border: 2px solid #703941; */
+    border: 2px solid var(--colorMediumDark); */
     margin-top: 5%;
     font-family: SyneMono;
+    font-weight: 600;
+}
+
+button{
+    font-family: monospace;
+    background-color: var(--colorContent);
+    color: var(--colorContentText);
+    text-shadow: 0 1px 2px var(--colorLight),  0 -1px 2px var(--colorContentText),  1px 0 2px var(--colorLight), -1px 0 2px var(--colorLight);
+    margin-bottom: 3px;
+    border: 2px solid var(--colorMain);
+}
+button:hover{
+    text-shadow: 0 -1px 2px var(--colorLight), 0 1px 2px var(--colorContentText), 1px 0 2px var(--colorLight), -1px 0 2px var(--colorLight);
+    background-color: var(--colorAccent);
 }

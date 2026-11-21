@@ -85,6 +85,7 @@
     top: 0;
     left: 0;
     right: 0;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     /* background-image: radial-gradient(circle 23px at 20px 8px, var(--colorMedium) 23px, transparent 24px), radial-gradient(circle 23px at 20px 32px, var(--colorDark) 23px, transparent 24px), linear-gradient(var(--colorDark) 50%, var(--colorMedium) 50%);
     background-size: 40px 40px;
     background-position: 0 0, 20px 0, 0 0; */
@@ -208,6 +209,7 @@
     /* margin-top: 10px; */
     @media screen and (max-width: 1398px){
         border-color: var(--colorLighter);
+        height: 15vh;
         margin-top: -0.5vh;      
         border-radius: 20px;
     }
@@ -221,8 +223,8 @@
     z-index: 9999;
     border: 4px solid var(--colorMain);
     box-shadow:0 0 0 .1vw var(--colorLight) , 0 0 0 .35vw var(--colorMediumDark), 0 0 0 .6vw var(--colorLightest), 0 0 10px 1vw var(--colorLighter);
-    margin-top: -34vh;
-    height: 50vh;
+    margin-top: -37vh;
+    height: 53vh;
     transition: 0.2s ease-in-out;
     @media screen and (max-width: 1685px) {
         margin-top: -32vh;
@@ -285,7 +287,7 @@
 }
 .infoBtn:hover > .updateText{
     margin-top: -1%;
-    height: 42vh;    
+    height: 45vh;    
     transition: 0.2s ease-in-out;
     @media screen and (max-width: 1398px){
         margin-top: -2%;
@@ -310,6 +312,7 @@
     border-radius: 5px 20px;
     @media screen and (max-width: 1398px){
         border-color: var(--colorLighter); 
+        height: 15vh;
         margin-top: -0.5vh;   
         border-radius: 20px;
     }
@@ -322,8 +325,8 @@
 .gbFrame:hover{ 
     border: 4px solid var(--colorMain);
     box-shadow:0 0 0 .1vw var(--colorLight) , 0 0 0 .35vw var(--colorMediumDark), 0 0 0 .6vw var(--colorLightest), 0 0 10px 1vw var(--colorLighter);
-    margin-top: -34vh;
-    height: 50vh;
+    margin-top: -37vh;
+    height: 53vh;
     transition: 0.2s ease-in-out;
     @media screen and (max-width: 1685px) {
         margin-top: -32vh;
