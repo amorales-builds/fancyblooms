@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/storiesStyle.css" type="text/css" media="all">
   </head>
 
-  <body>   
+  <body id="storyBody" onload="pleaseworkbro()">   
     <div class="tabs">
       <a href="/index.html" id="tabBtn" class="homeBtn">home</a>
       <a href="/public/programmingPage.html" id="tabBtn" class="prBtn">programming</a>
@@ -21,16 +21,66 @@
     <!-- <button>home</button> -->
       <!-- <h1 class="title">Stories</h1> -->
     <div class="storiesContent">
-      <div id="compartment" class="personal">
-        <button>Personal Works</button>
+      <div id="compartment" class="options">
+        <button id="communityBtn" onclick="collabFont()">Community Fiction</button>
+        <button id="pWorksBtn" onclick="pWorksFont()">Personal Works</button>
+        <button id="reviewsBtn" onclick="reviewsFont()">Media Reviews</button>
       </div>
-      <div id="compartment" class="community">
-        <button>Community Fiction</button>
+      <div id="optionContent" class="community">
+        <h2>Community Fiction</h2>
+        <!-- <div class="colabOptions">
+          <button>map</button>
+        </div> -->
+        <div class="collaborativeWorks">
+          <!-- <div class="colabInfo">
+            <p>building</p>
+            <p>number</p>
+            <p>reporter</p>
+          </div>
+          <h3 style="text-align: center;">Title</h3>
+          <p  style="text-align: justify;">Content</p> -->
+          <p id="contentPdf" class="contentss"></p>
+          <!-- <input type="file" /><br />
+          <p class="contentss"></p> -->
+          <!-- <button onclick="pleaseworkbro(0)">File 1</button>
+          <button onclick="pleaseworkbro(1)">File 2</button> -->
+          <div id="buttonsPdf"></div>
+        </div>
+        <div class="navButtonsColab">
+          <button>map</button>
+          <button>newest</button>
+          <button><<</button>
+          <button><</button>
+          <div id="navNumbers" style="display: inline;"></div>
+          <button>></button>
+          <button>>></button>
+          <button>random</button>
+          <button>add report</button>
+        </div>
       </div>
-      <div id="compartment" class="shorts">
-        <button>Media Reviews</button>
-      </div>     
+      <div  id="optionContent" class="communityMap">
+        <h2>Map</h2>
+        <button>hospital</button>
+        <button>grand hotel</button>
+        <button>night district</button>
+        <button>suburbs</button>
+        <button>circus</button>
+        <button>waterpark</button>
+        <button>beach resort</button>
+        <button>police station</button>
+        <button>municipal office</button>
+
+        <h2 style="margin-top: 25px;">Dictionary</h2>
+        <button>alphabetical</button>
+        <button>concepts</button>
+        <button>random</button>
+      </div>
+      <!-- <div id="compartment" class="shorts">
+        <h2>Media Reviews</h2>
+      </div>      -->
     </div> 
-    <p></p>
+
+    <script src="/src/storyScript.js"></script>
+
   </body>
 </html>

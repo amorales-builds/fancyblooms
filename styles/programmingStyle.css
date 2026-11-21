@@ -1,0 +1,28 @@
+@import "/styles/style.css";
+
+body{
+    font-family: Audiowide;
+    /* background-color: #1c2130;
+    background-image:  repeating-linear-gradient(to right, transparent 0, transparent 3.8333333333333335px, #1c2130 3.8333333333333335px, #1c2130 11.5px, transparent 11.5px, transparent 15.333333333333334px), repeating-linear-gradient(to bottom, transparent 0, transparent 3.8333333333333335px, #1c2130 3.8333333333333335px, #1c2130 11.5px, transparent 11.5px, transparent 15.333333333333334px), linear-gradient(to bottom, #028f76 1.38px, transparent 1.38px), linear-gradient(to right, #028f76 1.38px, transparent 1.38px) ;
+    background-size: 100% 100%, 100% 100%, 46px 46px, 46px 46px;
+    background-position: 0 0, 0 0, 0 -0.46px, -0.46px 0; */
+    /* background-color: #1c2130;
+    background-image:  linear-gradient(30deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(150deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(30deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(150deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(60deg, #028f7677 25%, transparent 25.5%, transparent 75%, #028f7677 75%, #028f7677), linear-gradient(60deg, #028f7677 25%, transparent 25.5%, transparent 75%, #028f7677 75%, #028f7677);
+    background-size: 46px 81px;
+    background-position: 0 0, 0 0, 23px 40px, 23px 40px, 0 0, 23px 40px; */
+    background-color: #1c2130;
+    background-image:  linear-gradient(30deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(150deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(30deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(150deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(60deg, #028f7677 25%, transparent 25.5%, transparent 75%, #028f7677 75%, #028f7677), linear-gradient(60deg, #028f7677 25%, transparent 25.5%, transparent 75%, #028f7677 75%, #028f7677);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+.pContent{
+    padding: 16px;
+    background-color: #1c2130;
+    background-image:  repeating-linear-gradient(to right, transparent 0, transparent 3.8333333333333335px, #1c2130 3.8333333333333335px, #1c2130 11.5px, transparent 11.5px, transparent 15.333333333333334px), repeating-linear-gradient(to bottom, transparent 0, transparent 3.8333333333333335px, #1c2130 3.8333333333333335px, #1c2130 11.5px, transparent 11.5px, transparent 15.333333333333334px), linear-gradient(to bottom, #1c302b 1.38px, transparent 1.38px), linear-gradient(to right, #1c302b 1.38px, transparent 1.38px) ;
+    background-size: 100% 100%, 100% 100%, 46px 46px, 46px 46px;
+    background-position: 0 0, 0 0, 0 -0.46px, -0.46px 0;
+    height: 90vh;
+    width: 95vw;
+    margin-left: 1.5%;
+}

@@ -1,21 +1,31 @@
 @import "/styles/style.css";
 
 :root{
-    --colorLightBG: #e4d8c3;
-    --colorLighterBG: #e8ddcb;
+    --colorLight: #e4d8c3;
+    --colorLighter: #e8ddcb;
+    --colorLightBG: rgb(135, 84, 84);
+    --colorLighterBG: rgb(128, 78, 78);
     --colorMain:  rgb(156, 102, 102);
+    --colorMedium:  rgb(147, 84, 84);
+    --colorDark:  rgb(93, 49, 49);
 }
 
 * {
     cursor: url('https://cdn.cursors-4u.net/previews/pink-feather-c4993148-64.webp') 19 21, auto !important; /* Pink Feather - https://www.cursors-4u.com/cursor/pink-feather */
 }
 
+#tabBtn{
+    color: var(--colorWhite);
+}
+#tabBtn:hover{
+    color: var(--colorAccent);
+}
 
 body{
     /* margin: 16px; */
     padding: 16px;
     font-family: Metamorphous;
-    color: darkslategray;
+    color: var(--colorDark);
     /* background-color: var(--colorLight); */
     /* background-color: val(--colorWhiteBG);
     background-image:  radial-gradient(circle 23px at 20px 8px, var(--colorLightBG) 23px, transparent 24px), radial-gradient(circle 23px at 20px 32px, var(--colorLighterBG) 23px, transparent 24px), linear-gradient(var(--colorLighterBG) 50%, var(--colorLightBG) 50%);
@@ -39,21 +49,98 @@ body{
     background-size: 100% 100%, 100% 25px;
     height: 100vh; */
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     display: grid;
     grid-template-columns: auto auto auto;
     row-gap: 50%;
-    column-gap: 1%;
+    column-gap: 0.7%;
+}
+
+h2{
+    margin-top: 3px;
+    font-size: 20px;
 }
 
 #compartment{
-    background-color: white;
-    border: 0.2vw solid var(--colorMain);
-    border-radius: 10px;
-    margin-top: 5vh;
-    height: 80vh;
-    width: 20vw;
+    /* background-color: white; */
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 2%;
+    place-content: start space-between;
+    padding: 25px;
+    padding-inline: 8px;
+    padding-top: 0;
+    border: 0.3vw solid #703941;
+    border-radius: 5px;
+    margin-top: 6.6vh;
+    height: 81.2vh;
+    width: 5vw;
+    background-color: #e8ddcb;
+    background-image:  repeating-linear-gradient(to right, #e8ddcb 0, #e8ddcb 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, #cdb380 1px, transparent 1px);
+    background-size: 100% 100%, 100% 25px;
 }
-#compartment.community{
-    width: 51vw;
+#compartment.options{    
+    padding-top: 10px;
+}
+
+#optionContent{
+    padding: 16px;
+    padding-top: 10px;
+    /* border: 0.5vw solid #e8ddcb; */
+    border: 0.3vw solid #703941;
+    border-radius: 2px;
+    margin-top: 6.6vh;
+    height: 82vh;
+    width: 80vw;
+    background-color: #e8ddcb;
+    background-image:  repeating-linear-gradient(to right, #e8ddcb 0, #e8ddcb 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, #cdb380 1px, transparent 1px);
+    background-size: 100% 100%, 100% 25px;
+}
+
+#optionContent.community{
+    width: 80vw;
+}
+.collaborativeWorks{    
+    border: 0.2vw solid #b17066;
+    border-radius: 2px;
+    background-color: #fff8edbe;
+    padding: 20px;
+    padding-inline: 5vw;
+    padding-top: 0;
+    height: 72vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #b17066 transparent;
+}
+.colabInfo{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.navButtonsColab{
+    text-align: center;
+    margin-top: 12px;
+}
+/* .colabOptions{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -10px;
+} */
+
+#optionContent.communityMap{       
+    width: 6vw;
+}
+
+/* iframe{
+    display: block;
+    height: 100%;
+    width: 100%;
+} */
+
+#contentPdf{
+    /* height: 50%;
+    width: 100%;
+    border: 2px solid #703941; */
+    margin-top: 5%;
+    font-family: SyneMono;
 }

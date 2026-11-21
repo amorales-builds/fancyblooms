@@ -188,5 +188,3 @@ document.getElementById("downBtn").addEventListener('click', async () => {
 // document.getElementById("lightBtn").addEventListener('click', async () => {   
     
 // })
-
-

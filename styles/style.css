@@ -58,6 +58,11 @@
     font-family: Sniglet;
     src: url(/assets/fonts/Sniglet-Regular.ttf) ;
 }
+@font-face{
+    font-family: SyneMono;
+    src: url(/assets/fonts/SyneMono-Regular.ttf) ;
+}
+
 
 
 * {
@@ -74,24 +79,27 @@
     position: absolute;
     text-align: start;
     background-color: var(--colorMain);
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 7px;
     padding-inline: 16px;
     top: 0;
     left: 0;
     right: 0;
+    /* background-image: radial-gradient(circle 23px at 20px 8px, var(--colorMedium) 23px, transparent 24px), radial-gradient(circle 23px at 20px 32px, var(--colorDark) 23px, transparent 24px), linear-gradient(var(--colorDark) 50%, var(--colorMedium) 50%);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 0, 0 0; */
 }
 #tabBtn{
     /* position: fixed;
     left: 0;
     top: 0; */
-    color: var(--colorMain);
+    color: var(--colorDark);
     border: 2px solid var(--colorLightBG);
     background-color: var(--colorLightBG);
     padding: 5px;
     margin: 4px;
     /* border-radius: 5px; */
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 #tabBtn:hover{
     /* color: var(--colorWhite);
@@ -291,7 +299,7 @@
     }    
 }
 
-iframe{
+.gbFrame{
     z-index: 9999;
     text-align: center;
     background-color: var(--colorMedium);    
@@ -311,7 +319,7 @@ iframe{
         width: 35vw;
     }    
 }
-iframe:hover{ 
+.gbFrame:hover{ 
     border: 4px solid var(--colorMain);
     box-shadow:0 0 0 .1vw var(--colorLight) , 0 0 0 .35vw var(--colorMediumDark), 0 0 0 .6vw var(--colorLightest), 0 0 10px 1vw var(--colorLighter);
     margin-top: -34vh;
@@ -420,7 +428,7 @@ body{
     font-family: Sniglet;
     color:var(--colorWhite);
     /* background-color: var(--colorLight); */
-    background-color: val(--colorWhiteBG);
+    background-color: var(--colorWhiteBG);
     background-image:  radial-gradient(circle 23px at 20px 8px, var(--colorLightBG) 23px, transparent 24px), radial-gradient(circle 23px at 20px 32px, var(--colorLighterBG) 23px, transparent 24px), linear-gradient(var(--colorLighterBG) 50%, var(--colorLightBG) 50%);
     background-size: 40px 40px;
     background-position: 0 0, 20px 0, 0 0;
