@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/storiesStyle.css" type="text/css" media="all">
   </head>
 
-  <body id="storyBody" onload="navFiles()">   
+  <body id="storyBody" onload="navFiles(); navStories()">   
     <div class="tabs">
       <a href="/index.html" id="tabBtn" class="homeBtn">home</a>
       <a href="/public/programmingPage.html" id="tabBtn" class="prBtn">programming</a>
@@ -42,12 +42,14 @@
           <p id="navMapBtn" class="storiesNavBtn">map</p>
           <div>
             <!-- <button>newest</button> -->
+            <button id="randomFiles" style="margin-left: 90px; margin-right: 50px;">RANDOM</button>
             <button id="topFile"><<</button>
             <button id="prevFile"><</button>
             <div id="navNumbers" style="display: inline;"></div>
             <button id="nextFile">></button>
             <button id="lastFile">>></button>
             <!-- <button>random</button> -->
+            <button id="allFiles" style="margin-left: 50px;" onclick="navFiles(0, 0, 0, 1)">ALL</button>
           </div>
           <p  id="navReportBtn" class="storiesNavBtn">create report</p>
         </div>
@@ -56,25 +58,25 @@
       
       <div id="optionContent" class="communityMap">
         
-        <div id="colabContent">          
+        <div id="colabContent">        
           <h2>Map</h2>
-          <button>hospital</button>
-          <button>grand hotel</button>
-          <button>night district</button>
-          <button>suburbs</button>
-          <button>circus</button>
-          <button>waterpark</button>
-          <button>beach resort</button>
-          <button>police station</button>
-          <button>city hall</button>
+          <button onclick="navFiles(0, 0, 0, 0)">hospital</button>
+          <button onclick="navFiles(0, 0, 0, 0)">grand hotel</button>
+          <button onclick="navFiles(0, 0, 0, 0)">lighthouse</button>
+          <button onclick="navFiles(0, 0, 0, 0)">suburbs</button>
+          <button onclick="navFiles(0, 0, 1, 0)">circus</button>
+          <button onclick="navFiles(0, 0, 0, 0)">waterpark</button>
+          <button onclick="navFiles(0, 0, 0, 0)">beach resort</button>
+          <button onclick="navFiles(0, 0, 0, 0)">police station</button>
+          <button onclick="navFiles(0, 0, 0, 0)">town hall</button>
+
+          <h2 style="margin-top: 25px;">Top Reporters</h2>
+          <button onclick="navFiles(0, 1, 0, 0)">G. Ivanov</button>
 
           <h2 style="margin-top: 25px;">Dictionary</h2>
           <button>alphabetical</button>
           <button>concepts</button>
           <button>random</button>
-
-          <h2 style="margin-top: 25px;">Top Reporters</h2>
-          <button>Grigory Ivanov</button>
         </div>
 
         <div id="myStoriesContent" style="display: none;">

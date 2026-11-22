@@ -62,45 +62,35 @@ function selectLeft(){
         case 0:            
             document.getElementById("selectArt").style.borderColor = "transparent";
             document.getElementById("artDiv").style.marginTop = ""; 
-            // document.getElementById("selectArt").style.backgroundColor = "transparent";
             document.getElementById("selectMe").style.borderColor = "var(--colorSelection)";
-            // document.getElementById("selectMe").style.backgroundColor = "#e7fff9";
             document.getElementById("meFrame").style.marginTop = "-20px";            
             x = 4;
             break; 
         case 1:
             document.getElementById("selectArt").style.borderColor = "transparent";
             document.getElementById("artDiv").style.marginTop = ""; 
-            // document.getElementById("selectArt").style.backgroundColor = "transparent";
             document.getElementById("selectMe").style.borderColor = "var(--colorSelection)";
-            // document.getElementById("selectMe").style.backgroundColor = "#e7fff9";
             document.getElementById("meFrame").style.marginTop = "-20px";    
             x = 4;
             break;
         case 2:
             document.getElementById("selectStories").style.borderColor = "transparent";
             document.getElementById("storiesDiv").style.marginTop = ""; 
-            // document.getElementById("selectStories").style.backgroundColor = "transparent";
             document.getElementById("selectArt").style.borderColor = "var(--colorSelection)";
-            // document.getElementById("selectArt").style.backgroundColor = "#e7fff9";
             document.getElementById("artDiv").style.marginTop = "-10px";    
             x = x-1;
             break;
         case 3:
             document.getElementById("selectProgramming").style.borderColor = "transparent";
             document.getElementById("programmingDiv").style.marginTop = ""; 
-            // document.getElementById("selectProgramming").style.backgroundColor = "transparent";
             document.getElementById("selectStories").style.borderColor = "var(--colorSelection)";
-            // document.getElementById("selectStories").style.backgroundColor = "#e7fff9";
             document.getElementById("storiesDiv").style.marginTop = "-20px";    
             x = x-1;
             break;
         case 4:
             document.getElementById("selectMe").style.borderColor = "transparent";
             document.getElementById("meFrame").style.marginTop = ""; 
-            // document.getElementById("selectMe").style.backgroundColor = "transparent";
             document.getElementById("selectProgramming").style.borderColor = "var(--colorSelection)";
-            // document.getElementById("selectProgramming").style.backgroundColor = "#e7fff9";
             document.getElementById("programmingDiv").style.marginTop = "-20px";    
             x = x-1;
             break; 
@@ -137,40 +127,6 @@ function selectEnter(){
         }
     }
 }
-
-// function lightTheme(){
-//     if(document.getElementById("lightBtn").value == "&#9728"){
-//         document.body.dataset.theme = ("dark");
-//         document.getElementById("lightBtn").value = "&#9681";
-//     }
-//     else{
-//         document.body.dataset.theme = ("light");
-//         document.getElementById("lightBtn").value = "&#9728";
-//     }
-// }
-
-// document.body.innerHTML.addEventListener('change', async () => {   
-//     if (screen.width <= 600){
-//     document.getElementById("lightBtn").style.display="none";  
-//     document.getElementById("darkBtn").style.display="none";     
-//     }
-// })
-
-// function lightTheme(){
-//     document.body.dataset.theme = ("light");    
-//     document.getElementById("lightBtn").style.display="none";
-//     document.getElementById("darkBtn").style.display="inline-block";
-// }
-// function darkTheme(){
-//     document.body.dataset.theme = ("dark");
-//     document.getElementById("darkBtn").style.display="none";
-//     document.getElementById("lightBtn").style.display="inline-block";
-// }
-
-// window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', async () => {
-//     const isDarkMode = await window.darkMode.toggle()
-//     document.getElementById('themeBtn').innerHTML = isDarkMode ? '&#9681' : '&#9728'
-// })
 
 document.getElementById("rightBtn").addEventListener('click', async () => {   
     selectRight();

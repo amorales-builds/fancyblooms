@@ -1,9 +1,9 @@
 
 const files = [
-    "/docs/collabs/jihaa0001_strangeHappenings.txt",
-    "/docs/collabs/test2.txt",
-    "/docs/collabs/test3.txt",
-    "/docs/collabs/test4.txt"
+    ["hospital", "Grigory Ivanov", "/docs/collabs/jihaa0001_strangeHappenings.txt"],
+    ["circus", "Ringmaster", "/docs/collabs/test2.txt"],
+    ["hospital", "Grigory Ivanov", "/docs/collabs/test3.txt"],
+    ["circus", "Grigory Ivanov", "/docs/collabs/test4.txt"]
 ];
 
 files.forEach((file, index) => {
@@ -15,65 +15,134 @@ files.forEach((file, index) => {
     document.getElementById("navNumbers").appendChild(button);
 });
 
-async function navFiles(index) {
+// function mapChoice(x){    
+//     switch(x) {
+//         case 1: 
+//             y = "hospital";  
+//             break;
+//         case 2: 
+//             y = "circus";  
+//             break;
+        
+//     }
+    
+//     return files.filter(file => file[0] === y);
+// }
+
+async function navFiles(index = 0, filterChoice = 0, subChoice = 0, isAll = true) {
 
     const content = document.getElementById("contentPdf");
-    const response = await fetch(files[index]);
+
+    if (index == null) index = 0;
+    
+    // const buildingFiles = files.filter(file => file[0] === "hospital");
+    // const nameFiles = files.filter(file => file[1] === "Grigory Ivanov");
+
+    // var mapChoice = 2;
+
+    var y;
+    var chosenFiles;
+
+    if (isAll){
+        chosenFiles = files;
+    }
+    else{
+
+        switch(filterChoice) {
+            case 0: //buildings
+                switch(subChoice) {
+                    case 0: 
+                        y = "hospital";  
+                        break;
+                    case 1: 
+                        y = "circus";  
+                        break;                
+                }
+                break;
+                
+            case 1: //names
+                switch(subChoice) {
+                    case 0: 
+                        y = "Grigory Ivanov";  
+                        break;
+                    case 1: 
+                        y = "Ringmaster";  
+                        break;                
+                }
+                break;        
+        }
+
+        chosenFiles = files.filter(file => file[filterChoice] === y);
+    }
+
+    const [type, name, path] = chosenFiles[index];
+
+    const response = await fetch(path);
+
     const text = await response.text();
 
-    if (index == null) {
-        navFiles(0);
-    } else{        
-        content.innerText = text;
-    }
+    content.innerText = text;
+
 
     if (index > 0) { 
-        document.getElementById("topFile").onclick = () => navFiles(0);
+        document.getElementById("topFile").onclick = () => navFiles(0, filterChoice, subChoice, isAll);
     }  
     if (index > 0) { 
-        document.getElementById("prevFile").onclick = () => navFiles(index - 1);
+        document.getElementById("prevFile").onclick = () => navFiles(index - 1, filterChoice, subChoice, isAll);
     }    
     if (index < files.length - 1) {
-        document.getElementById("nextFile").onclick = () => navFiles(index + 1);
+        document.getElementById("nextFile").onclick = () => navFiles(index + 1, filterChoice, subChoice, isAll);
     }
     if (index < files.length - 1) {
-        document.getElementById("lastFile").onclick = () => navFiles(files.length - 1);
+        document.getElementById("lastFile").onclick = () => navFiles(chosenFiles.length - 1, filterChoice, subChoice, isAll);
     }
 }
+
+// async function navFiles(index = 0, type = "circus") {
+
+//     const content = document.getElementById("contentPdf");
+
+//     // Filter files by type
+//     const filteredFiles = files.filter(file => file[0] === type);
+
+//     // Make sure the index is valid
+//     if (index >= filteredFiles.length) index = 0;
+
+//     const response = await fetch(filteredFiles[index][1]);
+//     const text = await response.text();
+
+//     content.innerText = text;
+
+//     if (index > 0) { 
+//         document.getElementById("topFile").onclick = () => navFiles(0);
+//     }  
+//     if (index > 0) { 
+//         document.getElementById("prevFile").onclick = () => navFiles(index - 1);
+//     }    
+//     if (index < files.length - 1) {
+//         document.getElementById("nextFile").onclick = () => navFiles(index + 1);
+//     }
+//     if (index < files.length - 1) {
+//         document.getElementById("lastFile").onclick = () => navFiles(files.length - 1);
+//     }
+// }
 
 const stories = [
     "/docs/stories/jihaa0001_strangeHappenings.txt",
     "/docs/stories/jihaa0001_strangeHappenings.txt"
 ];
-// const poems = [
-//     ["/docs/stories/jihaa0001_strangeHappenings.txt", "poem 1" ],
-//     ["/docs/stories/jihaa0001_strangeHappenings.txt", "poem 2" ]
-// ];
-
-// poems.forEach((file, index) => {
-//     const button = document.createElement("button");
-
-//     button.innerText = `${index + 1}`;
-//     button.onclick = () => navFiles(index);
-
-//     document.getElementById("poemBtns").appendChild(button);
-// });
 
 async function navStories(index) {
 
+    const content = document.getElementById("myStories");
     const response = await fetch(stories[index]);
     const text = await response.text();
 
     if (index == null) {
         navStories(0);
     } else{        
-        document.getElementById("myStories").innerText = text;
+        content.innerText = text;
     }
-}
-
-function showStories(){
-    document.getElementById("myStories").innerText = "broooooooooooo";
-    // document.getElementById("myStories").innerText = fetch(stories[0]).text();
 }
 
 function collabFont() {
@@ -82,10 +151,10 @@ function collabFont() {
     document.getElementById("contentTitle").textContent = "Community Fiction";  
 
     document.getElementById("storyBody").style.fontFamily = "";
-    document.getElementById("contentPdf").style.fontFamily = "";  
-    document.getElementById("contentPdf").style.color = ""; 
-    document.getElementById("contentPdf").style.lineHeight = "";   
-    document.getElementById("contentPdf").style.marginTop = ""; 
+    // document.getElementById("contentPdf").style.fontFamily = "";  
+    // document.getElementById("contentPdf").style.color = ""; 
+    // document.getElementById("contentPdf").style.lineHeight = "";   
+    // document.getElementById("contentPdf").style.marginTop = ""; 
     document.getElementById("contentTopic").style.borderRadius = ""; 
     document.getElementById("contentTopic").style.paddingTop = ""; 
     document.getElementById("contentTopic").style.fontSize = ""; 
@@ -131,16 +200,15 @@ function collabFont() {
     document.querySelector(':root').style.setProperty('--colorAccent', '');   
 }
 function pWorksFont() {
-    showStories();
     //text, titles
     document.getElementById("contentTopic").textContent = "The thing of the thing";     
     document.getElementById("contentTitle").textContent = "Personal Works";    
 
     document.getElementById("storyBody").style.fontFamily = "Metamorphous";    
-    document.getElementById("contentPdf").style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif"; 
-    document.getElementById("contentPdf").style.color = "var(--colorDark)";  
-    document.getElementById("contentPdf").style.lineHeight = "1.5";  
-    document.getElementById("contentPdf").style.marginTop = "2%"; 
+    // document.getElementById("contentPdf").style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif"; 
+    // document.getElementById("contentPdf").style.color = "var(--colorDark)";  
+    // document.getElementById("contentPdf").style.lineHeight = "1.5";  
+    // document.getElementById("contentPdf").style.marginTop = "2%"; 
     document.getElementById("contentTopic").style.borderRadius = "20px"; 
     document.getElementById("contentTopic").style.paddingTop = "20px"; 
     document.getElementById("contentTopic").style.fontSize = "65px"; 

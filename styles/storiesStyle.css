@@ -216,6 +216,13 @@ h2{
     scrollbar-color: var(--colorMain) transparent;
 }
 
+#myStories{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 16px;
+    padding-inline: 100px;
+}
+
+
 button{
     font-family: monospace;
     background-color: var(--colorContent);
