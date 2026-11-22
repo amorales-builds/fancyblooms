@@ -20,7 +20,6 @@
     --colorContentText: #ffffff; */
 
     --colorAccent: #fa5353;
-    /* --colorAccentLight: #ffa4a4; */
 }
 
 * {
@@ -34,6 +33,11 @@
 #tabBtn:hover{
     color: var(--colorAccent);
 }
+
+/* .textAccent{
+    color: var(--colorAccent);
+    text-shadow: 0 1px 2px var(--colorDark),  0 -1px 2px var(--colorDark),  1px 0 2px var(--colorDark), -1px 0 2px var(--colorDark), 0 2px 5px var(--colorMain),  0 -2px 5px var(--colorMain),  2px 0 5px var(--colorMain), -2px 0 5px var(--colorMain);
+} */
 
 body{
     /* margin: 16px; */
@@ -89,12 +93,12 @@ h2{
     padding-inline: 8px;
     padding-top: 0;
     border: 0.3vw solid var(--colorMediumDark);
+    background-color: var(--colorLighter);
     border-radius: 5px;
     /* margin-top: 6.6vh; 
     height: 81.2vh;*/    
     height: 76.2vh;
     width: 5vw;
-    background-color: var(--colorLighter);
     /* background-image: repeating-linear-gradient(to right, var(--colorLighter) 0, var(--colorLighter) 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, var(--colorMediumLight) 1px, transparent 1px);
     background-size: 100% 100%, 100% 25px; */
 }
@@ -102,24 +106,21 @@ h2{
     padding-top: 10px;
 }
 
-#optionContent{
+#contentMatter{
     padding: 16px;
     padding-top: 10px;
     /* border: 0.5vw solid var(--colorLighter); */
     border: 0.3vw solid var(--colorMediumDark);
+    background-color: var(--colorLighter);
     border-radius: 2px;
     /* margin-top: 6.6vh; */
     height: 77vh;
     width: 80vw;
-    background-color: var(--colorLighter);
     /* background-image:  repeating-linear-gradient(to right, var(--colorLighter) 0, var(--colorLighter) 5px, transparent 5px, transparent 10px), linear-gradient(to bottom, var(--colorMediumLight) 1px, transparent 1px);
     background-size: 100% 100%, 100% 25px; */
 }
 
-#optionContent.community{
-    width: 80vw;
-}
-.collaborativeWorks{    
+#collaborativeWorks{    
     border: 0.2vw solid var(--colorMain);
     background-color: var(--colorContent);
     scrollbar-color: var(--colorMain) transparent;
@@ -137,15 +138,34 @@ h2{
     display: grid;
     grid-template-columns: auto auto auto;
 }
-.navButtonsColab{
-    text-align: center;
+#navButtonsColab{
+    /* text-align: center; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
     margin-top: 18px;
 }
+
+.storiesNavBtn{
+    color: var(--colorAccent); 
+    margin-top: 0;
+}
+/* .navButtonsColab */
 /* .colabOptions{
     text-align: center;
     margin-bottom: 10px;
     margin-top: -10px;
 } */
+
+#optionContent{
+    padding: 16px;
+    padding-top: 10px;
+    border: 0.3vw solid var(--colorMediumDark);
+    background-color: var(--colorLighter);
+    border-radius: 2px;
+    height: 77vh;
+    width: 80vw;
+}
 
 #optionContent.communityMap{       
     width: 6vw;
@@ -165,7 +185,7 @@ h2{
     text-align: start;
     background-color: var(--colorDark);
     padding-inline: 8%;
-    height: 11.5%;
+    /* height: 11.5%; */
     /* transition: 0.4s ease-in-out; */
 }
 #contentTitle{
@@ -186,6 +206,14 @@ h2{
     margin-top: 5%;
     font-family: SyneMono;
     font-weight: 600;
+}
+
+.contentOverFlow{
+    height: 20vh;
+    display: grid;
+    grid-template-columns: auto;
+    overflow-y: scroll;
+    scrollbar-color: var(--colorMain) transparent;
 }
 
 button{

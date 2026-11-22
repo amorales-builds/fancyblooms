@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/storiesStyle.css" type="text/css" media="all">
   </head>
 
-  <body id="storyBody" onload="pleaseworkbro()">   
+  <body id="storyBody" onload="navFiles()">   
     <div class="tabs">
       <a href="/index.html" id="tabBtn" class="homeBtn">home</a>
       <a href="/public/programmingPage.html" id="tabBtn" class="prBtn">programming</a>
@@ -27,67 +27,89 @@
         <button id="pWorksBtn" onclick="pWorksFont()">Personal Works</button>
         <button id="reviewsBtn" onclick="reviewsFont()">Media Reviews</button>
       </div>
-      <div id="optionContent" class="community">
-        <h2 id="contentTitle">Community Fiction</h2>
+      <div id="contentMatter" class="community">
+        <h2 id="contentTitle" class="textAccent">Community Fiction</h2>
         <!-- <div class="colabOptions">
           <button>map</button>
         </div> -->
-        <div class="collaborativeWorks">
-          <!-- <div class="colabInfo">
-            <p>building</p>
-            <p>number</p>
-            <p>reporter</p>
+        <div id="collaborativeWorks">
+          <p id="contentPdf"></p>
+        </div>
+        
+        <p id="myStories" style="display: none"></p>
+
+        <div id="navButtonsColab">
+          <p id="navMapBtn" class="storiesNavBtn">map</p>
+          <div>
+            <!-- <button>newest</button> -->
+            <button id="topFile"><<</button>
+            <button id="prevFile"><</button>
+            <div id="navNumbers" style="display: inline;"></div>
+            <button id="nextFile">></button>
+            <button id="lastFile">>></button>
+            <!-- <button>random</button> -->
           </div>
-          <h3 style="text-align: center;">Title</h3>
-          <p  style="text-align: justify;">Content</p> -->
-          <p id="contentPdf" class="contentss"></p>
-          <!-- <input type="file" /><br />
-          <p class="contentss"></p> -->
-          <!-- <button onclick="pleaseworkbro(0)">File 1</button>
-          <button onclick="pleaseworkbro(1)">File 2</button> -->
-          <div id="buttonsPdf"></div>
+          <p  id="navReportBtn" class="storiesNavBtn">create report</p>
         </div>
 
-        <div class="navButtonsColab">
-
-          <button>map</button>
-          <button>newest</button>
-          <button><<</button>
-          <button><</button>
-          <div id="navNumbers" style="display: inline;"></div>
-          <button>></button>
-          <button>>></button>
-          <button>random</button>
-          <button>create report</button>
-
-        </div>
       </div>
       
-      <div  id="optionContent" class="communityMap">
+      <div id="optionContent" class="communityMap">
         
-        <h2>Map</h2>
-        <button>hospital</button>
-        <button>grand hotel</button>
-        <button>night district</button>
-        <button>suburbs</button>
-        <button>circus</button>
-        <button>waterpark</button>
-        <button>beach resort</button>
-        <button>police station</button>
-        <button>city hall</button>
+        <div id="colabContent">          
+          <h2>Map</h2>
+          <button>hospital</button>
+          <button>grand hotel</button>
+          <button>night district</button>
+          <button>suburbs</button>
+          <button>circus</button>
+          <button>waterpark</button>
+          <button>beach resort</button>
+          <button>police station</button>
+          <button>city hall</button>
 
-        <h2 style="margin-top: 25px;">Dictionary</h2>
-        <button>alphabetical</button>
-        <button>concepts</button>
-        <button>random</button>
+          <h2 style="margin-top: 25px;">Dictionary</h2>
+          <button>alphabetical</button>
+          <button>concepts</button>
+          <button>random</button>
 
-        <!-- <h2 style="margin-top: 25px;">Top Reporters</h2>
-        <button>Grigory Ivanov</button> -->
+          <h2 style="margin-top: 25px;">Top Reporters</h2>
+          <button>Grigory Ivanov</button>
+        </div>
+
+        <div id="myStoriesContent" style="display: none;">
+          <h2 style="font-size: 14px;">Short Stories</h2>
+          <div class="contentOverFlow">
+            <button>Story 1</button>
+            <button>Story 2</button>
+          </div>          
+          <h2 style="margin-top: 25px; margin-bottom: 25px; font-size: 14px;">Poetry</h2>
+          <div class="contentOverFlow">    
+            
+            <!-- <div id="poemBtns" style="display: grid;"></div>         -->
+            <button>Poem 1</button>
+            <button>Song</button>        
+            <button>Poem 1</button>
+            <button>Song</button>        
+            <button>Poem 1</button>
+            <button>Song</button>        
+            <button>Poem 1</button>
+            <button>Song</button>        
+            <button>Poem 1</button>
+            <button>Song</button>
+          </div>
+          
+          <h2 style="margin-top: 25px; margin-bottom: 25px; font-size: 14px;">Novel Updates</h2>
+          <div class="contentOverFlow">    
+            <button>Novel</button>   
+            <button>Novel</button>   
+            <button>Novel</button>       
+            <button>Novel</button>   
+          </div>
+        </div>
 
       </div>
-      <!-- <div id="compartment" class="shorts">
-        <h2>Media Reviews</h2>
-      </div>      -->
+
     </div> 
 
     <script src="/src/storyScript.js"></script>
