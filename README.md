@@ -5,11 +5,11 @@ _personal website_
 For fun! <br>
 
 ## To-Do List
-- [ ] Sectioned Main Page
+- [x] Sectioned Main Page
     - [x] Personal/Blog Section
     - [x] Art Section
     - [x] Programming Section
     - [x] Stories/Writing Section
 - [ ] Dark/Light Mode
     - [ ] \(Optional) UI Themes <!--  cuter/cooler themes with names -->
-- [ ] Guestbook <!-- (https://atabook.org/) -->
+- [x] Guestbook <!-- (https://atabook.org/) -->

@@ -1,50 +1,25 @@
 
 const files = [
-    ["hospital", "Grigory Ivanov", "/docs/collabs/jihaa0001_strangeHappenings.txt"],
+    ["hospital", "Grigory Ivanov", "/docs/collabs/jihaa0001_strangeHappenings.txt"], //2026.nov.21
     ["circus", "Ringmaster", "/docs/collabs/test2.txt"],
     ["hospital", "Grigory Ivanov", "/docs/collabs/test3.txt"],
     ["circus", "Grigory Ivanov", "/docs/collabs/test4.txt"]
 ];
-
-files.forEach((file, index) => {
-    const button = document.createElement("button");
-
-    button.innerText = `${index + 1}`;
-    button.onclick = () => navFiles(index);
-
-    document.getElementById("navNumbers").appendChild(button);
-});
-
-// function mapChoice(x){    
-//     switch(x) {
-//         case 1: 
-//             y = "hospital";  
-//             break;
-//         case 2: 
-//             y = "circus";  
-//             break;
-        
-//     }
-    
-//     return files.filter(file => file[0] === y);
-// }
 
 async function navFiles(index = 0, filterChoice = 0, subChoice = 0, isAll = true) {
 
     const content = document.getElementById("contentPdf");
 
     if (index == null) index = 0;
-    
-    // const buildingFiles = files.filter(file => file[0] === "hospital");
-    // const nameFiles = files.filter(file => file[1] === "Grigory Ivanov");
-
-    // var mapChoice = 2;
 
     var y;
     var chosenFiles;
 
     if (isAll){
         chosenFiles = files;
+
+        //buttons
+        // buttonFiles(chosenFiles);      
     }
     else{
 
@@ -73,6 +48,9 @@ async function navFiles(index = 0, filterChoice = 0, subChoice = 0, isAll = true
         }
 
         chosenFiles = files.filter(file => file[filterChoice] === y);
+
+        //buttons   
+        // buttonFiles(chosenFiles);
     }
 
     const [type, name, path] = chosenFiles[index];
@@ -84,72 +62,76 @@ async function navFiles(index = 0, filterChoice = 0, subChoice = 0, isAll = true
     content.innerText = text;
 
 
-    if (index > 0) { 
-        document.getElementById("topFile").onclick = () => navFiles(0, filterChoice, subChoice, isAll);
-    }  
-    if (index > 0) { 
-        document.getElementById("prevFile").onclick = () => navFiles(index - 1, filterChoice, subChoice, isAll);
-    }    
-    if (index < files.length - 1) {
-        document.getElementById("nextFile").onclick = () => navFiles(index + 1, filterChoice, subChoice, isAll);
-    }
-    if (index < files.length - 1) {
-        document.getElementById("lastFile").onclick = () => navFiles(chosenFiles.length - 1, filterChoice, subChoice, isAll);
-    }
+    if (index > 0) document.getElementById("topFile").onclick = () => navFiles(0, filterChoice, subChoice, isAll);
+
+    if (index > 0) document.getElementById("prevFile").onclick = () => navFiles(index - 1, filterChoice, subChoice, isAll);   
+
+    if (index < files.length - 1) document.getElementById("nextFile").onclick = () => navFiles(index + 1, filterChoice, subChoice, isAll);
+    
+    if (index < files.length - 1) document.getElementById("lastFile").onclick = () => navFiles(chosenFiles.length - 1, filterChoice, subChoice, isAll);
 }
 
-// async function navFiles(index = 0, type = "circus") {
+files.forEach((file, index) => {
+    const button = document.createElement("button");
 
-//     const content = document.getElementById("contentPdf");
+    button.innerText = `${index + 1}`;
+    button.onclick = () => navFiles(index);
 
-//     // Filter files by type
-//     const filteredFiles = files.filter(file => file[0] === type);
+    document.getElementById("navNumbers").appendChild(button);
+});
 
-//     // Make sure the index is valid
-//     if (index >= filteredFiles.length) index = 0;
+function noFiles(){
+    document.getElementById("contentPdf").textContent = "Awaiting reports... Witnesses to strange happenings in this location are asked to CREATE REPORT.";
+}
 
-//     const response = await fetch(filteredFiles[index][1]);
-//     const text = await response.text();
+////////////////////////
 
-//     content.innerText = text;
-
-//     if (index > 0) { 
-//         document.getElementById("topFile").onclick = () => navFiles(0);
-//     }  
-//     if (index > 0) { 
-//         document.getElementById("prevFile").onclick = () => navFiles(index - 1);
-//     }    
-//     if (index < files.length - 1) {
-//         document.getElementById("nextFile").onclick = () => navFiles(index + 1);
-//     }
-//     if (index < files.length - 1) {
-//         document.getElementById("lastFile").onclick = () => navFiles(files.length - 1);
-//     }
-// }
-
-const stories = [
+const shorts = [
     "/docs/stories/jihaa0001_strangeHappenings.txt",
-    "/docs/stories/jihaa0001_strangeHappenings.txt"
+    // "/docs/stories/test4.txt",
+    // "/docs/stories/novels/testNovel.txt"
+];
+const poetry = [
+    "/docs/stories/test4.txt"
+];
+const novels = [
+    "/docs/stories/novels/testNovel.txt"
 ];
 
-async function navStories(index) {
+async function navStories(index = 0, whichStory = 0) {
+
+    switch(whichStory){
+        case 0:            
+            stories = shorts;
+            break;
+        case 1:            
+            stories = poetry;
+            break;
+        case 2:            
+            stories = novels;
+            break;
+    }
 
     const content = document.getElementById("myStories");
     const response = await fetch(stories[index]);
     const text = await response.text();
 
     if (index == null) {
-        navStories(0);
+        navStories(0, 0);
     } else{        
         content.innerText = text;
     }
 }
+
+////////////////////////////////////
 
 function collabFont() {
     //text, titles
     document.getElementById("contentTopic").textContent = "Juniper Archives";     
     document.getElementById("contentTitle").textContent = "Community Fiction";  
 
+    
+    // document.querySelectorAll('button').style.setProperty('font-family', 'Audiowide')
     document.getElementById("storyBody").style.fontFamily = "";
     // document.getElementById("contentPdf").style.fontFamily = "";  
     // document.getElementById("contentPdf").style.color = ""; 
@@ -158,6 +140,8 @@ function collabFont() {
     document.getElementById("contentTopic").style.borderRadius = ""; 
     document.getElementById("contentTopic").style.paddingTop = ""; 
     document.getElementById("contentTopic").style.fontSize = ""; 
+    document.getElementById("contentTopic").style.textAlign = ""; 
+    document.getElementById("contentTopic").style.paddingLeft = ""; 
     document.getElementById("contentTitle").style.fontSize = ""; 
 
     //elements
@@ -167,8 +151,11 @@ function collabFont() {
     document.getElementById("contentTitle").style.display = ""; 
     document.getElementById("contentMatter").style.minHeight = ""; 
     document.getElementById("contentMatter").style.height = ""; 
+    document.getElementById("contentMatter").style.width = ""; 
     document.getElementById("myStories").style.display = "none"; 
     document.getElementById("myStoriesContent").style.display = "none"; 
+    document.getElementById("expandStories").style.display = "none"; 
+    document.getElementById("topPage").style.display = "none"; 
     // document.getElementById("navButtonsColab").style.justifyContent = "space-between"; 
     // document.getElementById("navButtonsColab").style.justifyContent = "space-between"; 
     // document.getElementById("navMapBtn").style.visibility = "visible"; 
@@ -201,7 +188,7 @@ function collabFont() {
 }
 function pWorksFont() {
     //text, titles
-    document.getElementById("contentTopic").textContent = "The thing of the thing";     
+    document.getElementById("contentTopic").textContent = "The thing of the thing";  
     document.getElementById("contentTitle").textContent = "Personal Works";    
 
     document.getElementById("storyBody").style.fontFamily = "Metamorphous";    
@@ -211,7 +198,9 @@ function pWorksFont() {
     // document.getElementById("contentPdf").style.marginTop = "2%"; 
     document.getElementById("contentTopic").style.borderRadius = "20px"; 
     document.getElementById("contentTopic").style.paddingTop = "20px"; 
-    document.getElementById("contentTopic").style.fontSize = "65px"; 
+    document.getElementById("contentTopic").style.fontSize = "40px"; 
+    document.getElementById("contentTopic").style.textAlign = "center"; 
+    document.getElementById("contentTopic").style.paddingLeft = "3.75%"; 
     document.getElementById("contentTitle").style.fontSize = "12px"; 
 
     //elements
@@ -219,10 +208,13 @@ function pWorksFont() {
     document.getElementById("navButtonsColab").style.display = "none"; 
     document.getElementById("colabContent").style.display = "none"; 
     document.getElementById("contentTitle").style.display = "none"; 
-    document.getElementById("contentMatter").style.minHeight = "77vh"; 
+    document.getElementById("contentMatter").style.minHeight = "75vh"; 
     document.getElementById("contentMatter").style.height = "fit-content"; 
+    document.getElementById("contentMatter").style.width = "50vw"; 
     document.getElementById("myStories").style.display = "block"; 
     document.getElementById("myStoriesContent").style.display = "block"; 
+    document.getElementById("expandStories").style.display = "grid"; 
+    document.getElementById("topPage").style.display = "grid"; 
     // document.getElementById("navButtonsColab").style.justifyContent = "center"; 
     // document.getElementById("navMapBtn").style.visibility = "hidden"; 
     // document.getElementById("navReportBtn").style.visibility = "hidden"; 
@@ -268,3 +260,23 @@ function reviewsFont() {
     
     //root colors
 }
+
+document.getElementById("expandStories").addEventListener('click', async () => {   
+    if(document.getElementById("contentMatter").style.width != "78vw"){
+        document.getElementById("contentMatter").style.width = "78vw"; 
+        document.getElementById("contentMatter").style.fontSize = "22px"; 
+        document.getElementById("expandStories").textContent = "><";
+    }else{
+        document.getElementById("contentMatter").style.width = "50vw"; 
+        document.getElementById("contentMatter").style.fontSize = ""; 
+        document.getElementById("expandStories").textContent = "<>";
+    }
+})
+document.getElementById("topPage").addEventListener('click', async () => { 
+    // window.scrollTo(0, 0);
+    window.scrollTo({
+        top: 60,
+        left: 60,
+        behavior: 'smooth'
+    })
+})

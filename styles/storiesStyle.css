@@ -217,9 +217,14 @@ h2{
 }
 
 #myStories{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 16px;
-    padding-inline: 100px;
+    font-family: Sniglet;
+    padding: 5vh;
+    color: var(--colorBlack);
+    /* margin-top: 2%; */
+    padding-inline: 7vw;
+    line-height: 1.8;  
+    background-color: #fff8edbe;
+    min-height: 58.3vh;
 }
 
 

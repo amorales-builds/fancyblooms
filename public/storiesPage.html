@@ -28,6 +28,7 @@
         <button id="reviewsBtn" onclick="reviewsFont()">Media Reviews</button>
       </div>
       <div id="contentMatter" class="community">
+        <button id="expandStories" style="display: none; justify-self: center;"><></button>
         <h2 id="contentTitle" class="textAccent">Community Fiction</h2>
         <!-- <div class="colabOptions">
           <button>map</button>
@@ -39,7 +40,7 @@
         <p id="myStories" style="display: none"></p>
 
         <div id="navButtonsColab">
-          <p id="navMapBtn" class="storiesNavBtn">map</p>
+          <p id="navMapBtn" class="storiesNavBtn">MAP</p>
           <div>
             <!-- <button>newest</button> -->
             <button id="randomFiles" style="margin-left: 90px; margin-right: 50px;">RANDOM</button>
@@ -51,44 +52,49 @@
             <!-- <button>random</button> -->
             <button id="allFiles" style="margin-left: 50px;" onclick="navFiles(0, 0, 0, 1)">ALL</button>
           </div>
-          <p  id="navReportBtn" class="storiesNavBtn">create report</p>
-        </div>
-
+          <p  id="navReportBtn" class="storiesNavBtn">CREATE REPORT</p>
+        </div>        
+        <button id="topPage" style="display: none; justify-self: center;">Top</button>
       </div>
       
       <div id="optionContent" class="communityMap">
         
         <div id="colabContent">        
           <h2>Map</h2>
-          <button onclick="navFiles(0, 0, 0, 0)">hospital</button>
-          <button onclick="navFiles(0, 0, 0, 0)">grand hotel</button>
-          <button onclick="navFiles(0, 0, 0, 0)">lighthouse</button>
-          <button onclick="navFiles(0, 0, 0, 0)">suburbs</button>
-          <button onclick="navFiles(0, 0, 1, 0)">circus</button>
-          <button onclick="navFiles(0, 0, 0, 0)">waterpark</button>
-          <button onclick="navFiles(0, 0, 0, 0)">beach resort</button>
-          <button onclick="navFiles(0, 0, 0, 0)">police station</button>
-          <button onclick="navFiles(0, 0, 0, 0)">town hall</button>
+          <button onclick="navFiles(0, 0, 0, 0)">hospital</button> <!-- navFiles(0, building/names, which one, isAll) -->
+          <button onclick="noFiles()">grand hotel</button>
+          <button onclick="noFiles()">lighthouse</button>
+          <!-- <button onclick="noFiles()">suburbs</button> -->
+          <button onclick="noFiles()">circus</button>
+          <button onclick="noFiles()">waterpark</button>
+          <button onclick="noFiles()">beach</button>
+          <!-- <button onclick="noFiles()">police station</button> -->
+          <button onclick="noFiles()">town hall</button>
+          <button onclick="noFiles()">caves</button>
+          <button onclick="noFiles()">suburbs</button>
+          <button onclick="noFiles()">unknown</button>
 
           <h2 style="margin-top: 25px;">Top Reporters</h2>
           <button onclick="navFiles(0, 1, 0, 0)">G. Ivanov</button>
 
-          <h2 style="margin-top: 25px;">Dictionary</h2>
-          <button>alphabetical</button>
-          <button>concepts</button>
-          <button>random</button>
+          <h2 style="margin-top: 30px;">Data</h2>
+          <button>Residents</button>
+          <button>Strangers</button>
+          <button>Locations</button>
+          <button>Glossary</button>
         </div>
 
         <div id="myStoriesContent" style="display: none;">
           <h2 style="font-size: 14px;">Short Stories</h2>
           <div class="contentOverFlow">
-            <button>Story 1</button>
-            <button>Story 2</button>
-          </div>          
+            <button onclick="navStories(0,0)">Lorem Ipsum</button>
+            <!-- <button>Story 2</button> -->
+          </div>      
+
           <h2 style="margin-top: 25px; margin-bottom: 25px; font-size: 14px;">Poetry</h2>
-          <div class="contentOverFlow">    
-            
-            <!-- <div id="poemBtns" style="display: grid;"></div>         -->
+          <div class="contentOverFlow">                
+            <button onclick="navStories(0,1)">test 1</button>
+            <!-- <button>Song</button>        
             <button>Poem 1</button>
             <button>Song</button>        
             <button>Poem 1</button>
@@ -96,17 +102,15 @@
             <button>Poem 1</button>
             <button>Song</button>        
             <button>Poem 1</button>
-            <button>Song</button>        
-            <button>Poem 1</button>
-            <button>Song</button>
+            <button>Song</button> -->
           </div>
           
           <h2 style="margin-top: 25px; margin-bottom: 25px; font-size: 14px;">Novel Updates</h2>
           <div class="contentOverFlow">    
-            <button>Novel</button>   
-            <button>Novel</button>   
+            <button onclick="navStories(0,2)">Test</button>   
+            <!-- <button>Novel</button>   
             <button>Novel</button>       
-            <button>Novel</button>   
+            <button>Novel</button>    -->
           </div>
         </div>
 
