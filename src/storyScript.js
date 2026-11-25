@@ -1,10 +1,22 @@
-
+//collabWorks
 const files = [
     ["hospital", "Grigory Ivanov", "/docs/collabs/jihaa0001_strangeHappenings.txt"], //2026.nov.21
     ["circus", "Ringmaster", "/docs/collabs/test2.txt"],
     ["hospital", "Grigory Ivanov", "/docs/collabs/test3.txt"],
     ["circus", "Grigory Ivanov", "/docs/collabs/test4.txt"]
 ];
+
+//personalWorks
+const shorts = [
+    ["/docs/stories/jihaa0001_strangeHappenings.txt", "Strange Happenings"]
+];
+const poetry = [
+    ["/docs/stories/testOne.txt", "Test One"]
+];
+const novels = [
+    ["/docs/stories/novels/testNovel.txt", "Test Novel"]
+];
+
 
 async function navFiles(index = 0, filterChoice = 0, subChoice = 0, isAll = true) {
 
@@ -18,8 +30,21 @@ async function navFiles(index = 0, filterChoice = 0, subChoice = 0, isAll = true
     if (isAll){
         chosenFiles = files;
 
+        document.getElementById("filterName").textContent = "@@@@@@@@@@@@@@@@@";
+
         //buttons
-        // buttonFiles(chosenFiles);      
+        navNumbers.innerHTML = "";
+
+        chosenFiles.forEach((file, i) => {
+            const button = document.createElement("button");
+
+            button.innerText = `${i + 1}`;
+            button.onclick = () => navFiles(i, filterChoice, subChoice, isAll);
+
+            navNumbers.appendChild(button);
+        });
+        // buttonFiles(chosenFiles);
+        // document.getElementById("navNumbers").style.display = "inline";        
     }
     else{
 
@@ -49,8 +74,20 @@ async function navFiles(index = 0, filterChoice = 0, subChoice = 0, isAll = true
 
         chosenFiles = files.filter(file => file[filterChoice] === y);
 
+        document.getElementById("filterName").textContent = "REPORTS @ —  " + y.toUpperCase();
+
         //buttons   
-        // buttonFiles(chosenFiles);
+        navNumbers.innerHTML = "";
+
+        chosenFiles.forEach((file, i) => {
+            const button = document.createElement("button");
+
+            button.innerText = `${i + 1}`;
+            button.onclick = () => navFiles(i, filterChoice, subChoice, isAll);
+
+            navNumbers.appendChild(button);
+        });
+
     }
 
     const [type, name, path] = chosenFiles[index];
@@ -60,6 +97,17 @@ async function navFiles(index = 0, filterChoice = 0, subChoice = 0, isAll = true
     const text = await response.text();
 
     content.innerText = text;
+
+    
+    //buttons
+    // chosenFiles.forEach((file, index) => {
+    //     const button = document.createElement("button");
+
+    //     button.innerText = `${index + 1}`;
+    //     button.onclick = () => navFiles(index);
+
+    //     document.getElementById("navNumbers").appendChild(button);
+    // });
 
 
     if (index > 0) document.getElementById("topFile").onclick = () => navFiles(0, filterChoice, subChoice, isAll);
@@ -71,32 +119,23 @@ async function navFiles(index = 0, filterChoice = 0, subChoice = 0, isAll = true
     if (index < files.length - 1) document.getElementById("lastFile").onclick = () => navFiles(chosenFiles.length - 1, filterChoice, subChoice, isAll);
 }
 
-files.forEach((file, index) => {
-    const button = document.createElement("button");
+// files.forEach((file, index) => {
+//     const button = document.createElement("button");
 
-    button.innerText = `${index + 1}`;
-    button.onclick = () => navFiles(index);
+//     button.innerText = `${index + 1}`;
+//     button.onclick = () => navFiles(index);
 
-    document.getElementById("navNumbers").appendChild(button);
-});
+//     document.getElementById("navNumbers").appendChild(button);
+// });
 
 function noFiles(){
     document.getElementById("contentPdf").textContent = "Awaiting reports... Witnesses to strange happenings in this location are asked to CREATE REPORT.";
+    document.getElementById("filterName").textContent = "NO FILES FOUND";    
+    navNumbers.innerHTML = "";
 }
 
 ////////////////////////
 
-const shorts = [
-    "/docs/stories/jihaa0001_strangeHappenings.txt",
-    // "/docs/stories/test4.txt",
-    // "/docs/stories/novels/testNovel.txt"
-];
-const poetry = [
-    "/docs/stories/test4.txt"
-];
-const novels = [
-    "/docs/stories/novels/testNovel.txt"
-];
 
 async function navStories(index = 0, whichStory = 0) {
 
@@ -112,14 +151,18 @@ async function navStories(index = 0, whichStory = 0) {
             break;
     }
 
+    
     const content = document.getElementById("myStories");
-    const response = await fetch(stories[index]);
+
+    const [path, title] = stories[index];
+    const response = await fetch(path);
     const text = await response.text();
 
     if (index == null) {
         navStories(0, 0);
     } else{        
-        content.innerText = text;
+        content.innerText = text;  
+        document.getElementById("storyTitle").textContent = title;  
     }
 }
 
@@ -130,19 +173,19 @@ function collabFont() {
     document.getElementById("contentTopic").textContent = "Juniper Archives";     
     document.getElementById("contentTitle").textContent = "Community Fiction";  
 
-    
-    // document.querySelectorAll('button').style.setProperty('font-family', 'Audiowide')
     document.getElementById("storyBody").style.fontFamily = "";
     // document.getElementById("contentPdf").style.fontFamily = "";  
     // document.getElementById("contentPdf").style.color = ""; 
     // document.getElementById("contentPdf").style.lineHeight = "";   
     // document.getElementById("contentPdf").style.marginTop = ""; 
-    document.getElementById("contentTopic").style.borderRadius = ""; 
-    document.getElementById("contentTopic").style.paddingTop = ""; 
-    document.getElementById("contentTopic").style.fontSize = ""; 
-    document.getElementById("contentTopic").style.textAlign = ""; 
-    document.getElementById("contentTopic").style.paddingLeft = ""; 
-    document.getElementById("contentTitle").style.fontSize = ""; 
+    // document.getElementById("contentTopic").style.borderRadius = ""; 
+    // document.getElementById("contentTopic").style.paddingTop = ""; 
+    // document.getElementById("contentTopic").style.fontSize = ""; 
+    // document.getElementById("contentTopic").style.textAlign = ""; 
+    // document.getElementById("contentTopic").style.paddingLeft = ""; 
+    // document.getElementById("contentTitle").style.fontSize = ""; 
+    document.getElementById("contentTopic").style.display = "block";
+    document.getElementById("storyTitle").style.display = "none";
 
     //elements
     document.getElementById("collaborativeWorks").style.display = "block"; 
@@ -152,6 +195,7 @@ function collabFont() {
     document.getElementById("contentMatter").style.minHeight = ""; 
     document.getElementById("contentMatter").style.height = ""; 
     document.getElementById("contentMatter").style.width = ""; 
+    document.getElementById("contentMatter").style.marginBottom = ""; 
     document.getElementById("myStories").style.display = "none"; 
     document.getElementById("myStoriesContent").style.display = "none"; 
     document.getElementById("expandStories").style.display = "none"; 
@@ -188,20 +232,16 @@ function collabFont() {
 }
 function pWorksFont() {
     //text, titles
-    document.getElementById("contentTopic").textContent = "The thing of the thing";  
-    document.getElementById("contentTitle").textContent = "Personal Works";    
+    // document.getElementById("contentTopic").textContent = "";  
+    // document.getElementById("contentTitle").textContent = "Personal Works";    
 
     document.getElementById("storyBody").style.fontFamily = "Metamorphous";    
     // document.getElementById("contentPdf").style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif"; 
     // document.getElementById("contentPdf").style.color = "var(--colorDark)";  
     // document.getElementById("contentPdf").style.lineHeight = "1.5";  
     // document.getElementById("contentPdf").style.marginTop = "2%"; 
-    document.getElementById("contentTopic").style.borderRadius = "20px"; 
-    document.getElementById("contentTopic").style.paddingTop = "20px"; 
-    document.getElementById("contentTopic").style.fontSize = "40px"; 
-    document.getElementById("contentTopic").style.textAlign = "center"; 
-    document.getElementById("contentTopic").style.paddingLeft = "3.75%"; 
-    document.getElementById("contentTitle").style.fontSize = "12px"; 
+    document.getElementById("contentTopic").style.display = "none";
+    document.getElementById("storyTitle").style.display = "block";
 
     //elements
     document.getElementById("collaborativeWorks").style.display = "none"; 
@@ -211,6 +251,7 @@ function pWorksFont() {
     document.getElementById("contentMatter").style.minHeight = "75vh"; 
     document.getElementById("contentMatter").style.height = "fit-content"; 
     document.getElementById("contentMatter").style.width = "50vw"; 
+    document.getElementById("contentMatter").style.marginBottom = "4vw"; 
     document.getElementById("myStories").style.display = "block"; 
     document.getElementById("myStoriesContent").style.display = "block"; 
     document.getElementById("expandStories").style.display = "grid"; 
@@ -275,8 +316,63 @@ document.getElementById("expandStories").addEventListener('click', async () => {
 document.getElementById("topPage").addEventListener('click', async () => { 
     // window.scrollTo(0, 0);
     window.scrollTo({
-        top: 60,
+        top: 50,
         left: 60,
         behavior: 'smooth'
     })
 })
+
+
+document.getElementById("createReportBtn").addEventListener('click', async () => {   
+    if (document.getElementById("contentPdf").style.display != "none"){
+        document.getElementById("contentPdf").style.display = "none";
+        document.getElementById("optionContent").style.display = "none";
+        document.getElementById("collaborativeWorks").style.height = "67vh"; 
+        document.getElementById("collaborativeWorks").style.overflowY = "hidden"; 
+        document.getElementById("contentMatter").style.width = "88.1vw"; 
+        document.getElementById("contentTitle").style.fontSize = "12px";
+        document.getElementById("formReport").style.display = "block";
+        document.getElementById("createReportBtn").textContent = "— BACK —";
+        document.getElementById("createReportBtn").style.textAlign = "center";
+        // document.getElementById("createReportBtn").style.marginLeft = "-12vw";
+        document.getElementById("createReportBtn").style.backgroundColor = "var(--colorMediumDark)";
+        document.getElementById("filterName").style.visibility = "hidden";
+        document.getElementById("navNumbers").style.visibility = "hidden";
+        document.getElementById("randomFiles").style.visibility = "hidden";
+        document.getElementById("topFile").style.visibility = "hidden";
+        document.getElementById("prevFile").style.visibility = "hidden";
+        document.getElementById("nextFile").style.visibility = "hidden";
+        document.getElementById("lastFile").style.visibility = "hidden";
+        document.getElementById("allFiles").style.visibility = "hidden";
+    }
+    else{
+        document.getElementById("contentPdf").style.display = "";
+        document.getElementById("optionContent").style.display = "";
+        document.getElementById("collaborativeWorks").style.height = ""; 
+        document.getElementById("collaborativeWorks").style.overflowY = ""; 
+        document.getElementById("contentMatter").style.width = ""; 
+        document.getElementById("contentTitle").style.fontSize = "";
+        document.getElementById("formReport").style.display = "none";
+        document.getElementById("createReportBtn").textContent = "CREATE REPORT";
+        document.getElementById("createReportBtn").style.textAlign = "end";
+        // document.getElementById("createReportBtn").style.marginLeft = "";
+        document.getElementById("createReportBtn").style.backgroundColor = "";
+        document.getElementById("filterName").style.visibility = "visible";
+        document.getElementById("navNumbers").style.visibility = "visible";
+        document.getElementById("randomFiles").style.visibility = "visible";
+        document.getElementById("topFile").style.visibility = "visible";
+        document.getElementById("prevFile").style.visibility = "visible";
+        document.getElementById("nextFile").style.visibility = "visible";
+        document.getElementById("lastFile").style.visibility = "visible";
+        document.getElementById("allFiles").style.visibility = "visible";        
+    }
+});
+
+// function formInfo(){
+//     document.getElementById("formInfo").style.visibility = "hidden"
+// }
+
+// document.getElementById("formInfo").addEventListener('click', async () => { 
+   
+//     window.alert("hi");
+// })

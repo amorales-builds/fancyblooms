@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/storiesStyle.css" type="text/css" media="all">
   </head>
 
-  <body id="storyBody" onload="navFiles(); navStories()">   
+  <body id="storyBody" onload="navFiles(); navStories();">   
     <div class="tabs">
       <a href="/index.html" id="tabBtn" class="homeBtn">home</a>
       <a href="/public/programmingPage.html" id="tabBtn" class="prBtn">programming</a>
@@ -21,11 +21,12 @@
     <!-- <button>home</button> -->
       <!-- <h1 class="title">Stories</h1> -->
     <h2 id="contentTopic">Juniper Archives</h2>
+    <h2 id="storyTitle" style="display: none;">Title</h2>
     <div class="storiesContent">
       <div id="compartment" class="options">
         <button id="communityBtn" onclick="collabFont()">Community Fiction</button>
         <button id="pWorksBtn" onclick="pWorksFont()">Personal Works</button>
-        <button id="reviewsBtn" onclick="reviewsFont()">Media Reviews</button>
+        <!-- <button id="reviewsBtn" onclick="reviewsFont()">Media Reviews</button> -->
       </div>
       <div id="contentMatter" class="community">
         <button id="expandStories" style="display: none; justify-self: center;"><></button>
@@ -35,15 +36,125 @@
         </div> -->
         <div id="collaborativeWorks">
           <p id="contentPdf"></p>
+
+          <form id="formReport" style="display: none; font-family: SyneMono; font-size: 18px; margin-top: 2vh;" method="POST" action="https://formsubmit.co/boombowstick@gmail.com" enctype="multipart/form-data">
+
+            <p style="margin-bottom: 2vh; margin-top: 0; font-size: 28px; background-color: var(--colorBlack); padding-left: 5vw; margin-left: -5vw; width: 81vw; color: var(--colorWhite);">Juniper Island (Resident or Guest) &mdash; Report Form:</p>
+
+          <div style="display:grid; grid-template-columns: auto auto; justify-content: space-around">
+              <!-- <div style="text-align: end; display: grid; grid-template-columns: 150px auto; grid-template-rows: 35vh; column-gap: 2%; margin-top: 0.3vh;"> -->
+                  <div style="display: grid; grid-template-rows:auto auto auto auto auto; align-items: center; row-gap: 4.1vh; border: 2px solid gray; padding-left: 1.2vw;">
+
+                    <div><label for="email">Address: </label>
+                      <input style="margin: 0.72vw; width: 12vw;" type="email" name="email" placeholder="email (optional)"> <br> </div>
+
+                    <div style="display: grid; grid-template-columns: auto auto;"><label for="anonymous">Anonymous: </label>
+                      <div style="display: flex; justify-content: space-around; width: 12vw;">
+                          <div>
+                              <input type="radio" name="anonymous" value="YES" checked>
+                              <label>YES</label>
+                          </div>
+                          <div>
+                              <input type="radio" name="anonymous" value="NO">
+                              <label>NO</label>
+                          </div>
+                      </div></div>
+
+                    <div><label for="name">Full Name: </label>
+                      <input style="margin:-0.5vw; width: 12vw;" type="text" name="name" placeholder="— CREATE CHARACTER"><br>   </div>
+
+                    <div><label for="location">Location: </label><select id="location" name="location">
+                        <button>
+                            <selectedcontent></selectedcontent>
+                        </button>    
+                        <option value="unknown">
+                            <span class="option-label">Unknown</span>
+                        </option>
+                        <option value="hospital">
+                            <span class="option-label">Hospital</span>
+                        </option>
+                        <option value="grand hotel">
+                            <span class="option-label">Grand Hotel</span>
+                        </option>
+                        <option value="lighthouse">
+                            <span class="option-label">Lighthouse</span>
+                        </option>
+                        <option value="circus">
+                            <span class="option-label">Circus</span>
+                        </option>
+                        <option value="waterpark">
+                            <span class="option-label">Waterpark</span>
+                        </option>
+                        <option value="beach">
+                            <span class="option-label">Beach</span>
+                        </option>
+                        <option value="town hall">
+                            <span class="option-label">Town Hall</span>
+                        </option>
+                        <option value="caves">
+                            <span class="option-label">Caves</span>
+                        </option>
+                        <option value="suburbs">
+                            <span class="option-label">Suburbs</span>
+                        </option>
+                        </select></div>
+                        
+                    <div style="display: grid; grid-template-columns: auto auto;">
+                      <label for="note">Witness Note: </label>
+                      <div style="display: flex; justify-content: space-around; width: 12vw;">
+                          <div>
+                              <input type="radio" name="note" value="ALLOW" checked>
+                              <label>ALLOW</label>
+                          </div>
+                          <div>
+                              <input type="radio" name="note" value="DENY">
+                              <label>DENY</label>
+                          </div>
+                      </div>
+                  </div> </div>
+
+              <div style="border: 2px solid gray; padding: 1.2vw;">
+                  <label for="title">Issue: </label>
+                  <input style="width:15vw;" type="text" name="title" placeholder="— TITLE STORY" required><br>
+
+                  <textarea style="height: 30vh; width: 50vw; margin-top: 20px; padding: 20px;" name="content" placeholder=" Report what you have witnessed on Juniper Island..." required></textarea><br>
+              </div>
+
+          </div>
+          <div style="text-align: center;">
+
+              <form action="https://formsubmit.co/witness_JuniperArchives" method="POST" />
+
+              <input type="hidden" name="_subject" value="NEW REPORT! — Juniper Archives">
+
+              <input type="hidden" name="_template" value="table">
+
+              <input type="hidden" name="_next" value="https://fancyblooms.neocities.org/public/storiesPage">
+
+              <input type="hidden" name="_autoresponse" value="* Your report has been submited. The Witness will review your report before uploading it to the Juniper Archives. Take Care. *">
+
+              <input type="text" name="_honey" style="display:none">
+
+              <div style="margin-top: 20px; border: 1px solid black; padding-bottom: 10px;" >
+                  <p style="margin-bottom: 0.5vh;">This is a work of fiction. Any resemblance to persons living or dead is purely coincidental.</p>
+                  <input type="checkbox" name="disclaimer" required> 
+                  <p style="display: inline; color: blue;">AGREE</p>
+              </div>
+
+              <br><button style="width: 30vw; margin-top: 0; padding: 5px; letter-spacing: 5px; border-color: var(--colorDark); font-weight: 900; font-size: 16px;" type="submit">SEND</button>
+          </div>
+
+        </form>
+
         </div>
         
         <p id="myStories" style="display: none"></p>
 
         <div id="navButtonsColab">
-          <p id="navMapBtn" class="storiesNavBtn">MAP</p>
+          <p id="filterName" class="storiesNavBtn"></p> <!-- &#64;&#64;&#64;&#64;&#64;&#64;&#64;&#64;&#64;&#64;&#64;&#64; -->
           <div>
             <!-- <button>newest</button> -->
-            <button id="randomFiles" style="margin-left: 90px; margin-right: 50px;">RANDOM</button>
+            <button id="randomFiles" style="margin-left: 10px; margin-right: 50px;">RANDOM</button>
             <button id="topFile"><<</button>
             <button id="prevFile"><</button>
             <div id="navNumbers" style="display: inline;"></div>
@@ -52,7 +163,7 @@
             <!-- <button>random</button> -->
             <button id="allFiles" style="margin-left: 50px;" onclick="navFiles(0, 0, 0, 1)">ALL</button>
           </div>
-          <p  id="navReportBtn" class="storiesNavBtn">CREATE REPORT</p>
+          <p  id="createReportBtn" class="storiesNavBtn" style="text-align: end;">CREATE REPORT</p>
         </div>        
         <button id="topPage" style="display: none; justify-self: center;">Top</button>
       </div>
@@ -64,7 +175,6 @@
           <button onclick="navFiles(0, 0, 0, 0)">hospital</button> <!-- navFiles(0, building/names, which one, isAll) -->
           <button onclick="noFiles()">grand hotel</button>
           <button onclick="noFiles()">lighthouse</button>
-          <!-- <button onclick="noFiles()">suburbs</button> -->
           <button onclick="noFiles()">circus</button>
           <button onclick="noFiles()">waterpark</button>
           <button onclick="noFiles()">beach</button>
@@ -78,9 +188,9 @@
           <button onclick="navFiles(0, 1, 0, 0)">G. Ivanov</button>
 
           <h2 style="margin-top: 30px;">Data</h2>
+          <button>Locations</button>
           <button>Residents</button>
           <button>Strangers</button>
-          <button>Locations</button>
           <button>Glossary</button>
         </div>
 

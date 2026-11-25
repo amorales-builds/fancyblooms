@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories-Fancyblooms</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/bunnyBear_icon.ico">
+    <!-- <link rel="stylesheet" href="/styles/style.css" type="text/css" media="all"> -->
+    <link rel="stylesheet" href="/styles/storiesStyle.css" type="text/css" media="all">
+  </head>
+
+  <body>
+    <form id="formReport" style="font-family: SyneMono; font-size: 18px; margin-top: 2vh; background-color: white; padding: 20px; padding-inline: 6vw;" method="POST" action="https://formsubmit.co/boombowstick@gmail.com" enctype="multipart/form-data">
+            <p style="margin-bottom: 3vh; font-size: 28px;">Juniper Island (Resident or Guest) &mdash; Report Form:</p>
+
+        <div style="display:grid; grid-template-columns: auto auto; justify-content: space-evenly;">
+            <div style="text-align: end; display: grid; grid-template-columns: 150px auto; grid-template-rows: 15vh; column-gap: 5%; margin-top: 0.3vh;">
+                <div style="display: grid; grid-template-rows:auto auto auto auto auto; align-items: center; row-gap: 4.1vh;">
+                    <label for="email">Address: </label>
+                    <label for="anonymous">Anonymous: </label>
+                    <label for="name">Full Name: </label>
+                    <label for="location">Location: </label>
+                    <label for="note">Witness Note: </label>
+                    <!-- <label for="name">Visuals: </label> -->
+                </div>  
+                <div style="display: grid; grid-template-rows:auto auto auto auto auto; grid-auto-columns: 16vw; row-gap: 0.9vh;">
+                    <input type="email" name="email" placeholder="email (optional)"> <br>  
+                    <div style="display: flex; justify-content: start; margin-bottom: 3.45vh;">
+                        <div style="margin-right: 20%;">
+                            <input type="radio" name="anonymous" value="YES" checked>
+                            <label>YES</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="anonymous" value="NO">
+                            <label>NO</label>
+                        </div>
+                    </div>
+
+                    <input type="text" name="name" placeholder="— CREATE CHARACTER"><br>   
+                
+                    <select id="location" name="location">
+                    <button>
+                        <selectedcontent></selectedcontent>
+                    </button>    
+
+                    <option value="unknown">
+                        <span class="option-label">Unknown</span>
+                    </option>
+                    <option value="hospital">
+                        <span class="option-label">Hospital</span>
+                    </option>
+                    <option value="grand hotel">
+                        <span class="option-label">Grand Hotel</span>
+                    </option>
+                    <option value="lighthouse">
+                        <span class="option-label">Lighthouse</span>
+                    </option>
+                    <option value="circus">
+                        <span class="option-label">Circus</span>
+                    </option>
+                    <option value="waterpark">
+                        <span class="option-label">Waterpark</span>
+                    </option>
+                    <option value="beach">
+                        <span class="option-label">Beach</span>
+                    </option>
+                    <option value="town hall">
+                        <span class="option-label">Town Hall</span>
+                    </option>
+                    <option value="caves">
+                        <span class="option-label">Caves</span>
+                    </option>
+                    <option value="suburbs">
+                        <span class="option-label">Suburbs</span>
+                    </option>
+                    </select>
+
+                    <div style="display: flex; justify-content: start; margin-top: 3.44vh;">
+                        <div style="margin-right: 15%;">
+                            <input type="radio" name="note" value="ALLOW" checked>
+                            <label>ALLOW</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="note" value="DENY">
+                            <label>DENY</label>
+                        </div>
+                    </div>
+
+                    <!-- <input style="margin-top: 2.8vh;" type="file" name="attachment" accept="image/png, image/jpeg"> -->
+                </div> 
+                
+            </div>
+
+            <div>
+                <label for="title">Issue: </label>
+                <input style="width:15vw;" type="text" name="title" placeholder="— TITLE STORY" required><br>
+
+                <!-- <label for="content">Content:</label><br> -->
+                <textarea style="height: 30vh; width: 50vw; margin-top: 10px; padding: 20px;" name="content" placeholder=" Report what you have witnessed on Juniper Island..." required></textarea><br>
+            </div>
+
+        </div>
+        <div style="text-align: center;">
+
+            <form action="https://formsubmit.co/witness_JuniperArchives" method="POST" />
+
+            <input type="hidden" name="_subject" value="NEW REPORT! — Juniper Archives">
+
+            <input type="hidden" name="_template" value="table">
+
+            <input type="hidden" name="_next" value="https://fancyblooms.neocities.org/public/storiesPage">
+
+            <input type="hidden" name="_autoresponse" value="* Your report has been submited. The Witness will review your report before uploading it to the Juniper Archives. Take Care. *">
+
+            <input type="text" name="_honey" style="display:none">
+
+            <div style="margin-top: 20px; border: 1px solid black; padding-bottom: 12px;" >
+                <p style="margin-bottom: 1vh;">This is a work of fiction. Any resemblance to persons living or dead is purely coincidental.</p>
+                <input type="checkbox" name="disclaimer" required> 
+                <p style="display: inline; color: blue;">AGREE</p>
+            </div>
+
+            <br><button style="width: 30vw; margin-top: 5px; padding: 5px; letter-spacing: 5px; border-color: var(--colorDark); font-weight: 900; font-size: 18px;" type="submit">SEND</button>
+        </div>
+        </form>
+
+
+        <!-- <form id="formReport" style="display: none; font-family: SyneMono; font-size: 18px; margin-top: 2vh;" method="POST" action="https://formsubmit.co/boombowstick@gmail.com" enctype="multipart/form-data">
+
+            <p style="margin-bottom: 3vh; margin-top: 0; font-size: 28px;">Juniper Island (Resident or Guest) &mdash; Report Form:</p>
+
+          <div style="display:grid; grid-template-columns: auto auto; justify-content: space-around;">
+              <div style="text-align: end; display: grid; grid-template-columns: 150px auto; grid-template-rows: 35vh; column-gap: 2%; margin-top: 0.3vh;">
+                  <div style="display: grid; grid-template-rows:auto auto auto auto auto; align-items: center; row-gap: 4.1vh;">
+                      <label for="email">Address: </label>
+                      <label for="anonymous">Anonymous: </label>
+                      <label style="margin-top: -0.1vh;" for="name">Full Name: </label>
+                      <label for="location">Location: </label>
+                      <label for="note">Witness Note: </label>
+                  </div>  
+                  <div style="display: grid; grid-template-rows:auto auto auto auto auto; grid-auto-columns: 13vw; row-gap: 0.9vh;">
+                      <input style="margin-top: 0.2vh;" type="email" name="email" placeholder="email (optional)"> <br>  
+                      <div style="display: flex; justify-content: start; margin-bottom: 2vh;">
+                          <div style="margin-right: 20%;">
+                              <input type="radio" name="anonymous" value="YES" checked>
+                              <label>YES</label>
+                          </div>
+                          <div>
+                              <input type="radio" name="anonymous" value="NO">
+                              <label>NO</label>
+                          </div>
+                      </div>
+
+                      <input type="text" name="name" placeholder="— CREATE CHARACTER"><br>   
+                  
+                      <select id="location" name="location">
+                      <button>
+                          <selectedcontent></selectedcontent>
+                      </button>    
+
+                      <option value="unknown">
+                          <span class="option-label">Unknown</span>
+                      </option>
+                      <option value="hospital">
+                          <span class="option-label">Hospital</span>
+                      </option>
+                      <option value="grand hotel">
+                          <span class="option-label">Grand Hotel</span>
+                      </option>
+                      <option value="lighthouse">
+                          <span class="option-label">Lighthouse</span>
+                      </option>
+                      <option value="circus">
+                          <span class="option-label">Circus</span>
+                      </option>
+                      <option value="waterpark">
+                          <span class="option-label">Waterpark</span>
+                      </option>
+                      <option value="beach">
+                          <span class="option-label">Beach</span>
+                      </option>
+                      <option value="town hall">
+                          <span class="option-label">Town Hall</span>
+                      </option>
+                      <option value="caves">
+                          <span class="option-label">Caves</span>
+                      </option>
+                      <option value="suburbs">
+                          <span class="option-label">Suburbs</span>
+                      </option>
+                      </select>
+
+                      <div style="display: flex; justify-content: start; margin-top: 3.5vh;">
+                          <div style="margin-right: 15%;">
+                              <input type="radio" name="note" value="ALLOW" checked>
+                              <label>ALLOW</label>
+                          </div>
+                          <div>
+                              <input type="radio" name="note" value="DENY">
+                              <label>DENY</label>
+                          </div>
+                      </div>
+
+                  </div> 
+                  
+              </div>
+
+              <div>
+                  <label for="title">Issue: </label>
+                  <input style="width:15vw;" type="text" name="title" placeholder="— TITLE STORY" required><br>
+
+                  <textarea style="height: 30vh; width: 50vw; margin-top: 20px; padding: 20px;" name="content" placeholder=" Report what you have witnessed on Juniper Island..." required></textarea><br>
+              </div>
+
+          </div>
+          <div style="text-align: center;">
+
+              <form action="https://formsubmit.co/witness_JuniperArchives" method="POST" />
+
+              <input type="hidden" name="_subject" value="NEW REPORT! — Juniper Archives">
+
+              <input type="hidden" name="_template" value="table">
+
+              <input type="hidden" name="_next" value="https://fancyblooms.neocities.org/public/storiesPage">
+
+              <input type="hidden" name="_autoresponse" value="* Your report has been submited. The Witness will review your report before uploading it to the Juniper Archives. Take Care. *">
+
+              <input type="text" name="_honey" style="display:none">
+
+              <div style="margin-top: 20px; border: 1px solid black; padding-bottom: 12px;" >
+                  <p style="margin-bottom: 1vh;">This is a work of fiction. Any resemblance to persons living or dead is purely coincidental.</p>
+                  <input type="checkbox" name="disclaimer" required> 
+                  <p style="display: inline; color: blue;">AGREE</p>
+              </div>
+
+              <br><button style="width: 30vw; margin-top: 5px; padding: 5px; letter-spacing: 5px; border-color: var(--colorDark); font-weight: 900; font-size: 18px;" type="submit">SEND</button>
+          </div>
+
+        </form> -->
+
+  </body>
+
+</html>
