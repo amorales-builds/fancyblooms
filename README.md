@@ -12,6 +12,8 @@ Practice Web Design and JS.
     - [x] Personal Section
         - [ ] About Me   
             - [ ] Basic Introduction  <!-- non security risk -->
+                - [ ] Github link
+                - [ ] Artstagram link
                 - [ ] \(Optional) Favorite Color
                 - [ ] \(Optional) Favorite Mammal
                 - [ ] \(Optional) Favorite Fish
@@ -38,9 +40,9 @@ Practice Web Design and JS.
         - [ ] Blog  
         - [ ] Cool Websites <!-- more on my notion --> 
             <!-- mention what each does please -->
-            - [ ] [WaniKani](https://www.wanikani.com/)
+            - [ ] [wanikani.com](https://www.wanikani.com/)
             - [ ] [itch.io](https://itch.io/games/platform-web)
-            - [ ] [Wayback Machine](https://web.archive.org/)
+            - [ ] [web.archive.org](https://web.archive.org/)
 
     - [x] Art Section
         - [ ] Introduction
