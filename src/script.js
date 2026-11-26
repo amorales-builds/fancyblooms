@@ -144,3 +144,18 @@ document.getElementById("downBtn").addEventListener('click', async () => {
 // document.getElementById("lightBtn").addEventListener('click', async () => {   
     
 // })
+
+// let popUp = true;
+
+// function warningPopup(){
+//     if (popUp){        
+//         document.getElementById("rPopUp").style.display = "block";
+//     }
+//     document.getElementById("rWarningBtn").onclick = () => {
+//         document.getElementById("rPopUp").style.display = "none";
+//         popUp = false;
+//     }
+// }
+// document.getElementById("rWarningBtn").addEventListener('click', async () => {   
+//     document.getElementById("rPopUp").style.display = "none";
+// })

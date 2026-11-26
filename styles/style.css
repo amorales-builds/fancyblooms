@@ -71,6 +71,48 @@
     /*cursor: url('https://cdn.cursors-4u.net/previews/cat-paw-curl-f8836eeb-preview-64.webp') 0 0, auto !important; /* White Cat Paw Curl - https://www.cursors-4u.com/cursor/white-cat-paw-curl */
 }
 
+#rPopUp{    
+    position: fixed;
+    z-index: 99999;
+    background-color: var(--colorWhite);
+    box-shadow: 0 0 5px 10vw var(--colorWhite);
+    height: 100vh;
+    width: 100vw; 
+}
+#resolutionWarning{
+    /* position: absolute;
+    z-index: 99999; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0 0 10px var(--colorDarker);
+    background-color: var(--colorMedium);    
+    border: 4px solid var(--colorMain);
+    box-shadow:0 0 0 1vw var(--colorWhitish) inset, 0 0 20px 1vw var(--colorMediumDark) inset,  0 0 0 .1vw var(--colorLight), 0 0 0 .3vw var(--colorDark), 0 0 5px .8vw var(--colorAccentLight), 0 0 5px 1vw var(--colorWhite);
+    height: 30vh;
+    width: 38vw;
+    border-radius: 50px;
+    margin: 5% 20%;
+    padding: 5% 10%;
+    font-size: 28px;
+}
+#rWarningBtn{
+    font-size: 20px; 
+    background-color: var(--colorWhitish); 
+    border-color: var(--colorDark); 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    color: var(--colorDarker); 
+    padding: 10px; 
+    border-radius: 10px;
+}
+#rWarningBtn:hover{
+    font-size: 20px; 
+    background-color: var(--colorMediumDark); 
+    border: 2.5px solid var(--colorWhitish);
+    box-shadow:0 0 2px 0.1vw var(--colorMediumDark) inset, 0 0 10px .1vw var(--colorAccentLight); 
+    color: var(--colorWhitish); 
+    transform: scale(150%) rotate(-5deg);
+    transition: 0.2s ease-in-out;
+}
+
 
 .tabs{
     position: absolute;

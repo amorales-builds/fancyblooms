@@ -18,33 +18,35 @@ Practice Web Design and JS.
                 - [x] \(Optional) Favorite Mammal
                 - [x] \(Optional) Favorite Fish
                 - [x] \(Optional) Favorite Tree
-        - [ ] Blog      
+        - [x] Blog      
         - [ ] Current 
-            - [ ] "Reading"
-            - [ ] "Watching"
-            - [ ] "Playing"
-            - [ ] "Listening to"
-        - [ ] Language Progress 
-            - [ ] Human Languages 
-            - [ ] Programming Languages 
-            - [ ] Conlangs
-        - [ ] Personal Projects 
-            - [ ] Art <!-- redirect to Gallery or Comics -->
-            - [ ] Programming <!-- redirect to Programming Projects -->  
-            - [ ] Novels <!-- redirect to Novel Updates -->
-        - [ ] \(Optional) Favorites 
-            - [ ] Aesthetics      
-            - [ ] YouTube Channels     
-            - [ ] Artists       
-                - [ ] Music     
-                - [ ] Visual        
-        - [ ] Cool Websites <!-- more on my notion --> 
-            <!-- mention what each does please -->
-            - [ ] [wanikani.com](https://www.wanikani.com/)
-            - [ ] [itch.io](https://itch.io/games/platform-web)
-            - [ ] [web.archive.org](https://web.archive.org/)
-            - [ ] [loremipsum.io/generator](https://loremipsum.io/generator/)
-            - [ ] [virustotal.com](https://www.virustotal.com/gui/home/upload)
+            - [x] "Reading"
+            - [x] "Watching"
+            - [x] "Playing"
+            - [x] "Listening to"
+        - [ ] Mine            
+            - [x] Language Progress 
+                - [x] Human Languages 
+                - [ ] Programming Languages 
+                - [ ] Conlangs
+            - [ ] Personal Projects 
+                - [x] Art <!-- redirect to Gallery or Comics -->
+                - [x] Programming <!-- redirect to Programming Projects -->  
+                - [x] Novels <!-- redirect to Novel Updates -->
+        - [ ] Others        
+            - [ ] \(Optional) Favorites 
+                - [ ] Aesthetics      
+                - [x] YouTube Channels     
+                - [ ] Artists       
+                    - [x] Music     
+                    - [x] Visual        
+            - [x] Cool Websites <!-- more on my notion --> 
+                <!-- mention what each does please -->
+                - [x] [wanikani.com](https://www.wanikani.com/)
+                - [x] [itch.io](https://itch.io/games/platform-web)
+                - [x] [web.archive.org](https://web.archive.org/)
+                - [x] [loremipsum.io/generator](https://loremipsum.io/generator/)
+                - [x] [virustotal.com](https://www.virustotal.com/gui/home/upload)
 
     - [x] Art Section
         - [ ] Introduction
@@ -80,8 +82,8 @@ Practice Web Design and JS.
             - [ ] \(Optional) Blurb <!-- Maybe as a "pop-up" window that closes when you click on x --> 
             - [ ] \(Optional) Witness Eye <!-- Eye that appears and follows cursor after sending report. Maybe a "The Witness will keep their eyes on you" message --> 
         - [x] Personal Works   
-            - [ ] Short Stories   
-            - [ ] Novel Updates <!-- Teaser, Hook, Blurb (and where it's published) --> 
+            - [x] Short Stories   
+            - [x] Novel Updates <!-- Teaser, Hook, Blurb (and where it's published) --> 
             - [ ] Comics <!-- (button) redirects to Art Section -->
         - [ ] Media Reviews 
             - [ ] Books   

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/styles/personalStyle.css" type="text/css" media="all">
   </head>
   <!-- style="background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3N0cG5lY3dydGp1cWg2cDExNDk0YnM0NGM1N3JiZ2ZqdGMxZGs4ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gvfpZrR54qd56/giphy.gif); background-repeat: no-repeat; background-size: cover;" -->
-  <body>    
+  <body onload="navBlog()">    
     <div class="tabs">
       <a href="/index.html" id="tabBtn" class="homeBtn">home</a>
       <a href="/public/artPage.html" id="tabBtn" class="aBtn">art</a>
@@ -19,7 +19,56 @@
     </div>
     <div class="content">
       <div class="pGrid">
-        <div class="container">3</div>
+        <div class="container">Cool Stuff
+          <div id="stuffGrid">
+            <div id="currentStuff" class="stuffContainer2">
+              <div id="id="currentStuff" class="stuffContainer">
+                <p>Reading:</p>
+                <p>Listening:</p>
+                <p>Watching:</p>
+                <p>Playing:</p>
+              </div>
+              <div id="id="projectStuff" class="stuffContainer">
+                <p>Art:</p>
+                <p>Programs:</p>
+                <p>Music</p>
+                <p>Novels:</p>
+              </div>
+            </div>
+            <div id="myStuff" class="stuffContainer">
+                <!-- <p style="margin-bottom: -5px;">Languages:</p> -->
+              <div id="languageStuff" class="langGrid">
+                <p>Japanese : &starf;&starf;&starf;&star;&star;</p>
+                <p>Chinese : &starf;&star;&star;&star;&star;</p>
+                <p>German : &starf;&starf;&starf;&star;&star;</p>
+              </div>
+              <!-- <div id="id="compStuff">
+                <p>HTML, CSS, JS:</p>
+                <p>C++, C#:</p>
+                <p>SQL:</p>
+              </div>
+              <div id="id="conlangStuff">
+                <p>Elvish:</p>
+                <p>Mine:</p>
+              </div> -->
+            </div>
+            <div id="artistsStuff" class="stuffContainer">
+              <p>Artists:</p>
+              <p>Musicians:</p>
+              <p>Channels:</p>
+            </div>
+            <div id="websiteStuff" class="stuffContainer">
+              <p>Cool Websites:</p>
+              <div class="linkGrid">
+                <p class="linkDesc"><a href="https://www.wanikani.com/">wanikani.com</a> &larr; japanese language learning!</p>
+                <p class="linkDesc"><a href="https://itch.io/games/">itch.io</a> &larr; free web games available</p>
+                <p class="linkDesc"><a href="https://web.archive.org/">web.archive.org</a> &larr; THE Internet Archive</p>
+                <p class="linkDesc"><a href="https://loremipsum.io/generator/">loremipsum.io/generator</a> &larr; filler text on demand</p>
+                <p class="linkDesc"><a href="https://www.virustotal.com/gui/home/upload">virustotal.com</a> &larr; upload files to check for viruses</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="container">About Me
           <div id="aboutMeDiv">
             <div>
@@ -50,12 +99,22 @@
                 <h3 id="favTitle"></h3>
                 <p id="favContent"></p>
               </div>
-              <p id="favImage"></p><br>
-              <p id="favImage2"></p>
+              <div style="margin-right: 2vw; margin-top: 1vh;">
+                <p id="favImage"></p>
+                <p id="favImage2"></p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="container">Blog</div>
+        <div class="container">
+          <p style="display: inline;">My Blog</p>
+          <div id="blogsNav"></div>            
+          <div id="blogContainer">    
+            <h2 id="blogTitle"></h2> 
+            <p id="blogDate"></p>
+            <p id="blogContent"></p>
+          </div>  
+        </div>
       </div>
     </div>
     <!-- <embed style="position: absolute; scale: 35%; margin-left:-3%; margin-top: -1%;" src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZHZzYnlyd2pzczFkYnd2M2dodTJrNTFiNm81N2hxNG9na3ZrYjliMyZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/LxHcvjM41ViH0f9ptl/giphy.webp"></embed> -->

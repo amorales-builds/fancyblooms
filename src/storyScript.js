@@ -8,13 +8,14 @@ const files = [
 
 //personalWorks
 const shorts = [
-    ["/docs/stories/jihaa0001_strangeHappenings.txt", "Strange Happenings"]
+    ["/docs/stories/nothingYet.txt", "Nothing Yet"],
+    // ["/docs/stories/jihaa0001_strangeHappenings.txt", "Strange Happenings"]
 ];
 const poetry = [
-    ["/docs/stories/testOne.txt", "Test One"]
+    ["/docs/stories/nothingYet.txt", "Nothing Yet"]
 ];
 const novels = [
-    ["/docs/stories/novels/testNovel.txt", "Test Novel"]
+    ["/docs/stories/nothingYet.txt", "Nothing Yet"]
 ];
 
 

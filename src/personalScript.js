@@ -58,6 +58,36 @@ function favTree(){
     document.getElementById("favContainer").style.height = "48.6vh";
     document.getElementById("favTitle").textContent = "Ginkgo";
     document.getElementById("favTitle").style.fontSize = "";
-    document.getElementById("favContent").textContent = " We have evidence of the \"Ginkgo Biloba\" from back in the Jurassic period, and it is now the last living species in the order of Ginkgoales. These trees have survived atomic bombs, so it's no surprised they survived extinction. ♥";
+    document.getElementById("favContent").textContent = " We have evidence of the \"Ginkgo Biloba\" from back in the Jurassic period, and it is now the last living species in the order of Ginkgoales! These trees have survived atomic bombs, so it's no surprised they survived extinction. ♥";
     document.getElementById("favContent").style.display = "block";
 }
+
+//blog
+const blog = [
+    ["Wisdom Surgery", "26.11.26", "/docs/blogs/wisdomSurgery.txt"], 
+];
+
+async function navBlog(index = 0) {
+
+    const [title, date, path] = blog[index];
+    const response = await fetch(path);
+    const text = await response.text();
+
+    if (index == null) {
+        navBlog(0);
+    } 
+    else{        
+        document.getElementById("blogContent").innerText = text;  
+        document.getElementById("blogTitle").textContent = title;  
+        document.getElementById("blogDate").textContent = date;  
+    }
+}
+
+blog.forEach((file, index) => {
+    const button = document.createElement("button");
+
+    button.innerText = `${index + 1}`;
+    button.onclick = () => navBlog(index);
+
+    document.getElementById("blogsNav").appendChild(button);
+});
