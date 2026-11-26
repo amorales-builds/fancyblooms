@@ -1,10 +1,9 @@
+.stickers{
+    display: none;
+}
 
 #website{
     display: block;
-}
-
-#wip{
-    display: none;
 }
 
 .select{

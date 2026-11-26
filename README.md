@@ -10,39 +10,41 @@ Practice Web Design and JS.
 ## To-Do List
 - [x] Sectioned Main Page
     - [x] Personal Section
-        - [ ] About Me   
-            - [ ] Basic Introduction  <!-- non security risk -->
-                - [ ] Github link
-                - [ ] Artstagram link
-                - [ ] \(Optional) Favorite Color
-                - [ ] \(Optional) Favorite Mammal
-                - [ ] \(Optional) Favorite Fish
-                - [ ] \(Optional) Favorite Tree
-                - [ ] \(Optional) Favorite Word
-            - [ ] Status 
-                - [ ] "Reading"
-                - [ ] "Watching"
-                - [ ] "Listening to"
-            - [ ] Language Progress 
-                - [ ] Human Languages 
-                - [ ] Programming Languages 
-                - [ ] Conlangs
-            - [ ] Personal Projects 
-                - [ ] Art <!-- redirect to Gallery or Comics -->
-                - [ ] Programming <!-- redirect to Programming Projects -->  
-                - [ ] Novels <!-- redirect to Novel Updates -->
-            - [ ] \(Optional) Favorites 
-                - [ ] Aesthetics      
-                - [ ] YouTube Channels     
-                - [ ] Artists       
-                    - [ ] Music     
-                    - [ ] Visual    
-        - [ ] Blog  
+        - [x] About Me   
+            - [x] Basic Introduction  <!-- non security risk -->
+                - [x] Github link
+                - [x] Artstagram link
+                - [x] \(Optional) Favorite Color
+                - [x] \(Optional) Favorite Mammal
+                - [x] \(Optional) Favorite Fish
+                - [x] \(Optional) Favorite Tree
+        - [ ] Blog      
+        - [ ] Current 
+            - [ ] "Reading"
+            - [ ] "Watching"
+            - [ ] "Playing"
+            - [ ] "Listening to"
+        - [ ] Language Progress 
+            - [ ] Human Languages 
+            - [ ] Programming Languages 
+            - [ ] Conlangs
+        - [ ] Personal Projects 
+            - [ ] Art <!-- redirect to Gallery or Comics -->
+            - [ ] Programming <!-- redirect to Programming Projects -->  
+            - [ ] Novels <!-- redirect to Novel Updates -->
+        - [ ] \(Optional) Favorites 
+            - [ ] Aesthetics      
+            - [ ] YouTube Channels     
+            - [ ] Artists       
+                - [ ] Music     
+                - [ ] Visual        
         - [ ] Cool Websites <!-- more on my notion --> 
             <!-- mention what each does please -->
             - [ ] [wanikani.com](https://www.wanikani.com/)
             - [ ] [itch.io](https://itch.io/games/platform-web)
             - [ ] [web.archive.org](https://web.archive.org/)
+            - [ ] [loremipsum.io/generator](https://loremipsum.io/generator/)
+            - [ ] [virustotal.com](https://www.virustotal.com/gui/home/upload)
 
     - [x] Art Section
         - [ ] Introduction
@@ -67,11 +69,11 @@ Practice Web Design and JS.
             - [ ] [Google Fonts](https://fonts.google.com/)
             - [ ] [formsubmit.co](https://formsubmit.co/)
             - [ ] [atabook.org](https://atabook.org/)
-            - [ ] [giphy.vom](https://giphy.com/)
+            - [ ] [giphy.com](https://giphy.com/)
+            - [ ] [cursors-4u.com](https://www.cursors-4u.com/)
             - [ ] [freesound.org](https://freesound.org/)
             - [ ] [magicpattern.design/tools/css-backgrounds](https://www.magicpattern.design/tools/css-backgrounds/)
-            - [ ] [loremipsum.io/generator](https://loremipsum.io/generator/)
-            - [ ] [virustotal.com](https://www.virustotal.com/gui/home/upload)
+            - [ ] [freefrontend.com](https://freefrontend.com/)
 
     - [x] Stories Section    
         - [x] Collaborative Fiction   

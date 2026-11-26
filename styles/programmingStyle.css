@@ -1,5 +1,43 @@
 @import "/styles/style.css";
 
+:root{
+    --colorWhite: #ffffff;
+
+    --colorLight: #f3f4fc;
+    --colorLighter: #414148be;
+    --colorMediumLight: #a0a0c1;
+    --colorLightBG: #1c2130;
+    --colorLighterBG: #4e4e56;
+    --colorMain:  #1c302b;
+    --colorMedium:  #935454;
+    --colorMediumDark: #1a1a22;
+    --colorDark:  #1c2130;
+    --colorBlack: #1a1a22;
+
+    --colorContent: #f2f2fbd9;
+    --colorContentText: #121018;
+
+    --colorAccent: #6cfa53;
+}
+
+
+.tabs{
+    background-color: var(--colorBlack);
+}
+#tabBtn{
+    color: var(--colorWhite);
+}
+#tabBtn:hover{
+    color: var(--colorAccent);
+}
+
+a{
+    color: var(--colorAccent);
+}
+a:visited{
+    color: var(--colorAccent);
+}
+
 body{
     font-family: Audiowide;
     /* background-color: #1c2130;
@@ -8,21 +46,22 @@ body{
     background-position: 0 0, 0 0, 0 -0.46px, -0.46px 0; */
     /* background-color: #1c2130;
     background-image:  linear-gradient(30deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(150deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(30deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(150deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(60deg, #028f7677 25%, transparent 25.5%, transparent 75%, #028f7677 75%, #028f7677), linear-gradient(60deg, #028f7677 25%, transparent 25.5%, transparent 75%, #028f7677 75%, #028f7677);
-    background-size: 46px 81px;
-    background-position: 0 0, 0 0, 23px 40px, 23px 40px, 0 0, 23px 40px; */
-    background-color: #1c2130;
-    background-image:  linear-gradient(30deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(150deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(30deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(150deg, #028f76 12%, transparent 12.5%, transparent 87%, #028f76 87.5%, #028f76), linear-gradient(60deg, #028f7677 25%, transparent 25.5%, transparent 75%, #028f7677 75%, #028f7677), linear-gradient(60deg, #028f7677 25%, transparent 25.5%, transparent 75%, #028f7677 75%, #028f7677);
     background-size: 80px 140px;
-    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
-}
-
-.pContent{
-    padding: 16px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; */
     background-color: #1c2130;
     background-image:  repeating-linear-gradient(to right, transparent 0, transparent 3.8333333333333335px, #1c2130 3.8333333333333335px, #1c2130 11.5px, transparent 11.5px, transparent 15.333333333333334px), repeating-linear-gradient(to bottom, transparent 0, transparent 3.8333333333333335px, #1c2130 3.8333333333333335px, #1c2130 11.5px, transparent 11.5px, transparent 15.333333333333334px), linear-gradient(to bottom, #1c302b 1.38px, transparent 1.38px), linear-gradient(to right, #1c302b 1.38px, transparent 1.38px) ;
     background-size: 100% 100%, 100% 100%, 46px 46px, 46px 46px;
     background-position: 0 0, 0 0, 0 -0.46px, -0.46px 0;
+}
+
+.pContent{
+    /* background-color: #1c2130;
+    background-image:  repeating-linear-gradient(to right, transparent 0, transparent 3.8333333333333335px, #1c2130 3.8333333333333335px, #1c2130 11.5px, transparent 11.5px, transparent 15.333333333333334px), repeating-linear-gradient(to bottom, transparent 0, transparent 3.8333333333333335px, #1c2130 3.8333333333333335px, #1c2130 11.5px, transparent 11.5px, transparent 15.333333333333334px), linear-gradient(to bottom, #1c302b 1.38px, transparent 1.38px), linear-gradient(to right, #1c302b 1.38px, transparent 1.38px) ;
+    background-size: 100% 100%, 100% 100%, 46px 46px, 46px 46px;
+    background-position: 0 0, 0 0, 0 -0.46px, -0.46px 0; */
+    padding: 16px;
     height: 90vh;
     width: 95vw;
     margin-left: 1.5%;
+    margin-top: 3vh;
 }

@@ -71,9 +71,6 @@
     /*cursor: url('https://cdn.cursors-4u.net/previews/cat-paw-curl-f8836eeb-preview-64.webp') 0 0, auto !important; /* White Cat Paw Curl - https://www.cursors-4u.com/cursor/white-cat-paw-curl */
 }
 
-#wip{
-    display: none;
-}
 
 .tabs{
     position: absolute;
@@ -127,15 +124,17 @@
     border: 0.8vw solid var(--colorMain);
     /* background: var(--colorMainGradient);
     padding: 0.85vw; */
+    width: 48vw;
     text-align: center;
-    margin-inline: 25%;
+    /* vertical-align: middle; */
+    /* margin-inline: 25%; */
     margin-top: 1.5%;
     border-radius: 60px;
     @media screen and (max-width: 1685px) {
         margin-top: 2%;
     } 
     @media screen and (max-width: 1398px){
-        margin-inline: 20%;
+        /* margin-inline: 20%; */
         margin-top: 1.5%;
         margin-bottom: -1.5%;
         font-size: 20px;     
@@ -152,20 +151,37 @@
     } 
 }
 
+.stickers{
+    height: 8vh;
+    @media screen and (max-width: 1398px){
+        margin-top: 0.5vh;
+        height: 4vh;
+    }
+}
+.stickers:active{
+    transform: translateY(10px);
+}
+.stickerInfo{
+    height: 15vh; 
+    margin-top: 3vh;
+    @media screen and (max-width: 1398px){
+        margin-top: 4vh;
+        height: 10vh;
+    }
+}
+.stickerInfo:active{
+    transform: translateY(-10px);
+    /* transition: 0.5s ease-in-out; */
+}
+
 .infoDiv{
     align-content: center;
     justify-content: center;
     margin-top: 2%;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 1%;
-    @media screen and (max-width: 1398px){
-        grid-gap: 0;
-    }
-    @media screen and (max-width: 820px){
-        margin-left: 10%;
-        grid-gap: 10%;
-    }
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
     @media screen and (max-width: 600px){
         display:none;          
         @media screen and (max-height: 550px)    {

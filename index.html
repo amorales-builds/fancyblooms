@@ -14,14 +14,21 @@
   </head>
 
   <body>
-    <!-- <h1 id="intro">Welcome to my (under construction) Website!</h1>
-    <br>
-    <div id="wip">
-    <hr>    
-      <p>We're under construction!</p> 
-    </div> -->
+    <!-- <embed style="position: absolute; z-index: -99999; height: 100vh; width: 100vw; top:0; right: 0;" src="https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3dTdyOWV5cGF4YTBqcWQ0czE5aHRhbDRiZ3R0d2hqNG5qOXUyanM4OSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/xUOwGfV7UYp0E6cb1m/giphy.webp"> -->
+
+    <!-- <embed style="position: absolute; z-index: -999; height: 100vh; width: 100vw; top:0; right: 0; opacity: 0.25; " src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YjNnZ3piMDNqNmx2aWoyMHh1czNiZjUzMzgybDlmeG5wenIzc2UwOSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/QvMlCIiURQJNYsKLbD/giphy.webp"> -->
+      
+    <embed style="position: absolute; z-index: -999; height: 100vh; width: 100vw; top:0; right: 0; opacity: 0.5; " src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDBzdXRma3MzemFkbnpscmt3MWw1cHJ2ZHA5cTI3dWU0bHppNTJpYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/NeITw3HGve332JMD4E/giphy.gif">
+      
+    <!-- <embed style="position: absolute; z-index: -999; height: 100vh; width: 100vw; top:0; right: 0; opacity: 0.5; " src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXV6MnBkNHFpcmh1OHdjaGVpNzB6d2UwaHh1cG10NzFsM3dzY3JjcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/dwsu3XQVa1z9eVcuFQ/giphy.gif"> -->
+
     <!-- <embed style="position: absolute; scale: 35%; margin-left:-3%; margin-top: -1%;" src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MGkwcThhcGo1Mm01dXZxd2p4ajNzY3YxazYzZW50d3FmNXU3N3I5ZiZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/Oxjl24LleQCvVIiqRP/giphy.webp"></embed> -->
-    <h1 id="introBanner">&#9830; &#9825; Welcome to Fancyblooms! &#9825; &#9830;</h1>
+    
+    <div style="display: grid; grid-template-columns: auto auto auto; justify-content: center; column-gap: 2%; margin-bottom: -2vh;">
+      <embed class="stickers" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWRud2h1NTRkcHA5bjNpb3p0cWJxdzJxZXl0bHkzcTd1eWYyb3VoayZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/I1GhlA9LXCCouY1lko/giphy.webp">
+      <h1 id="introBanner">&#9830; &#9825; Welcome to Fancyblooms! &#9825; &#9830;</h1>
+      <embed class="stickers" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWRud2h1NTRkcHA5bjNpb3p0cWJxdzJxZXl0bHkzcTd1eWYyb3VoayZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/I1GhlA9LXCCouY1lko/giphy.webp">
+    </div>
     <div id="website" class="website">
       <div class="buttons">
         <button id="upBtn" class="navBtn">&#9650</button>
@@ -40,7 +47,7 @@
         <!-- <p id="brand">Fancyblooms</p> -->
         <div id="mainGrid">
 
-          <div id="selectArt" class="select">
+          <div id="selectArt" class="select"> <!-- canvas(?)/window -->
             <div id="artDiv" onclick="artPage()">
               <div class="artWindow">
                 <div id="artCircle" class="redButton"></div>
@@ -55,7 +62,7 @@
                   <div id=tool class="t6"></div>
                 </div>
                 <div class="artSquare">
-                  <p id="gridPage" class="artBtn">Art</p>  <!-- canvas(?)/window -->
+                  <p id="gridPage" class="artBtn">Art</p>  
                 </div>
                 <div class="artColors">
                   <div id="colorSquare" class="redSqr"></div>
@@ -70,10 +77,10 @@
             </div>
           </div>
           
-          <div id="selectStories" class="select">
+          <div id="selectStories" class="select"> <!-- notebook/book -->
             <div id="storiesDiv" onclick="storiesPage()">
               <div class="outsideBook" >
-                <p id="gridPage" class="storiesBtn">Stories</p> <!-- notebook/book -->
+                <p id="gridPage" class="storiesBtn">Stories</p>
               </div>
               <div class="insideBook">
                 <p style="font-family: Redacted Script; font-size: 17px;">this is where I write stuff. bla bla bla. bla bla bla. bla bla bla.  are you reading this? that's pretty cool, I'm honored. I welcome you to my random musings. I hope you're blessed and happy.</p>
@@ -82,23 +89,24 @@
             </div>
           </div>
           
-          <div id="selectProgramming" class="select">
+          <div id="selectProgramming" class="select"><!-- game/computer -->
             <div id="programmingDiv" onclick="programmingPage()">
               <div id="gridPage" class="programmingBtn" >
-                <p style="margin-left: -5px; transform:skew(-5deg)">Programming</p> <!-- game/computer -->
+                <p style="margin-left: -5px; transform:skew(-5deg)">Programming</p> 
               </div>        
               <p class="computerNeck"></p>
               <p class="keyboardPart"></p>
+              <!-- <embed style="height: 24vh;" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmtyaDA5dmhqbDRwZ3RpZ21ycHV2MHdlbW45eWhzZWt2NXVwNml2eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/P50dA1QDzaPMumtj0w/giphy.gif"> -->
             </div>
           </div>
 
-          <div id="selectMe" class="select">
+          <div id="selectMe" class="select"><!-- journal(?)/bunny(?) -->
             <div id="meFrame" onclick="mePage()">
               <div class="meDiv">
                 <div id="meEar" class="left"></div>
                 <div id="meEar" class="right"></div>
                 <div id="gridPage" class="meBtn">
-                  <p id="meText">Me</p> <!-- journal(?)/bunny(?) -->
+                  <p id="meText">Me</p> 
                 </div>           
                 <div id="meEye" class="left"></div>
                 <div id="meEye" class="right"></div>
@@ -108,24 +116,26 @@
           </div>
 
         </div>
-      </div>      
+      </div>    
+      
+      <!-- <div style="z-index: 99999;">
+        <embed style="position: absolute; top: 10vh; left: 3vw; scale: 50%" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3p6ZnczYmo0dDJwNWxxcTJhaGV6dGk3Yml2ZXYweWt1c2ljOTFhOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/DRpsT8AJmGkjxdo9tY/giphy.gif">
+        <embed style="position: absolute; top: 45vh; margin-left: -1vw; scale: 35%" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWRud2h1NTRkcHA5bjNpb3p0cWJxdzJxZXl0bHkzcTd1eWYyb3VoayZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/A9dZqpVpbLsju/giphy.webp">     
+      </div> -->
 
       <div class="infoDiv">
           <iframe class="gbFrame" src="https://fancyblooms.atabook.org/"></iframe>
-        <!-- <div id="guestBook" class="infoBtn">
-          <h2 class="gbTitle" style="font-size: 16px; font-weight: bold; margin-top: 1vh;">&#9826;  G u e s t B o o k &#9826;</h2>
-          <div class="gbGrid">
-            <textarea type="text" readonly> NOT YET AVAILABLE </textarea>
-            <form>
-              <label>Name:</label>
-              <input class="gbName" type="text" readonly></input>
-              <label>Message:</label>
-              <input class="gbText" type="text" readonly></input>
-              <button class="sendBtn">SEND</button> 
-            </form>
-          </div> 
-        </div>-->
+
         <p id="infoBanner"><strong>Choose a niche to enter the site.</strong><br>Don't worry, you may change niche at anytime!</p>
+
+        <!-- <embed class="stickerInfo" src="https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MHpscmJ0bnE1dXEwbzM1cXh3bzBsd3NnMnJnZzhhcHdjOTU2amI1NCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/SSa95b4K6KgZ1GqkDp/200.webp"> -->
+
+        <!-- <embed class="stickers" style="height: 15vh" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXl1MDlqcHE1b2xobnpkZ3ZwZW43bXllNnp1a3FxcXIycnRuaHJhYyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/UdxJwrriQpQ2Y/200.webp"> -->
+
+        <!-- <embed class="stickers" style="height: 15vh" src="https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cTBrOG12NXVzd2V2bDF1N2Z0ZmNodGRia3dlMzFoNmlwczNmMWwwcyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/sskVlsPgpMnhRI7Ooe/giphy.webp"> -->
+
+        <!-- <embed class="stickers" style="height: 15vh" src="https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bGp5YW9yM2w3Z2N2MzU3amExZHk2a3l0b212ZTQ1cDNnYWM1d3g2bSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/9mKFTIlyqLG8ltuU8N/200.webp"> -->
+
         <div id="updates" class="infoBtn">
           <p style="font-size: 16px; font-weight: bold; margin-top: 1vh;">&#9826; U p d a t e s &#9826; </p>
           <p class="updateText">
@@ -142,8 +152,8 @@
             [~ Added updates log!]<br><br>
             <strong class="updateSpace"></strong>
         </div>
-      </div>
 
+      </div>
 
       <script src="/src/script.js"></script>
 

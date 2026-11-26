@@ -7,13 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal-Fancyblooms</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/bunnyBear_icon.ico">
-    <link rel="stylesheet" href="/styles/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/styles/personalStyle.css" type="text/css" media="all">
   </head>
   <!-- style="background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3N0cG5lY3dydGp1cWg2cDExNDk0YnM0NGM1N3JiZ2ZqdGMxZGs4ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gvfpZrR54qd56/giphy.gif); background-repeat: no-repeat; background-size: cover;" -->
   <body>    
-    <a href="/index.html">home</a>
-    <h1>Welcome to my Personal Page!</h1>
+    <div class="tabs">
+      <a href="/index.html" id="tabBtn" class="homeBtn">home</a>
+      <a href="/public/artPage.html" id="tabBtn" class="aBtn">art</a>
+      <a href="/public/storiesPage.html" id="tabBtn" class="prBtn">stories</a>
+      <a href="/public/programmingPage.html" id="tabBtn" class="peBtn">programming</a>
+    </div>
+    <div class="content">
+      <div class="pGrid">
+        <div class="container">3</div>
+        <div class="container">About Me
+          <div id="aboutMeDiv">
+            <div>
+              <div style="display: grid; grid-template-columns: auto auto; margin-left: 0.5vh;">
+                <img id="idPic" src="/private/fancyIDpic.png" onclick="favCointaner()">
+                <div  style="margin-left: 2vh; margin-top: 1vh;">
+                  <a target="_blank" href="https://neocities.org/site/fancyblooms"><embed class="socialIcons" style="height:5.4vh; margin-left: -1.7vw; margin-bottom: -0.8vh;" src="https://happycoding.io/tutorials/html/images/neocities-1.png"></a><br>
+                  <a target="_blank" href="https://github.com/amorales-builds"><embed class="socialIcons" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/250px-GitHub_Invertocat_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"></a><br>
+                  <a target="_blank" href="https://www.instagram.com/fancycreator_/"><embed class="socialIcons" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1280px-Instagram_logo_2022.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"></a> 
+                </div>
+              </div>
+              <div id="idStatus">
+                <p style="margin-top: 0.8vh; margin-left: 2vh; font-size: 10px; font-weight: 600;">Status:</p>
+                <p style="text-align: center; margin-top: -2vh; color: var(--colorDark);">Coding ~</p>
+              </div>
+            </div>
+            <div id="idFav">
+              <div>Favorites</div>
+              <button class="favBtn" onclick="favColor()">Color</button>
+              <button class="favBtn" onclick="favMammal()">Mammal</button>
+              <button class="favBtn" onclick="favFish()">Fish</button>
+              <button class="favBtn" onclick="favTree()">Tree</button>
+            </div>
+          </div>
+          <div id="favContainer">
+            <div id="favInfo" style="display: grid; grid-template-columns: auto auto;">
+              <div>
+                <h3 id="favTitle"></h3>
+                <p id="favContent"></p>
+              </div>
+              <p id="favImage"></p><br>
+              <p id="favImage2"></p>
+            </div>
+          </div>
+        </div>
+        <div class="container">Blog</div>
+      </div>
+    </div>
     <!-- <embed style="position: absolute; scale: 35%; margin-left:-3%; margin-top: -1%;" src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZHZzYnlyd2pzczFkYnd2M2dodTJrNTFiNm81N2hxNG9na3ZrYjliMyZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/LxHcvjM41ViH0f9ptl/giphy.webp"></embed> -->
     <p></p>
+
+    <script src="/src/personalScript.js"></script>
+
   </body>
 </html>

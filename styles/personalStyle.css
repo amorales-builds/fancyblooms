@@ -1,0 +1,164 @@
+@import "/styles/style.css";
+
+#tabBtn{
+    font-family: Audiowide;
+    color: var(--colorMediumDark);
+}
+#tabBtn:hover{
+    transform: translateY(-20px);
+}
+
+.content{
+    padding: 20px;
+    margin-top: 5vh;
+}
+
+.pGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.container{    
+    border: 0.2vw solid var(--colorMediumDark);
+    /* background-color: var(--colorLighter); */
+    border-radius: 5px;
+    padding: 20px;
+    height: 84vh;
+    width: 29vw;
+}
+
+#aboutMeDiv{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-rows: auto auto; */
+    justify-content: space-evenly;
+    /* vertical-align: middle; */
+    row-gap: 5vh;
+    background-color: var(--colorMain);
+    box-shadow: 0 0 0 5px var(--colorDark);
+    border: 0.2vw solid var(--colorLighter);
+    border-radius: 15px;
+    padding: 1.8vh 1vw;
+    margin: 2vh 1vw;
+    transform: scale(100%);
+    transition: 0.3s ease-out;
+}
+#aboutMeDiv:hover{
+    /* transform: rotateY(360deg);
+    transform: rotate(-1.5deg); */
+    transform: scale(105%);
+    transition: 0.2s ease-in
+}
+#idPic{
+    height: 15vh;
+    border: 5px solid var(--colorMain);     
+    box-shadow: 0 0 10px 10px var(--colorLightest) inset, 0 0 0 5px var(--colorLightest); 
+    border-radius: 30px;
+}
+#idPic:hover{
+    transform: scale(95%) rotate(-360deg);
+    transition: 0.5s ease-in-out;
+}
+.socialIcons{    
+    height: 4vh;
+}
+.socialIcons:hover{    
+    transform: scale(90%);
+}
+#idStatus{
+    margin-top: 1vh;
+    margin-left: -1vh;
+    border: 0.8vw double var(--colorMain);
+    background-color: var(--colorLightest);
+    border-radius: 20px;
+    /* padding: 0 0.5vw; */
+    text-align: start;
+    width: 11.8vw;
+    color: var(--colorMain);
+}
+#idFav{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 1.1vh;
+    padding: 1vh 2vw;
+    text-align: center;
+}
+.favBtn{
+    color: var(--colorDark);
+    border: 3px solid var(--colorMain);
+    background-color: var(--colorWhite);
+    box-shadow: 0 0 0 3px var(--colorLighter); 
+    border-radius: 20px;
+    width: 8vw;
+}
+.favBtn:hover{
+    /* color: var(--colorWhite); */
+    font-weight: 600;
+    background-color: var(--colorLighter);
+    /* border-radius: 5px; */
+    transform: translateY(-2px);
+    transition: 0.2s ease-in-out;
+}
+#favContainer{    
+    background-color: var(--colorLightest);
+    border: 0.3vw solid var(--colorDark);
+    border-radius: 100px;
+    height: 48vh;
+    background-image: url(/private/fancyIDpic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-blend-mode: overlay; */
+}
+#favTitle{
+    color: var(--colorDark);
+    letter-spacing: 3px;
+    font-family: Metamorphous;
+    font-size: 28px;
+    width: fit-content;
+    /* background-color: var(--colorWhitish);
+    border-radius: 20px;
+    margin-inline: 0.5vw; */
+    padding: 4vh 3vw 0;
+}
+#favContent{
+    display: none;
+    color: var(--colorDark);
+    border: 3px solid var(--colorWhite);
+    background-color: var(--colorWhitish);
+    border-radius: 20px;
+    margin: -1.5vh 2vw;
+    padding: 1.5vh 1vw;
+    line-height: 1.8;
+}
+#favImage{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 3px solid var(--colorMain);
+    border-radius: 10px; */
+    height: 20vh;
+    width: 10vw;
+    margin-top: 4vh;
+    margin-right: 2vw;
+    align-items: end;
+}
+#favImage2{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+    width: 10vw;
+    margin-top: -15vh;
+    margin-right: 2vw;
+    align-items: start;
+}
+
+
+/* .myID{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between;    
+} */
