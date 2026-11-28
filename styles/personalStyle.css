@@ -51,6 +51,13 @@
     background-color: var(--colorWhitish);
     padding: 20px; */
 }
+.stuffContainer4{    
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    /* column-gap: 1vw; */
+}
 /* .stuffContainer3{    
     display: grid;
     grid-template-columns: auto auto auto;
@@ -60,26 +67,107 @@
     padding: 20px;
 } */
 #websiteStuff{
-    overflow-y: scroll;
+    /* overflow-y: scroll;
     scrollbar-width: thin;
-    scrollbar-color: var(--colorMedium) transparent;
+    scrollbar-color: var(--colorMedium) transparent; */
+    padding: 0 1vw 1.5vh;
+}
+.stuffTopicLang{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--colorWhite);
+    background-color: var(--colorMain);
+    margin-inline: 0.4vw;
+    margin-bottom: -1.8vh;
+    text-align: center;
+    border-radius: 20px;
+    /* padding: 0.1vh 0; */
+}
+.stuffTopic{
+    letter-spacing: 2px;
+    color: var(--colorWhite);
+    background-color: var(--colorMain);
+    /* background-color: var(--colorMedium); */
+    /* color: var(--colorDark);
+    background-color: transparent;
+    border: 1px solid var(--colorMedium); */
+    /* font-family: Audiowide;
+    padding: 0.2vh 0.8vw; */
+    margin-inline: 0.2vw;
+    margin-bottom: -1.8vh;
+    text-align: center;
+    border-radius: 20px;
+}
+.stuffTopicSide{
+    letter-spacing: 2px;
+    /* font-family: Audiowide; */
+    color: var(--colorDark);
+    background-color:  var(--colorLightest);
+    border: 1px solid var(--colorLightest);
+    /* color: var(--colorWhite);
+    background-color: var(--colorMain);
+    border: 2px solid var(--colorMain); */
+    margin-left: -0.5vw;
+    padding-left: 0.5vw;
+    /*padding: 0.2vh 0.8vw; 
+    margin-inline: 0.2vw;
+    margin-bottom: -1.8vh;
+    text-align: center;
+    border-radius: 20px;*/
+}
+.stuffContentSide{
+    /* letter-spacing: 2px;
+    color: var(--colorWhite);
+    background-color: var(--colorMain); */
+    border: 1px solid var(--colorLighter);
+    /* margin: 0 0;
+    padding: 0 0; */
+    margin-inline: -0.5vw;
+    /* padding-left: 0.5vw; */
+    /* font-family: Audiowide;
+    padding: 0.2vh 0.8vw; 
+    margin-inline: 0.2vw;
+    margin-bottom: -1.8vh;
+    border-radius: 20px;*/
+    text-align: center;
+}
+.projectBtn{
+    padding: 0.1vh 4.8vw;
+    text-align: center;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid  var(--colorLight);
+}
+.projectBtn:hover{
+    background-color: var(--colorLightest);
+    border: 1px solid  var(--colorLightest);
 }
 .langGrid{
     display: grid;
+    text-align: center;
     grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
     /* padding-left: 1vw; */
     /* align-items: start; */
 }
 .linkGrid{
     display: grid;
     grid-template-columns: auto;
-    padding-left: 1vw;
+    /* padding: 0 0 0 2vw; */
+    padding: 4px 0 0 0;
     /* align-items: start; */
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--colorMedium) transparent;
+    height: 14vh;
 }
 .linkDesc{
     margin: -5px 0 20px;
     font-style: oblique;
     font-size: 12px;
+    border: 2px dotted var(--colorLighter);
+    border-radius: 20px;
+    padding: 0 2vw;
 }
 a{
     font-size: 16px;
@@ -91,6 +179,7 @@ a{
 a:visited{
     color: var(--colorMediumDark);
 }
+
 
 #aboutMeDiv{
     display: grid;
@@ -239,12 +328,25 @@ button{
     scrollbar-width: thin;
     scrollbar-color: var(--colorMedium) transparent;
 }
+#blogTitle{
+    letter-spacing: 2px;
+    /* color: var(--colorWhite);
+    background-color: var(--colorDark);
+    border-radius: 20px; 
+    margin-top: 1.5vh;*/
+    text-align: center;
+}
 #blogDate{    
-    margin: -1.5vh 0 2vh;
+    margin: -1.5vh 0 0;
     padding-inline: 0.5vw;
     font-size: 12px;
+    color: var(--colorWhite);
+    background-color: var(--colorMedium);
+    text-align: end;
+    border-radius: 20px;
 }
 #blogContent{    
-    padding-inline: 1vw;
+    border: 5px dotted var(--colorLightest);
+    padding: 2vh 2vw;
     line-height: 1.8;
 }

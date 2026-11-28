@@ -20,27 +20,68 @@
     <div class="content">
       <div class="pGrid">
         <div class="container">Cool Stuff
-          <div id="stuffGrid">
-            <div id="currentStuff" class="stuffContainer2">
-              <div id="id="currentStuff" class="stuffContainer">
-                <p>Reading:</p>
-                <p>Listening:</p>
-                <p>Watching:</p>
-                <p>Playing:</p>
+          <div id="stuffGrid" style="overflow-y: scroll; scrollbar-width: none;">
+            <div id="currentStuff" class="stuffContainer">
+              <!-- <p class="stuffTopic" style="margin-inline: -0.5vw; margin-bottom: -0.5vh; border-radius: 0;">Current:</p> -->
+              <div class="stuffContainer2">
+                <div>
+                    <p class="stuffTopicSide">Reading:</p>
+                    <p class="stuffTopicSide">Listening:</p>
+                    <p class="stuffTopicSide">Watching:</p>
+                    <p class="stuffTopicSide">Playing:</p>
+                  </div>
+                  <div>
+                    <p class="stuffContentSide">The Fellowship of the Ring</p>
+                    <p class="stuffContentSide">EPIC: the Musical</p>
+                    <p class="stuffContentSide">Kanata Kara</p>
+                    <p class="stuffContentSide">Zelda: Ocarina of Time</p>
+                  </div>
               </div>
-              <div id="id="projectStuff" class="stuffContainer">
-                <p>Art:</p>
-                <p>Programs:</p>
-                <p>Music</p>
-                <p>Novels:</p>
-              </div>
+              <!-- <div id="id="projectStuff" class="stuffContainer">
+                <div id="currentStuff" class="stuffContainer2">
+                  <div>
+                    <p class="stuffTopicSide">Art:</p>
+                    <p class="stuffTopicSide">Programs:</p>
+                    <p class="stuffTopicSide">Music:</p>
+                    <p class="stuffTopicSide">Novels:</p>
+                  </div>
+                  <div>
+                    <p class="stuffContentSide">The Fellowship of the Ring</p>
+                    <p class="stuffContentSide">Epic the Musical</p>
+                    <p class="stuffContentSide">Kanata Kara</p>
+                    <p class="stuffContentSide">Zelda: Ocarina of Time</p>
+                  </div>
+                </div>
+              </div> -->
             </div>
-            <div id="myStuff" class="stuffContainer">
+            <div id="myStuff" class="stuffContainer" style="padding-bottom: 0.8vh;">
                 <!-- <p style="margin-bottom: -5px;">Languages:</p> -->
+              <p class="stuffTopic" style="margin: 0.8vh 0 -0.6vh; border: none; background-color: transparent; color: var(--colorLight);">Language Levels</p>
               <div id="languageStuff" class="langGrid">
-                <p>Japanese : &starf;&starf;&starf;&star;&star;</p>
-                <p>Chinese : &starf;&star;&star;&star;&star;</p>
-                <p>German : &starf;&starf;&starf;&star;&star;</p>
+                <div>
+                  <p class="stuffTopicLang">Spanish</p>
+                  <p style="margin-bottom: 0;">&starf;&starf;&starf;&starf;&starf;</p>
+                </div>
+                <div>
+                  <p class="stuffTopicLang">English</p>
+                  <p style="margin-bottom: 0;"> &starf;&starf;&starf;&starf;&starf;</p>
+                </div>
+                <div>
+                  <p class="stuffTopicLang">Japanese</p>
+                  <p style="margin-bottom: 0;">&starf;&starf;&starf;&star;&star;</p>
+                </div>
+                <div>
+                  <p class="stuffTopicLang">German</p>
+                  <p style="margin-bottom: 0.5vh;">&starf;&starf;&starf;&star;&star;</p>
+                </div>
+                <div>
+                  <p class="stuffTopicLang">Chinese</p>
+                  <p style="margin-bottom: 0;">&starf;&star;&star;&star;&star;</p>
+                </div>
+                <div>
+                  <p class="stuffTopicLang">Italian</p>
+                  <p style="margin-bottom: 0;">&starf;&star;&star;&star;&star;</p>
+                </div>
               </div>
               <!-- <div id="id="compStuff">
                 <p>HTML, CSS, JS:</p>
@@ -52,19 +93,68 @@
                 <p>Mine:</p>
               </div> -->
             </div>
+            <div id="projectStuff" class="stuffContainer">
+              <p class="stuffTopic" style="margin-inline: -0.5vw; margin-bottom: -0.5vh; border-radius: 0;">Personal Projects:</p>
+              <div class="stuffContainer4">
+                <p class="projectBtn">game dev</p>
+                <p class="projectBtn">art</p>
+                <p class="projectBtn" style="margin-top: -0.6vh;">music</p>
+                <p class="projectBtn" style="margin-top: -0.6vh;">writing</p>
+                <!-- <div>
+                  <p class="stuffTopicSide">my Code:</p>
+                  <p class="stuffTopicSide">my Writing:</p>
+                </div>
+                <div>
+                  <p class="stuffContentSide">(this website lol)</p>
+                  <p class="stuffContentSide">The Juniper Archives</p>
+                </div> -->
+              </div>
+            </div>
             <div id="artistsStuff" class="stuffContainer">
-              <p>Artists:</p>
+              <p class="stuffTopic" style="margin-inline: -0.5vw; margin-bottom: -0.5vh; border-radius: 0;">Inspirations:</p>
+              <div class="stuffContainer2">
+                <div>
+                  <p class="stuffTopicSide">Visual Artists:</p>
+                  <p class="stuffTopicSide">Musicians/Bands:</p>
+                  <!-- <p class="stuffTopicSide">YT Channels:</p> -->
+                </div>
+                <div>
+                  <p class="stuffContentSide">Gretel Lusky</p>
+                  <p class="stuffContentSide">Toby Fox</p> 
+                  <!-- <p class="stuffContentSide">n/a</p> -->
+                </div>
+              </div>
+              <!-- <div class="langGrid"></div> -->
+              <!-- <p>Artists:</p>
               <p>Musicians:</p>
-              <p>Channels:</p>
+              <p>Channels:</p> -->
+              <!-- <p class="stuffTopic" style="margin-inline: -0.5vw; margin-bottom: -0.5vh; border-radius: 0;">Personal Projects:</p>
+              <div id="currentStuff" class="stuffContainer2">
+                  <div>
+                    <p class="stuffTopicSide">my Art:</p>
+                    <p class="stuffTopicSide">my Programs:</p>
+                    <p class="stuffTopicSide">my Music:</p>
+                    <p class="stuffTopicSide">my Novels:</p>
+                  </div>
+                  <div>
+                    <p class="stuffContentSide">n/a</p>
+                    <p class="stuffContentSide">(this website lol)</p>
+                    <p class="stuffContentSide">n/a</p>
+                    <p class="stuffContentSide">n/a</p>
+                  </div>
+                </div> -->
             </div>
             <div id="websiteStuff" class="stuffContainer">
-              <p>Cool Websites:</p>
+              <p class="stuffTopic" style="font-family: Audiowide; margin-inline: 0; margin-bottom: 0.8vh;">Cool Websites:</p>
               <div class="linkGrid">
-                <p class="linkDesc"><a href="https://www.wanikani.com/">wanikani.com</a> &larr; japanese language learning!</p>
-                <p class="linkDesc"><a href="https://itch.io/games/">itch.io</a> &larr; free web games available</p>
-                <p class="linkDesc"><a href="https://web.archive.org/">web.archive.org</a> &larr; THE Internet Archive</p>
-                <p class="linkDesc"><a href="https://loremipsum.io/generator/">loremipsum.io/generator</a> &larr; filler text on demand</p>
-                <p class="linkDesc"><a href="https://www.virustotal.com/gui/home/upload">virustotal.com</a> &larr; upload files to check for viruses</p>
+                <p class="linkDesc"><a target="_blank" href="https://www.wanikani.com/">wanikani.com</a> &larr; japanese language learning!</p>
+                <p class="linkDesc"><a target="_blank" href="https://neal.fun/">neal.fun</a> &larr; games and stuff by Neal</p>
+                <!-- <p class="linkDesc"><a target="_blank" href="https://itch.io/games/">itch.io</a> &larr; free web games available</p> -->
+                <p class="linkDesc"><a target="_blank" href="https://wigglypaint.com/">wigglypaint.com</a> &larr; paint wiggles on this website</p>
+                <p class="linkDesc"><a target="_blank" href="https://web.archive.org/">web.archive.org</a> &larr; THE Internet Archive</p>
+                <p class="linkDesc"><a target="_blank" href="https://loremipsum.io/generator/">loremipsum.io/generator</a> &larr; filler text on demand</p>
+                <p class="linkDesc"><a target="_blank" href="https://www.window-swap.com/Window">window-swap.com</a> &larr; cameras showing window views around the world</p>
+                <p class="linkDesc"><a target="_blank" href="https://www.virustotal.com/gui/home/upload">virustotal.com</a> &larr; upload files to check for viruses</p>
               </div>
             </div>
           </div>

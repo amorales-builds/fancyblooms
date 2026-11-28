@@ -64,6 +64,7 @@ function favTree(){
 
 //blog
 const blog = [
+    ["Fixer Upper Love", "26.11.27", "/docs/blogs/fixerUpperLove.txt"], 
     ["Wisdom Surgery", "26.11.26", "/docs/blogs/wisdomSurgery.txt"], 
 ];
 
